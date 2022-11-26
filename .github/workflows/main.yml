@@ -1,0 +1,19 @@
+---
+name: test
+on: [push]
+jobs:
+  build:
+    name: Build some packages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Guix
+        id: install-guix
+        uses: PromyLOPh/guix-install-action@v1
+        with:
+          pullAfterInstall: false
+      - name: Build haskell-attoparsec
+        run: guix build -L . haskell-9.0-attoparsec
+      - name: Build haskell-attoparsec-iso8601
+        run: guix build -L . haskell-9.0-attoparsec-iso8601

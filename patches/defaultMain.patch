@@ -1,0 +1,7 @@
+diff --git a/Setup.hs b/Setup.hs
+index 656d14b..cd7dc32 100644
+--- a/Setup.hs
++++ b/Setup.hs
+@@ -3 +3 @@ import Distribution.Simple
+-main = defaultMainWithHooks defaultUserHooks
++main = defaultMain
