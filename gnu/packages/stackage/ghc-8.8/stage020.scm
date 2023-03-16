@@ -30,7 +30,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fsupportnodejs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage019)
                      haskell-8.8-LambdaHack)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -46,7 +46,7 @@
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-random)))
     (propagated-inputs (list (@ (gnu packages sdl) sdl2)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://allureofthestars.com")
     (synopsis "Near-future Sci-Fi roguelike and tactical squad combat game")
     (description
@@ -100,7 +100,7 @@ haskell-8.8-Allure
        #:configure-flags (list)
        #:cabal-revision
        ("5" "048hlb1517q9qf8pkbi6479qghpn2n9krq6h2ci0z81v1p7mcv9y")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage016)
                      haskell-8.8-Chart)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -126,7 +126,7 @@ haskell-8.8-Allure
                      haskell-8.8-operational)
                   (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-svg-builder)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/timbod7/haskell-chart/wiki")
     (synopsis "Diagrams backend for Charts.")
     (description "Diagrams backend for Charts.")
@@ -153,7 +153,7 @@ haskell-8.8-Chart-diagrams
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -165,7 +165,7 @@ haskell-8.8-Chart-diagrams
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon API Gateway SDK.")
     (description
@@ -207,7 +207,7 @@ haskell-8.8-amazonka-apigateway
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -219,7 +219,7 @@ haskell-8.8-amazonka-apigateway
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Application Auto Scaling SDK.")
     (description
@@ -260,7 +260,7 @@ haskell-8.8-amazonka-application-autoscaling
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -272,7 +272,7 @@ haskell-8.8-amazonka-application-autoscaling
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon AppStream SDK.")
     (description
@@ -313,7 +313,7 @@ haskell-8.8-amazonka-appstream
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -325,7 +325,7 @@ haskell-8.8-amazonka-appstream
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Athena SDK.")
     (description
@@ -366,7 +366,7 @@ haskell-8.8-amazonka-athena
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -378,7 +378,7 @@ haskell-8.8-amazonka-athena
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Auto Scaling SDK.")
     (description
@@ -419,7 +419,7 @@ haskell-8.8-amazonka-autoscaling
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -431,7 +431,7 @@ haskell-8.8-amazonka-autoscaling
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Budgets SDK.")
     (description
@@ -473,7 +473,7 @@ haskell-8.8-amazonka-budgets
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -485,7 +485,7 @@ haskell-8.8-amazonka-budgets
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Certificate Manager SDK.")
     (description
@@ -526,7 +526,7 @@ haskell-8.8-amazonka-certificatemanager
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -538,7 +538,7 @@ haskell-8.8-amazonka-certificatemanager
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudFormation SDK.")
     (description
@@ -579,7 +579,7 @@ haskell-8.8-amazonka-cloudformation
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -591,7 +591,7 @@ haskell-8.8-amazonka-cloudformation
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudFront SDK.")
     (description
@@ -632,7 +632,7 @@ haskell-8.8-amazonka-cloudfront
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -644,7 +644,7 @@ haskell-8.8-amazonka-cloudfront
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudHSM SDK.")
     (description
@@ -685,7 +685,7 @@ haskell-8.8-amazonka-cloudhsm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -697,7 +697,7 @@ haskell-8.8-amazonka-cloudhsm
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudSearch SDK.")
     (description
@@ -739,7 +739,7 @@ haskell-8.8-amazonka-cloudsearch
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -751,7 +751,7 @@ haskell-8.8-amazonka-cloudsearch
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudSearch Domain SDK.")
     (description
@@ -792,7 +792,7 @@ haskell-8.8-amazonka-cloudsearch-domains
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -804,7 +804,7 @@ haskell-8.8-amazonka-cloudsearch-domains
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudTrail SDK.")
     (description
@@ -845,7 +845,7 @@ haskell-8.8-amazonka-cloudtrail
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -857,7 +857,7 @@ haskell-8.8-amazonka-cloudtrail
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudWatch SDK.")
     (description
@@ -899,7 +899,7 @@ haskell-8.8-amazonka-cloudwatch
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -911,7 +911,7 @@ haskell-8.8-amazonka-cloudwatch
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudWatch Events SDK.")
     (description
@@ -952,7 +952,7 @@ haskell-8.8-amazonka-cloudwatch-events
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -964,7 +964,7 @@ haskell-8.8-amazonka-cloudwatch-events
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CloudWatch Logs SDK.")
     (description
@@ -1005,7 +1005,7 @@ haskell-8.8-amazonka-cloudwatch-logs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1017,7 +1017,7 @@ haskell-8.8-amazonka-cloudwatch-logs
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CodeBuild SDK.")
     (description
@@ -1058,7 +1058,7 @@ haskell-8.8-amazonka-codebuild
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1070,7 +1070,7 @@ haskell-8.8-amazonka-codebuild
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CodeCommit SDK.")
     (description
@@ -1111,7 +1111,7 @@ haskell-8.8-amazonka-codecommit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1123,7 +1123,7 @@ haskell-8.8-amazonka-codecommit
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CodeDeploy SDK.")
     (description
@@ -1164,7 +1164,7 @@ haskell-8.8-amazonka-codedeploy
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1176,7 +1176,7 @@ haskell-8.8-amazonka-codedeploy
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon CodePipeline SDK.")
     (description
@@ -1218,7 +1218,7 @@ haskell-8.8-amazonka-codepipeline
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1230,7 +1230,7 @@ haskell-8.8-amazonka-codepipeline
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Cognito Identity SDK.")
     (description
@@ -1271,7 +1271,7 @@ haskell-8.8-amazonka-cognito-identity
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1283,7 +1283,7 @@ haskell-8.8-amazonka-cognito-identity
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Cognito Identity Provider SDK.")
     (description
@@ -1324,7 +1324,7 @@ haskell-8.8-amazonka-cognito-idp
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1336,7 +1336,7 @@ haskell-8.8-amazonka-cognito-idp
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Cognito Sync SDK.")
     (description
@@ -1377,7 +1377,7 @@ haskell-8.8-amazonka-cognito-sync
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1389,7 +1389,7 @@ haskell-8.8-amazonka-cognito-sync
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Config SDK.")
     (description
@@ -1430,7 +1430,7 @@ haskell-8.8-amazonka-config
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1442,7 +1442,7 @@ haskell-8.8-amazonka-config
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Data Pipeline SDK.")
     (description
@@ -1483,7 +1483,7 @@ haskell-8.8-amazonka-datapipeline
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1495,7 +1495,7 @@ haskell-8.8-amazonka-datapipeline
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Device Farm SDK.")
     (description
@@ -1536,7 +1536,7 @@ haskell-8.8-amazonka-devicefarm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1548,7 +1548,7 @@ haskell-8.8-amazonka-devicefarm
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Direct Connect SDK.")
     (description
@@ -1589,7 +1589,7 @@ haskell-8.8-amazonka-directconnect
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1601,7 +1601,7 @@ haskell-8.8-amazonka-directconnect
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Application Discovery Service SDK.")
     (description
@@ -1642,7 +1642,7 @@ haskell-8.8-amazonka-discovery
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1654,7 +1654,7 @@ haskell-8.8-amazonka-discovery
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Database Migration Service SDK.")
     (description
@@ -1695,7 +1695,7 @@ haskell-8.8-amazonka-dms
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1707,7 +1707,7 @@ haskell-8.8-amazonka-dms
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Directory Service SDK.")
     (description
@@ -1748,7 +1748,7 @@ haskell-8.8-amazonka-ds
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1760,7 +1760,7 @@ haskell-8.8-amazonka-ds
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon DynamoDB SDK.")
     (description
@@ -1802,7 +1802,7 @@ haskell-8.8-amazonka-dynamodb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1814,7 +1814,7 @@ haskell-8.8-amazonka-dynamodb
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon DynamoDB Streams SDK.")
     (description
@@ -1855,7 +1855,7 @@ haskell-8.8-amazonka-dynamodb-streams
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1867,7 +1867,7 @@ haskell-8.8-amazonka-dynamodb-streams
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon EC2 Container Registry SDK.")
     (description
@@ -1908,7 +1908,7 @@ haskell-8.8-amazonka-ecr
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1920,7 +1920,7 @@ haskell-8.8-amazonka-ecr
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon EC2 Container Service SDK.")
     (description
@@ -1961,7 +1961,7 @@ haskell-8.8-amazonka-ecs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -1973,7 +1973,7 @@ haskell-8.8-amazonka-ecs
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic File System SDK.")
     (description
@@ -2014,7 +2014,7 @@ haskell-8.8-amazonka-efs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2026,7 +2026,7 @@ haskell-8.8-amazonka-efs
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon ElastiCache SDK.")
     (description
@@ -2068,7 +2068,7 @@ haskell-8.8-amazonka-elasticache
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2080,7 +2080,7 @@ haskell-8.8-amazonka-elasticache
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic Beanstalk SDK.")
     (description
@@ -2121,7 +2121,7 @@ haskell-8.8-amazonka-elasticbeanstalk
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2133,7 +2133,7 @@ haskell-8.8-amazonka-elasticbeanstalk
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elasticsearch Service SDK.")
     (description
@@ -2175,7 +2175,7 @@ haskell-8.8-amazonka-elasticsearch
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2187,7 +2187,7 @@ haskell-8.8-amazonka-elasticsearch
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic Transcoder SDK.")
     (description
@@ -2228,7 +2228,7 @@ haskell-8.8-amazonka-elastictranscoder
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2240,7 +2240,7 @@ haskell-8.8-amazonka-elastictranscoder
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic Load Balancing SDK.")
     (description
@@ -2281,7 +2281,7 @@ haskell-8.8-amazonka-elb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2293,7 +2293,7 @@ haskell-8.8-amazonka-elb
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic Load Balancing SDK.")
     (description
@@ -2334,7 +2334,7 @@ haskell-8.8-amazonka-elbv2
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2346,7 +2346,7 @@ haskell-8.8-amazonka-elbv2
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Elastic MapReduce SDK.")
     (description
@@ -2387,7 +2387,7 @@ haskell-8.8-amazonka-emr
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2399,7 +2399,7 @@ haskell-8.8-amazonka-emr
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon GameLift SDK.")
     (description
@@ -2440,7 +2440,7 @@ haskell-8.8-amazonka-gamelift
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2452,7 +2452,7 @@ haskell-8.8-amazonka-gamelift
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Glacier SDK.")
     (description
@@ -2493,7 +2493,7 @@ haskell-8.8-amazonka-glacier
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2505,7 +2505,7 @@ haskell-8.8-amazonka-glacier
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Glue SDK.")
     (description
@@ -2546,7 +2546,7 @@ haskell-8.8-amazonka-glue
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2558,7 +2558,7 @@ haskell-8.8-amazonka-glue
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Health APIs and Notifications SDK.")
     (description
@@ -2599,7 +2599,7 @@ haskell-8.8-amazonka-health
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2611,7 +2611,7 @@ haskell-8.8-amazonka-health
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Identity and Access Management SDK.")
     (description
@@ -2652,7 +2652,7 @@ haskell-8.8-amazonka-iam
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2664,7 +2664,7 @@ haskell-8.8-amazonka-iam
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Import/Export SDK.")
     (description
@@ -2705,7 +2705,7 @@ haskell-8.8-amazonka-importexport
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2717,7 +2717,7 @@ haskell-8.8-amazonka-importexport
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Inspector SDK.")
     (description
@@ -2758,7 +2758,7 @@ haskell-8.8-amazonka-inspector
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2770,7 +2770,7 @@ haskell-8.8-amazonka-inspector
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon IoT SDK.")
     (description
@@ -2811,7 +2811,7 @@ haskell-8.8-amazonka-iot
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2823,7 +2823,7 @@ haskell-8.8-amazonka-iot
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon IoT Data Plane SDK.")
     (description
@@ -2864,7 +2864,7 @@ haskell-8.8-amazonka-iot-dataplane
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2876,7 +2876,7 @@ haskell-8.8-amazonka-iot-dataplane
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Kinesis SDK.")
     (description
@@ -2918,7 +2918,7 @@ haskell-8.8-amazonka-kinesis
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2930,7 +2930,7 @@ haskell-8.8-amazonka-kinesis
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Kinesis Analytics SDK.")
     (description
@@ -2972,7 +2972,7 @@ haskell-8.8-amazonka-kinesis-analytics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -2984,7 +2984,7 @@ haskell-8.8-amazonka-kinesis-analytics
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Kinesis Firehose SDK.")
     (description
@@ -3025,7 +3025,7 @@ haskell-8.8-amazonka-kinesis-firehose
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3037,7 +3037,7 @@ haskell-8.8-amazonka-kinesis-firehose
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Key Management Service SDK.")
     (description
@@ -3078,7 +3078,7 @@ haskell-8.8-amazonka-kms
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3090,7 +3090,7 @@ haskell-8.8-amazonka-kms
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Lambda SDK.")
     (description
@@ -3131,7 +3131,7 @@ haskell-8.8-amazonka-lambda
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3143,7 +3143,7 @@ haskell-8.8-amazonka-lambda
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Lightsail SDK.")
     (description
@@ -3185,7 +3185,7 @@ haskell-8.8-amazonka-lightsail
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3197,7 +3197,7 @@ haskell-8.8-amazonka-lightsail
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Marketplace Commerce Analytics SDK.")
     (description
@@ -3239,7 +3239,7 @@ haskell-8.8-amazonka-marketplace-analytics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3251,7 +3251,7 @@ haskell-8.8-amazonka-marketplace-analytics
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Marketplace Metering SDK.")
     (description
@@ -3292,7 +3292,7 @@ haskell-8.8-amazonka-marketplace-metering
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3304,7 +3304,7 @@ haskell-8.8-amazonka-marketplace-metering
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Machine Learning SDK.")
     (description
@@ -3345,7 +3345,7 @@ haskell-8.8-amazonka-ml
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3357,7 +3357,7 @@ haskell-8.8-amazonka-ml
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon OpsWorks SDK.")
     (description
@@ -3398,7 +3398,7 @@ haskell-8.8-amazonka-opsworks
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3410,7 +3410,7 @@ haskell-8.8-amazonka-opsworks
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon OpsWorks for Chef Automate SDK.")
     (description
@@ -3451,7 +3451,7 @@ haskell-8.8-amazonka-opsworks-cm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3463,7 +3463,7 @@ haskell-8.8-amazonka-opsworks-cm
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Pinpoint SDK.")
     (description
@@ -3504,7 +3504,7 @@ haskell-8.8-amazonka-pinpoint
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3516,7 +3516,7 @@ haskell-8.8-amazonka-pinpoint
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Polly SDK.")
     (description
@@ -3557,7 +3557,7 @@ haskell-8.8-amazonka-polly
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3569,7 +3569,7 @@ haskell-8.8-amazonka-polly
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Relational Database Service SDK.")
     (description
@@ -3610,7 +3610,7 @@ haskell-8.8-amazonka-rds
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3622,7 +3622,7 @@ haskell-8.8-amazonka-rds
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Redshift SDK.")
     (description
@@ -3663,7 +3663,7 @@ haskell-8.8-amazonka-redshift
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3675,7 +3675,7 @@ haskell-8.8-amazonka-redshift
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Rekognition SDK.")
     (description
@@ -3716,7 +3716,7 @@ haskell-8.8-amazonka-rekognition
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3728,7 +3728,7 @@ haskell-8.8-amazonka-rekognition
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Route 53 SDK.")
     (description
@@ -3769,7 +3769,7 @@ haskell-8.8-amazonka-route53
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3781,7 +3781,7 @@ haskell-8.8-amazonka-route53
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Route 53 Domains SDK.")
     (description
@@ -3822,7 +3822,7 @@ haskell-8.8-amazonka-route53-domains
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3835,7 +3835,7 @@ haskell-8.8-amazonka-route53-domains
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Storage Service SDK.")
     (description
@@ -3876,7 +3876,7 @@ haskell-8.8-amazonka-s3
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3888,7 +3888,7 @@ haskell-8.8-amazonka-s3
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon SimpleDB SDK.")
     (description
@@ -3929,7 +3929,7 @@ haskell-8.8-amazonka-sdb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3941,7 +3941,7 @@ haskell-8.8-amazonka-sdb
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Service Catalog SDK.")
     (description
@@ -3982,7 +3982,7 @@ haskell-8.8-amazonka-servicecatalog
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -3994,7 +3994,7 @@ haskell-8.8-amazonka-servicecatalog
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Email Service SDK.")
     (description
@@ -4035,7 +4035,7 @@ haskell-8.8-amazonka-ses
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4047,7 +4047,7 @@ haskell-8.8-amazonka-ses
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Shield SDK.")
     (description
@@ -4088,7 +4088,7 @@ haskell-8.8-amazonka-shield
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4100,7 +4100,7 @@ haskell-8.8-amazonka-shield
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Server Migration Service SDK.")
     (description
@@ -4141,7 +4141,7 @@ haskell-8.8-amazonka-sms
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4153,7 +4153,7 @@ haskell-8.8-amazonka-sms
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Import/Export Snowball SDK.")
     (description
@@ -4194,7 +4194,7 @@ haskell-8.8-amazonka-snowball
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4206,7 +4206,7 @@ haskell-8.8-amazonka-snowball
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Notification Service SDK.")
     (description
@@ -4247,7 +4247,7 @@ haskell-8.8-amazonka-sns
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4259,7 +4259,7 @@ haskell-8.8-amazonka-sns
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Queue Service SDK.")
     (description
@@ -4300,7 +4300,7 @@ haskell-8.8-amazonka-sqs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4312,7 +4312,7 @@ haskell-8.8-amazonka-sqs
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Systems Manager (SSM) SDK.")
     (description
@@ -4353,7 +4353,7 @@ haskell-8.8-amazonka-ssm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4365,7 +4365,7 @@ haskell-8.8-amazonka-ssm
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Step Functions SDK.")
     (description
@@ -4406,7 +4406,7 @@ haskell-8.8-amazonka-stepfunctions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4418,7 +4418,7 @@ haskell-8.8-amazonka-stepfunctions
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Storage Gateway SDK.")
     (description
@@ -4459,7 +4459,7 @@ haskell-8.8-amazonka-storagegateway
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4471,7 +4471,7 @@ haskell-8.8-amazonka-storagegateway
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Security Token Service SDK.")
     (description
@@ -4512,7 +4512,7 @@ haskell-8.8-amazonka-sts
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4524,7 +4524,7 @@ haskell-8.8-amazonka-sts
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Support SDK.")
     (description
@@ -4565,7 +4565,7 @@ haskell-8.8-amazonka-support
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4577,7 +4577,7 @@ haskell-8.8-amazonka-support
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon Simple Workflow Service SDK.")
     (description
@@ -4618,7 +4618,7 @@ haskell-8.8-amazonka-swf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4630,7 +4630,7 @@ haskell-8.8-amazonka-swf
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon WAF SDK.")
     (description
@@ -4671,7 +4671,7 @@ haskell-8.8-amazonka-waf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4683,7 +4683,7 @@ haskell-8.8-amazonka-waf
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon WorkSpaces SDK.")
     (description
@@ -4724,7 +4724,7 @@ haskell-8.8-amazonka-workspaces
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-amazonka-core)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4736,7 +4736,7 @@ haskell-8.8-amazonka-workspaces
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Amazon X-Ray SDK.")
     (description
@@ -4777,7 +4777,7 @@ haskell-8.8-amazonka-xray
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage016)
@@ -4810,7 +4810,7 @@ haskell-8.8-amazonka-xray
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-unliftio-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/arbor/antiope#readme")
     (synopsis
      "Please see the README on Github at <https://github.com/arbor/antiope#readme>")
@@ -4839,7 +4839,7 @@ haskell-8.8-antiope-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -4868,7 +4868,7 @@ haskell-8.8-antiope-core
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-unliftio-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/arbor/antiope#readme")
     (synopsis
      "Please see the README on Github at <https://github.com/arbor/antiope#readme>")
@@ -4898,7 +4898,7 @@ haskell-8.8-antiope-messages
        #:haddock? #t
        #:configure-flags
        (list "-f-cairo" "-f-gtk" "-fsvg" "-f-ps" "-f-postscript" "-f-rasterific" "-f-canvas")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage019)
                      haskell-8.8-diagrams-contrib)
                   (@ (gnu packages stackage ghc-8.8 stage017)
@@ -4907,7 +4907,7 @@ haskell-8.8-antiope-messages
                      haskell-8.8-diagrams-lib)
                   (@ (gnu packages stackage ghc-8.8 stage019)
                      haskell-8.8-diagrams-svg)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://projects.haskell.org/diagrams")
     (synopsis
      "Embedded domain-specific language for declarative vector graphics")
@@ -4993,7 +4993,7 @@ haskell-8.8-diagrams
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) atk)
                   (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-gi-glib)
@@ -5006,7 +5006,7 @@ haskell-8.8-diagrams
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Atk bindings")
     (description "Bindings for Atk, autogenerated by haskell-gi.")
@@ -5033,7 +5033,7 @@ haskell-8.8-gi-atk
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-gi-glib)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -5046,7 +5046,7 @@ haskell-8.8-gi-atk
                      haskell-8.8-haskell-gi-overloading)
                   (@ (gnu packages gtk) libdbusmenu)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Dbusmenu bindings")
     (description "Bindings for libdbusmenu, autogenerated by haskell-gi.")
@@ -5072,7 +5072,7 @@ haskell-8.8-gi-dbusmenu
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages glib) glib-with-documentation)
                   (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-gi-glib)
@@ -5085,7 +5085,7 @@ haskell-8.8-gi-dbusmenu
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Gio bindings")
     (description "Bindings for Gio, autogenerated by haskell-gi.")
@@ -5112,7 +5112,7 @@ haskell-8.8-gi-gio
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) graphene)
                   (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-gi-glib)
@@ -5125,7 +5125,7 @@ haskell-8.8-gi-gio
                   (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Graphene bindings")
     (description "Bindings for Graphene, autogenerated by haskell-gi.")
@@ -5152,7 +5152,7 @@ haskell-8.8-gi-graphene
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-gi-glib)
                   (@ (gnu packages stackage ghc-8.8 stage019)
@@ -5165,7 +5165,7 @@ haskell-8.8-gi-graphene
                      haskell-8.8-haskell-gi-overloading)
                   (@ (gnu packages gtk) pango-1.90)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Pango bindings")
     (description "Bindings for Pango, autogenerated by haskell-gi.")
@@ -5193,7 +5193,7 @@ haskell-8.8-gi-pango
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base-prelude)
                   (@ (gnu packages stackage ghc-8.8 stage018)
@@ -5202,7 +5202,7 @@ haskell-8.8-gi-pango
                      haskell-8.8-hasql-pool)
                   (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-optparse-applicative)))
-    (propagated-inputs (list (@ (gnu packages databases) postgresql-14)))
+    (propagated-inputs (list (@ (gnu packages databases) postgresql-15)))
     (home-page "https://github.com/sannsyn/hasql-optparse-applicative ")
     (synopsis "\"optparse-applicative\" parsers for \"hasql\"")
     (description "")
@@ -5228,7 +5228,7 @@ haskell-8.8-hasql-optparse-applicative
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-test")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -5258,7 +5258,7 @@ haskell-8.8-hasql-optparse-applicative
                      haskell-8.8-wai-middleware-static)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/freizl/hoauth2")
     (synopsis "Haskell OAuth2 authentication client")
     (description
@@ -5304,7 +5304,7 @@ haskell-8.8-hoauth2
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage000) haskell-8.8-alex)
@@ -5360,7 +5360,7 @@ haskell-8.8-hoauth2
                      haskell-8.8-vector)
                   (@ (gnu packages stackage ghc-8.8 stage016) haskell-8.8-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://salsa.debian.org/clint/hOpenPGP-tools")
     (synopsis "hOpenPGP-based command-line tools")
     (description
@@ -5387,7 +5387,7 @@ haskell-8.8-hopenpgp-tools
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage008)
@@ -5414,7 +5414,7 @@ haskell-8.8-hopenpgp-tools
                      haskell-8.8-scotty)
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/utatti/line")
     (synopsis "Haskell SDK for the LINE API")
     (description
@@ -5453,7 +5453,7 @@ haskell-8.8-line
        #:haddock? #t
        #:configure-flags
        (list "-f-static" "-f-embed_data_files" "-f-trypandoc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004) haskell-8.8-Glob)
                   (@ (gnu packages stackage ghc-8.8 stage002) haskell-8.8-HTTP)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -5546,7 +5546,7 @@ haskell-8.8-line
                      haskell-8.8-zip-archive)
                   (@ (gnu packages stackage ghc-8.8 stage000) haskell-8.8-zlib)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://pandoc.org")
     (synopsis "Conversion between markup formats")
     (description "Pandoc is a Haskell library for converting from one markup
@@ -5599,7 +5599,7 @@ haskell-8.8-pandoc
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1b0vf551kl4nshhrm8g4k0mbflkyzj6dq7nlj05djd30y92k28rm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -5674,7 +5674,7 @@ haskell-8.8-pandoc
                   (@ (gnu packages stackage ghc-8.8 stage007)
                      haskell-8.8-zip-archive)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/commercialhaskell/pantry#readme")
     (synopsis "Content addressable Haskell package management")
     (description
@@ -5702,7 +5702,7 @@ haskell-8.8-pantry
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-ci")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002) haskell-8.8-HTTP)
                   (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-Ranged-sets)
@@ -5777,8 +5777,8 @@ haskell-8.8-pantry
                      haskell-8.8-wai-middleware-static)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages databases) postgresql-14)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages databases) postgresql-15)
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://postgrest.org")
     (synopsis "REST API for any Postgres database")
     (description
@@ -5808,7 +5808,7 @@ haskell-8.8-postgrest
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-JuicyPixels)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -5820,7 +5820,7 @@ haskell-8.8-postgrest
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/tvh/servant-JuicyPixels")
     (synopsis "Servant support for JuicyPixels")
     (description
@@ -5848,7 +5848,7 @@ haskell-8.8-servant-JuicyPixels
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -5883,7 +5883,7 @@ haskell-8.8-servant-JuicyPixels
                      haskell-8.8-unordered-containers)
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/haskell-servant/servant-auth#readme")
     (synopsis "servant-server/servant-auth compatibility")
     (description
@@ -5917,7 +5917,7 @@ haskell-8.8-servant-auth-server
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexample")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage018)
@@ -5951,7 +5951,7 @@ haskell-8.8-servant-auth-server
                   (@ (gnu packages stackage ghc-8.8 stage012)
                      haskell-8.8-world-peace)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/cdepillabout/servant-checked-exceptions")
     (synopsis "Checked exceptions for Servant APIs.")
     (description
@@ -5981,7 +5981,7 @@ haskell-8.8-servant-checked-exceptions
        #:configure-flags (list)
        #:cabal-revision
        ("3" "1rcxn2m95zvxqvjbagk9gmwcyvx9wanhxmafwar4y4p15mvzd8d1")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base-compat)
                   (@ (gnu packages stackage ghc-8.8 stage014)
@@ -6003,7 +6003,7 @@ haskell-8.8-servant-checked-exceptions
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://docs.servant.dev/")
     (synopsis "Servant Stream support for conduit.")
     (description
@@ -6033,7 +6033,7 @@ haskell-8.8-servant-conduit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -6059,7 +6059,7 @@ haskell-8.8-servant-conduit
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/epicallan/servant-errors")
     (synopsis "Servant Errors wai-middlware")
     (description
@@ -6089,7 +6089,7 @@ haskell-8.8-servant-errors
        #:configure-flags (list "-f-example")
        #:cabal-revision
        ("3" "1i8ngrrdnql03hlv07wfwbswfwm6zfj66n3byg647hcl71q67ppc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -6105,7 +6105,7 @@ haskell-8.8-servant-errors
                      haskell-8.8-servant-server)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://haskell-servant.readthedocs.org/")
     (synopsis
      "Automatically derive javascript functions to query servant webservices.")
@@ -6144,7 +6144,7 @@ haskell-8.8-servant-js
        #:configure-flags (list)
        #:cabal-revision
        ("3" "10j29y9zjflh88csvn7zi4pm8jr9dxsglin94wypjrhcwy7yj1ic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-http-media)
                   (@ (gnu packages stackage ghc-8.8 stage011)
@@ -6156,7 +6156,7 @@ haskell-8.8-servant-js
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://haskell-servant.readthedocs.org/")
     (synopsis "Servant support for lucid")
     (description
@@ -6190,7 +6190,7 @@ haskell-8.8-servant-lucid
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0231278v3vs5ca3cx43711kzfbhqj2s7g67zcwrj39ly8i9kxm2n")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base-compat)
                   (@ (gnu packages stackage ghc-8.8 stage015)
@@ -6208,7 +6208,7 @@ haskell-8.8-servant-lucid
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://docs.servant.dev/")
     (synopsis "Servant Stream support for machines")
     (description
@@ -6240,7 +6240,7 @@ haskell-8.8-servant-machines
        #:configure-flags (list "-fexample")
        #:cabal-revision
        ("3" "1137vz9xm8iwj6x8h1q1yify6c1lahy0dxj6hpbhgi4s3mqkhm2g")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage008)
@@ -6265,7 +6265,7 @@ haskell-8.8-servant-machines
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages commencement) gcc-toolchain-12)
                              (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://haskell-servant.readthedocs.org/")
     (synopsis "Derive a mock server for free from your servant API types")
     (description
@@ -6295,7 +6295,7 @@ haskell-8.8-servant-mock
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base-compat)
                   (@ (gnu packages stackage ghc-8.8 stage015)
@@ -6319,7 +6319,7 @@ haskell-8.8-servant-mock
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://docs.servant.dev/")
     (synopsis "Servant Stream support for pipes")
     (description
@@ -6349,7 +6349,7 @@ haskell-8.8-servant-pipes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexample")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage015)
                      haskell-8.8-http-client)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -6374,7 +6374,7 @@ haskell-8.8-servant-pipes
                      haskell-8.8-wai-app-static)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/cdepillabout/servant-rawm")
     (synopsis "Embed a raw 'Application' in a Servant API")
     (description
@@ -6402,7 +6402,7 @@ haskell-8.8-servant-rawm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexample")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004) haskell-8.8-Glob)
                   (@ (gnu packages stackage ghc-8.8 stage007)
                      haskell-8.8-blaze-html)
@@ -6429,7 +6429,7 @@ haskell-8.8-servant-rawm
                   (@ (gnu packages stackage ghc-8.8 stage015) haskell-8.8-wai)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/cdepillabout/servant-static-th")
     (synopsis "Embed a directory of static files in your Servant server")
     (description
@@ -6457,7 +6457,7 @@ haskell-8.8-servant-static-th
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fwebsockets_0_11")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -6494,7 +6494,7 @@ haskell-8.8-servant-static-th
                   (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-websockets)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/eskimor/servant-subscriber#readme")
     (synopsis "When REST is not enough ...")
     (description
@@ -6522,7 +6522,7 @@ haskell-8.8-servant-subscriber
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage006)
                      haskell-8.8-blaze-markup)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -6540,7 +6540,7 @@ haskell-8.8-servant-subscriber
                   (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-wai-app-static)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui core components")
     (description
@@ -6571,7 +6571,7 @@ haskell-8.8-servant-swagger-ui-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -6593,7 +6593,7 @@ haskell-8.8-servant-swagger-ui-core
                   (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-websockets)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/moesenle/servant-websockets#readme")
     (synopsis "Small library providing WebSocket endpoints for servant.")
     (description "Small library providing WebSocket endpoints for servant.")
@@ -6622,7 +6622,7 @@ haskell-8.8-servant-websockets
        #:configure-flags (list)
        #:cabal-revision
        ("4" "0k9jg3vf0p1332243mji4lzm3lk3frsmxxlz6lgg68rwh3baz6f0")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -6637,7 +6637,7 @@ haskell-8.8-servant-websockets
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-warp)
                   (@ (gnu packages stackage ghc-8.8 stage016) haskell-8.8-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-yaml#readme")
     (synopsis "Servant support for yaml")
     (description "Servant support for yaml.")
@@ -6664,7 +6664,7 @@ haskell-8.8-servant-yaml
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fnetwork-uri")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage008)
                      haskell-8.8-aeson)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -6703,7 +6703,7 @@ haskell-8.8-servant-yaml
                   (@ (gnu packages stackage ghc-8.8 stage019)
                      haskell-8.8-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Form handling support for Yesod Web Framework")
     (description
@@ -6731,7 +6731,7 @@ haskell-8.8-yesod-form
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -6783,7 +6783,7 @@ haskell-8.8-yesod-form
                   (@ (gnu packages stackage ghc-8.8 stage019)
                      haskell-8.8-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Static file serving subsite for Yesod Web Framework.")
     (description
@@ -6811,7 +6811,7 @@ haskell-8.8-yesod-static
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage014)
                      haskell-8.8-conduit)
                   (@ (gnu packages stackage ghc-8.8 stage007)
@@ -6823,7 +6823,7 @@ haskell-8.8-yesod-static
                   (@ (gnu packages stackage ghc-8.8 stage018)
                      haskell-8.8-yesod-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/yesodweb/yesod")
     (synopsis "WebSockets support for Yesod")
     (description

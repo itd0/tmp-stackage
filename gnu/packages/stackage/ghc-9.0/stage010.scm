@@ -31,7 +31,7 @@
        #:haddock? #t
        #:configure-flags
        (list "-fusenativewindowslibraries" "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-OpenAL)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -73,7 +73,7 @@ haskell-9.0-ALUT
        #:configure-flags (list "-f-buildtests")
        #:cabal-revision
        ("1" "10qqg7x6pa2nryk3j56im65kvbh1v9psf6ic3nkabfxvigw83d2c")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-MissingH)))
     (home-page "http://software.complete.org/configfile")
@@ -115,7 +115,7 @@ haskell-9.0-ConfigFile
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-MissingH)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -156,7 +156,7 @@ haskell-9.0-file-modules
        #:configure-flags (list)
        #:cabal-revision
        ("1" "10x83cpxp6yrmamjg4kjm3pzlhh6zj2rdw686py0vcx0jrjy3qg7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009) haskell-9.0-GLUT)
                   (@ (gnu packages stackage ghc-9.0 stage008)
                      haskell-9.0-OpenGL)
@@ -191,7 +191,7 @@ haskell-9.0-gloss-rendering
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-ftasty" "-f-debug")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-tasty)))
     (home-page "https://github.com/Bodigrim/tasty-bench")
@@ -225,7 +225,7 @@ haskell-9.0-tasty-bench
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-dejafu)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -265,7 +265,7 @@ haskell-9.0-tasty-dejafu
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Glob)
                   (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-tasty)))
@@ -302,7 +302,7 @@ haskell-9.0-tasty-discover
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-tagged)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -350,7 +350,7 @@ haskell-9.0-tasty-expected-failure
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-lib-werror")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-tagged)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -389,7 +389,7 @@ haskell-9.0-tasty-fail-fast
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-call-stack)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -425,7 +425,7 @@ haskell-9.0-tasty-hunit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-inspection-testing)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -457,7 +457,7 @@ haskell-9.0-tasty-inspection-testing
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-leancheck)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -494,7 +494,7 @@ haskell-9.0-tasty-leancheck
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage009)
                      haskell-9.0-tasty)))
     (home-page "https://github.com/jstolarek/tasty-program")
@@ -536,8 +536,8 @@ haskell-9.0-tasty-program
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("3" "0091arn90cx5rzn5n2bpb9alzybwraf9yj7hb0bwdfyamzpf3pkb")))
-    (outputs (list "out" "static" "doc"))
+       ("4" "1i2van23247h62sz94kjiyyb6xvz88z6kkjqqsbxi4m74pga27hn")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage003)
                      haskell-9.0-optparse-applicative)
                   (@ (gnu packages stackage ghc-9.0 stage000)

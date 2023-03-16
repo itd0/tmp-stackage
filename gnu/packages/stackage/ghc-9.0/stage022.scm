@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-BiobaseTypes)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -81,7 +81,7 @@ haskell-9.0-BiobaseENA
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-BiobaseTypes)
                   (@ (gnu packages stackage ghc-9.0 stage019)
@@ -145,7 +145,7 @@ haskell-9.0-BiobaseFasta
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -169,7 +169,7 @@ haskell-9.0-BiobaseFasta
                   (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/lehins/Color")
     (synopsis "Color spaces and conversions between them")
     (description
@@ -196,11 +196,13 @@ haskell-9.0-Color
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-mtl-compat")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-case-insensitive)
                   (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-data-default)
+                  (@ (gnu packages stackage ghc-9.0 stage000)
+                     haskell-9.0-haskeline)
                   (@ (gnu packages stackage ghc-9.0 stage017)
                      haskell-9.0-http-client)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -226,7 +228,7 @@ haskell-9.0-Color
                      haskell-9.0-xml-hamlet)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://floss.scru.org/hDAV")
     (synopsis "RFC 4918 WebDAV support")
     (description
@@ -260,7 +262,7 @@ haskell-9.0-DAV
        #:haddock? #t
        #:configure-flags
        (list "-f-with_expensive_assertions" "-fwith_costly_optimizations" "-frelease" "-fsupportnodejs" "-f-jsaddle")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -275,6 +277,8 @@ haskell-9.0-DAV
                      haskell-9.0-enummapset)
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-file-embed)
+                  (@ (gnu packages stackage ghc-9.0 stage000)
+                     haskell-9.0-ghc-compact)
                   (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-hashable)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -314,7 +318,7 @@ haskell-9.0-DAV
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
                              (@ (gnu packages sdl) sdl2)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://lambdahack.github.io")
     (synopsis
      "A game engine library for tactical squad ASCII roguelike dungeon crawlers")
@@ -374,7 +378,7 @@ haskell-9.0-LambdaHack
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -397,7 +401,7 @@ haskell-9.0-LambdaHack
                      haskell-9.0-vector)
                   (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-xml)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/SVGFonts")
     (synopsis "Fonts from the SVG-Font format")
     (description
@@ -445,7 +449,7 @@ haskell-9.0-SVGFonts
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -495,7 +499,7 @@ haskell-9.0-acc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage021) haskell-9.0-amqp)
                   (@ (gnu packages stackage ghc-9.0 stage020)
                      haskell-9.0-connection)
@@ -554,7 +558,7 @@ haskell-9.0-amqp-utils
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage020)
                      haskell-9.0-apecs)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -596,7 +600,7 @@ haskell-9.0-apecs-gloss
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1j7p9smyfmkayx6n7inssxcg9cr4zdm6329fpvba7504b96aprdk")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-FontyFruity)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -615,7 +619,7 @@ haskell-9.0-apecs-gloss
                   (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/asciidiagram")
     (synopsis "Pretty rendering of Ascii diagram into svg or png.")
     (description
@@ -659,7 +663,7 @@ haskell-9.0-asciidiagram
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -700,7 +704,7 @@ haskell-9.0-binary-parser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -732,7 +736,7 @@ haskell-9.0-binary-parser
                   (@ (gnu packages stackage ghc-9.0 stage021) haskell-9.0-wuss)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/sullyj3/buttplug-hs-core#readme")
     (synopsis "Client library for buttplug.io")
     (description
@@ -761,8 +765,8 @@ haskell-9.0-buttplug-hs-core
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "1468f116hza0l9z4n4zqy1y65q322ypx5kh646fsfi78fimwj34a")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "04fk0hdbdgfw5md19kjgs3mrmkcwhn4qm2qd7fav6nph0rdkwr10")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -789,7 +793,7 @@ haskell-9.0-buttplug-hs-core
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hub.darcs.net/thielema/cabal-flatpak/")
     (synopsis "Generate a FlatPak manifest from a Cabal package description")
     (description
@@ -823,7 +827,7 @@ haskell-9.0-cabal-flatpak
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -866,7 +870,7 @@ haskell-9.0-classy-prelude-conduit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage020)
@@ -900,7 +904,7 @@ haskell-9.0-classy-prelude-conduit
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/iand675/datadog")
     (synopsis
      "Datadog client for Haskell. Supports both the HTTP API and StatsD.")
@@ -928,7 +932,7 @@ haskell-9.0-datadog
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage015)
@@ -981,7 +985,7 @@ haskell-9.0-deferred-folds
        #:configure-flags (list)
        #:cabal-revision
        ("1" "00dj8vf9gg9ww37sir6mblf3xhcpam8qgfz5bfana23arhf2cixj")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1022,8 +1026,8 @@ haskell-9.0-detour-via-sci
        #:configure-flags
        (list "-fwith-http" "-fuse-http-client-tls" "-f-cross")
        #:cabal-revision
-       ("2" "0mxq3knz1wpvs6jcdw6p0mnwpyy7aqriy2qdyxqzmhcbw2yn3hc1")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "02q1d9kscja2dribapxmgp1ymg456bihc665rhw102ci8j1ykvyn")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Diff)
                   (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
@@ -1054,6 +1058,8 @@ haskell-9.0-detour-via-sci
                   (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-half)
                   (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-hashable)
+                  (@ (gnu packages stackage ghc-9.0 stage000)
+                     haskell-9.0-haskeline)
                   (@ (gnu packages stackage ghc-9.0 stage017)
                      haskell-9.0-http-client)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -1082,7 +1088,7 @@ haskell-9.0-detour-via-sci
                      haskell-9.0-prettyprinter-ansi-terminal)
                   (@ (gnu packages stackage ghc-9.0 stage004)
                      haskell-9.0-profunctors)
-                  (@ (gnu packages stackage ghc-9.0 stage000)
+                  (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-repline)
                   (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-scientific)
@@ -1100,7 +1106,7 @@ haskell-9.0-detour-via-sci
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/dhall")
     (synopsis "A configuration language guaranteed to terminate")
     (description
@@ -1139,7 +1145,7 @@ haskell-9.0-dhall
        #:configure-flags (list)
        #:cabal-revision
        ("7" "0jwj06c2bqawpr57y2x8hbnjlsl1nv9k7wjxhk56w240qyspmj3p")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -1188,7 +1194,7 @@ haskell-9.0-dhall
                   (@ (gnu packages stackage ghc-9.0 stage004)
                      haskell-9.0-test-framework-quickcheck2)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://diagrams.github.io/")
     (synopsis "Collection of user contributions to diagrams EDSL")
     (description "A collection of user contributions for diagrams,
@@ -1219,7 +1225,7 @@ haskell-9.0-diagrams-contrib
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1vkk5r4k2myfdrvg3s7l8cmwi3wz1nydnj0011747s1qhgzx3fjf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-FontyFruity)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -1240,7 +1246,7 @@ haskell-9.0-diagrams-contrib
                   (@ (gnu packages stackage ghc-9.0 stage003)
                      haskell-9.0-optparse-applicative)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://projects.haskell.org/diagrams/")
     (synopsis "Rasterific backend for diagrams.")
     (description "A full-featured backend for rendering
@@ -1270,7 +1276,7 @@ haskell-9.0-diagrams-rasterific
        #:configure-flags (list)
        #:cabal-revision
        ("4" "026mkj9fz64rdrap25mp8cwdrzwj90h35qg9kkn078fac93aaq10")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-JuicyPixels)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -1295,7 +1301,7 @@ haskell-9.0-diagrams-rasterific
                   (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-svg-builder)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://diagrams.github.io/")
     (synopsis "SVG backend for diagrams drawing EDSL.")
     (description
@@ -1340,7 +1346,7 @@ haskell-9.0-diagrams-svg
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-first-class-families)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -1379,7 +1385,7 @@ haskell-9.0-generic-data-surgery
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-gi-cairo)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -1387,7 +1393,7 @@ haskell-9.0-generic-data-surgery
                   (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-haskell-gi-base)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/cohomology/gi-cairo-render")
     (synopsis "GI friendly Binding to the Cairo library.")
     (description
@@ -1415,7 +1421,7 @@ haskell-9.0-gi-cairo-connector
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages glib) gobject-introspection-next)
                   (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-gi-glib)
@@ -1427,7 +1433,7 @@ haskell-9.0-gi-cairo-connector
                      haskell-9.0-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "GModule bindings")
     (description "Bindings for GModule, autogenerated by haskell-gi.")
@@ -1454,7 +1460,7 @@ haskell-9.0-gi-gmodule
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages glib) gobject-introspection-next)
                   (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-gi-glib)
@@ -1466,7 +1472,7 @@ haskell-9.0-gi-gmodule
                      haskell-9.0-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "GObject bindings")
     (description "Bindings for GObject, autogenerated by haskell-gi.")
@@ -1494,7 +1500,7 @@ haskell-9.0-gi-gobject
        #:configure-flags (list "-f-openssl")
        #:cabal-revision
        ("1" "02424a74kjzmwl0nwc4gl7xg0cgdsbspwj3mzzzgx5xxlh3vi212")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -1542,7 +1548,7 @@ haskell-9.0-gi-gobject
                      haskell-9.0-vector-instances)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/phadej/github")
     (synopsis "Access to the GitHub API, v3.")
     (description
@@ -1584,7 +1590,7 @@ haskell-9.0-github
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage015)
@@ -1603,7 +1609,7 @@ haskell-9.0-github
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/github-release")
     (synopsis "Upload files to GitHub releases.")
     (description "GitHub Release uploads files to GitHub releases.")
@@ -1631,8 +1637,8 @@ haskell-9.0-github-release
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "09vinl6l5jy8bz504bhw3g2baj9fc0fym2vnh8q76xzmz2s0b686")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "0390zxa270d8x8a0imd71z72l6hxnn1ip6jjgrrvrs3zj20c7adp")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1650,7 +1656,7 @@ haskell-9.0-github-release
                      haskell-9.0-unliftio-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/LeapYear/github-rest#readme")
     (synopsis "Query the GitHub REST API programmatically")
     (description
@@ -1679,7 +1685,7 @@ haskell-9.0-github-rest
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Glob)
                   (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
@@ -1704,7 +1710,7 @@ haskell-9.0-github-rest
                   (@ (gnu packages stackage ghc-9.0 stage019) haskell-9.0-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/sol/hpack#readme")
     (synopsis "A modern format for Haskell packages")
     (description "See README at <https://github.com/sol/hpack#readme>")
@@ -1731,7 +1737,7 @@ haskell-9.0-hpack
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1749,7 +1755,7 @@ haskell-9.0-hpack
                   (@ (gnu packages stackage ghc-9.0 stage019) haskell-9.0-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/robbiemcmichael/http-client-overrides")
     (synopsis "HTTP client overrides")
     (description
@@ -1778,7 +1784,7 @@ haskell-9.0-http-client-overrides
        #:haddock? #t
        #:configure-flags
        (list "-f-devel" "-f-h2spec" "-f-doc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1842,7 +1848,6 @@ haskell-9.0-http2
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0m3q539nlcfgmxir78vzsyh3c9pf10hx2czh1d16ih1p52mhwbjd")))
-    (outputs (list "out" "static"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-generic-lens)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1896,7 +1901,7 @@ haskell-9.0-hw-balancedparens
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fuse-hlint")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -1907,6 +1912,8 @@ haskell-9.0-hw-balancedparens
                      haskell-9.0-ghc-parser)
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-ghc-paths)
+                  (@ (gnu packages stackage ghc-9.0 stage000)
+                     haskell-9.0-haskeline)
                   (@ (gnu packages stackage ghc-9.0 stage020)
                      haskell-9.0-hlint)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1931,7 +1938,7 @@ haskell-9.0-hw-balancedparens
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/gibiansky/IHaskell")
     (synopsis "A Haskell backend kernel for the Jupyter project.")
     (description
@@ -1960,7 +1967,7 @@ haskell-9.0-ihaskell
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-async)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -1981,7 +1988,7 @@ haskell-9.0-ihaskell
                      haskell-9.0-x509-validation)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/barrucadu/irc-conduit")
     (synopsis "Streaming IRC message library using conduits.")
     (description
@@ -2020,7 +2027,7 @@ haskell-9.0-irc-conduit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -2062,7 +2069,7 @@ haskell-9.0-katip-logstash
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage011)
                      haskell-9.0-gloss)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -2107,7 +2114,7 @@ haskell-9.0-learn-physics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-fast-logger)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2170,7 +2177,7 @@ haskell-9.0-logging
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0szqlr1brhr1z2m2fwqj98ghh73d2sim4r5mbqzm072f6iycl6ky")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Diff)
                   (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Glob)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -2229,7 +2236,7 @@ haskell-9.0-lsp-test
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -2262,7 +2269,7 @@ haskell-9.0-lsp-test
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/mandrill")
     (synopsis "Library for interfacing with the Mandrill JSON API")
     (description "Pure Haskell client for the Mandrill JSON API")
@@ -2289,7 +2296,7 @@ haskell-9.0-mandrill
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -2333,7 +2340,7 @@ haskell-9.0-massiv-persist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -2380,7 +2387,7 @@ haskell-9.0-massiv-serialise
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("2" "0kz0389rrjd4wy6a5m89w7a4pcd4765kah7rwa7i649l8h5a5asm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage015)
                      haskell-9.0-foldl)
                   (@ (gnu packages stackage ghc-9.0 stage015)
@@ -2396,7 +2403,7 @@ haskell-9.0-massiv-serialise
                   (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-skylighting)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/mmark-md/mmark-ext")
     (synopsis "Commonly useful extensions for the MMark markdown processor")
     (description
@@ -2426,8 +2433,8 @@ haskell-9.0-mmark-ext
        #:haddock? #t
        #:configure-flags (list "-ftemplate_haskell")
        #:cabal-revision
-       ("2" "1kkw07kk8gv7d9iarradqcqzjpdfh5shjlhfbf2v25mmcpchp6hd")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "1dzkw08b4ijacdw0vcfxlr13rd819x2yj7b6sr9jrrwicd45zm1z")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage017)
                      haskell-9.0-conduit)
                   (@ (gnu packages stackage ghc-9.0 stage018)
@@ -2451,7 +2458,7 @@ haskell-9.0-mmark-ext
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-unliftio-core)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/snoyberg/monad-logger#readme")
     (synopsis "A class of monads which can log messages.")
     (description
@@ -2477,8 +2484,10 @@ haskell-9.0-monad-logger
      `(#:tests? #f
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list "-f-_old-network")))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list "-f-_old-network")
+       #:cabal-revision
+       ("1" "06kdgrg2p2c9n6im1fy04y0rvlwc4xssmk9wvw33k9svhzld7afr")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-base16-bytestring)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -2523,7 +2532,7 @@ haskell-9.0-monad-logger
                      haskell-9.0-transformers-base)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/mongodb-haskell/mongodb")
     (synopsis "Driver (client) for MongoDB, a free, scalable, fast, document
 DBMS")
@@ -2554,7 +2563,7 @@ haskell-9.0-mongoDB
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-data-default)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -2602,7 +2611,7 @@ haskell-9.0-network-simple-tls
        #:haddock? #t
        #:configure-flags
        (list "-f-transformers_compat")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -2615,7 +2624,7 @@ haskell-9.0-network-simple-tls
                      haskell-9.0-tasty-hunit)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://api.opensource.org/")
     (synopsis "Haskell API Wrapper for the Open Source License API")
     (description
@@ -2643,7 +2652,7 @@ haskell-9.0-opensource
        #:haddock? #t
        #:configure-flags
        (list "-f-embed_data_files" "-f-trypandoc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Glob)
                   (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-JuicyPixels)
@@ -2752,7 +2761,7 @@ haskell-9.0-opensource
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://pandoc.org")
     (synopsis "Conversion between markup formats")
     (description
@@ -2811,8 +2820,8 @@ haskell-9.0-pandoc
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "1pyxrq9m8c1v747c9bk75z418cyivhf8mbgdgfj9g2dvcf6zaq5w")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "0m38lrmr356gfrv6gnrncwiy1hnh882084yn7vgmjsqssgvhbz8a")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage017)
                      haskell-9.0-http-client)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -2821,7 +2830,7 @@ haskell-9.0-pandoc
                      haskell-9.0-pipes)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/pipes-http")
     (synopsis "HTTP client with pipes interface")
     (description
@@ -2849,7 +2858,7 @@ haskell-9.0-pipes-http
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Diff)
                   (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-data-default)
@@ -2860,7 +2869,7 @@ haskell-9.0-pipes-http
                   (@ (gnu packages stackage ghc-9.0 stage021)
                      haskell-9.0-tasty-test-reporter)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/stoeffel/pretty-diff#readme")
     (synopsis "Pretty printing a diff of two values.")
     (description
@@ -2888,7 +2897,7 @@ haskell-9.0-pretty-diff
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage017)
                      haskell-9.0-hedgehog)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2924,7 +2933,7 @@ haskell-9.0-ptr-poker
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -2951,7 +2960,7 @@ haskell-9.0-ptr-poker
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/WillSewell/pusher-http-haskell")
     (synopsis "Haskell client library for the Pusher Channels HTTP API")
     (description
@@ -2981,7 +2990,7 @@ haskell-9.0-pusher-http-haskell
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -2999,7 +3008,7 @@ haskell-9.0-pusher-http-haskell
                   (@ (gnu packages stackage ghc-9.0 stage007) haskell-9.0-uuid)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/ratel")
     (synopsis "Notify Honeybadger about exceptions.")
     (description "Ratel notifies Honeybadger about exceptions.")
@@ -3026,7 +3035,7 @@ haskell-9.0-ratel
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -3037,7 +3046,7 @@ haskell-9.0-ratel
                      haskell-9.0-http-client-tls)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/rattletrap")
     (synopsis "Parse and generate Rocket League replays.")
     (description "Rattletrap parses and generates Rocket League replays.")
@@ -3065,7 +3074,7 @@ haskell-9.0-rattletrap
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("2" "147q0jkfrg066lnl20gzv5rk6d9jdwyvaip2y4am5hkrvcg3v9z8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage018)
@@ -3096,7 +3105,7 @@ haskell-9.0-rattletrap
                      haskell-9.0-unliftio-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/mrkkrp/req")
     (synopsis "HTTP client library")
     (description "HTTP client library.")
@@ -3124,7 +3133,7 @@ haskell-9.0-req
        #:haddock? #t
        #:configure-flags
        (list "-f-enable-hlint-test")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -3173,7 +3182,7 @@ haskell-9.0-req
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-xml-types)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/rss-conduit")
     (synopsis "Streaming parser/renderer for the RSS standard.")
     (description "Cf README file.")
@@ -3201,8 +3210,8 @@ haskell-9.0-rss-conduit
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("5" "1qwzj9nija3kw6ijxl5nhny7vclp7x31cml3hl9fpajj5v0lhh4j")))
-    (outputs (list "out" "static" "doc"))
+       ("6" "0ii5cdg4l4ww81p7gd5m3z2jdqrs2hvqhwzrlz267nzxbws00x0b")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -3251,7 +3260,7 @@ haskell-9.0-safecopy
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-case-insensitive)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -3266,7 +3275,7 @@ haskell-9.0-safecopy
                      haskell-9.0-tagsoup)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/fimad/scalpel")
     (synopsis "A high level web scraping library for Haskell.")
     (description
@@ -3298,7 +3307,7 @@ haskell-9.0-scalpel
        #:configure-flags (list)
        #:cabal-revision
        ("6" "0d6mi3w3gx9h21awf1gy2wx7dwh5l9ichww21a3p5rfd8a8swypf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage018)
                      haskell-9.0-servant)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -3341,7 +3350,7 @@ haskell-9.0-servant-auth-client
        #:configure-flags (list)
        #:cabal-revision
        ("11" "1xk6j4l5jccwzk0xkiv6ny6w33g92wziacqvqgc5rvy2mzyff4fl")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3395,7 +3404,7 @@ haskell-9.0-servant-auth-docs
        #:configure-flags (list)
        #:cabal-revision
        ("8" "19hp58cf3avq3jnzhspsxkb7vml8ch3cw7dq8qy59xp1wgci6v5m")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3447,7 +3456,7 @@ haskell-9.0-servant-auth-swagger
        #:configure-flags (list)
        #:cabal-revision
        ("3" "1nz8h4p94pn2kv65jbdybn9nf5djm9kycbpigk5gbh0ar52zgl4k")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-HsOpenSSL)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3460,9 +3469,9 @@ haskell-9.0-servant-auth-swagger
                      haskell-9.0-http-client-openssl)
                   (@ (gnu packages stackage ghc-9.0 stage021) haskell-9.0-soap)))
     (propagated-inputs (list (@ (gnu packages tls) openssl-3.0)
-                             (@ (gnu packages tls) openssl-1.1)
+                             (@ (gnu packages tls) openssl)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://bitbucket.org/dpwiz/haskell-soap")
     (synopsis "TLS-enabled SOAP transport (using openssl bindings)")
     (description
@@ -3499,7 +3508,7 @@ haskell-9.0-soap-openssl
        #:configure-flags (list)
        #:cabal-revision
        ("2" "06a65jphfn1nxcnm4r6gf12afxhd7cs6ax8kq22w4pai98jk3jwn")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-configurator)
                   (@ (gnu packages stackage ghc-9.0 stage020)
@@ -3519,7 +3528,7 @@ haskell-9.0-soap-openssl
                      haskell-9.0-x509-validation)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://bitbucket.org/dpwiz/haskell-soap")
     (synopsis "TLS-enabled SOAP transport (using tls package)")
     (description
@@ -3554,7 +3563,7 @@ haskell-9.0-soap-tls
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -3581,7 +3590,7 @@ haskell-9.0-soap-tls
                      haskell-9.0-tasty-hunit)))
     (propagated-inputs (list (@ (gnu packages curl) curl)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/sternenseemann/spacecookie")
     (synopsis "Gopher server library and daemon")
     (description "Simple gopher library that allows writing custom gopher
@@ -3610,7 +3619,7 @@ haskell-9.0-spacecookie
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage019)
                      haskell-9.0-byte-order)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -3626,7 +3635,7 @@ haskell-9.0-spacecookie
                   (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-vector)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/IvanMalison/status-notifier-item#readme")
     (synopsis
      "A wrapper over the StatusNotifierItem/libappindicator dbus specification")
@@ -3655,7 +3664,7 @@ haskell-9.0-status-notifier-item
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -3699,7 +3708,7 @@ haskell-9.0-strict-list
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -3714,7 +3723,7 @@ haskell-9.0-strict-list
                      haskell-9.0-http-types)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/strive")
     (synopsis "A client for the Strava V3 API.")
     (description "Strive is a client for the Strava V3 API.")
@@ -3740,7 +3749,7 @@ haskell-9.0-strive
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3784,7 +3793,7 @@ haskell-9.0-th-lego
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-double-conversion)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -3818,7 +3827,7 @@ haskell-9.0-tinylog
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-cryptonite)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3866,7 +3875,7 @@ haskell-9.0-tls-debug
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -3936,7 +3945,7 @@ haskell-9.0-vector-builder
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-byteorder)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3977,7 +3986,7 @@ haskell-9.0-wai-logger
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage004)
                      haskell-9.0-arrows)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -4022,7 +4031,7 @@ haskell-9.0-webgear-openapi
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -4087,7 +4096,7 @@ haskell-9.0-webgear-server
        #:haddock? #t
        #:configure-flags
        (list "-fdoctest" "-f-aws" "-f-httpbin" "-f-developer")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -4125,7 +4134,7 @@ haskell-9.0-webgear-server
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.serpentine.com/wreq")
     (synopsis "An easy-to-use HTTP client library.")
     (description

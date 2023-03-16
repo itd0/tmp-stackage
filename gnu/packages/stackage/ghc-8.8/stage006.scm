@@ -30,7 +30,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004)
                      haskell-8.8-ListLike)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -72,7 +72,7 @@ haskell-8.8-Earley
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-hashtables)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -118,7 +118,7 @@ haskell-8.8-RefSerialize
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fsplitbase")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -157,7 +157,7 @@ haskell-8.8-STMonadTrans
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-data-default)
                   (@ (gnu packages pkg-config) %pkg-config)))
@@ -196,8 +196,10 @@ haskell-8.8-X11
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags
-       (list "-f-buildexamples" "-f-buildsynthesizer" "-f-debug")))
-    (outputs (list "out" "static" "doc"))
+       (list "-f-buildexamples" "-f-buildsynthesizer" "-f-debug")
+       #:cabal-revision
+       ("1" "1bq0rmawwn7xaqny6gvp0qh0pggqcxr9b64346fm4a8fsq71a6wi")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages linux) alsa-lib)
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-alsa-core)
@@ -238,7 +240,7 @@ haskell-8.8-alsa-pcm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-explicit-exception)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -309,7 +311,7 @@ haskell-8.8-audacity
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base16-bytestring)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -353,7 +355,7 @@ haskell-8.8-base16
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0chbgkq65mh6nc48a3hywcv7idfqgb3acv4b7gmz8m6szqq4mx95")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -399,7 +401,7 @@ haskell-8.8-base32
        #:configure-flags (list)
        #:cabal-revision
        ("2" "19m4zw5qrj56pflnxr93jyz6m66p8z7xa5hjqy8zm16fb1mrsdss")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -443,7 +445,7 @@ haskell-8.8-base64
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-data-default)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -483,7 +485,7 @@ haskell-8.8-bcrypt
        #:configure-flags (list)
        #:cabal-revision
        ("1" "111wyqh17a6pkjhyaz8n1891m69hwr2gybqcpacw4xdmarxmi7f5")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -517,7 +519,7 @@ haskell-8.8-bimap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -560,7 +562,7 @@ haskell-8.8-blaze-markup
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -595,7 +597,7 @@ haskell-8.8-bounded-queue
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1x8c42cfzb6fdvgkxxdxcpdf16csimlzsgahb1axnplmr6b3ba63")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -637,7 +639,7 @@ haskell-8.8-bytestring-conversion
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1n7w4w2icfppyvlmyzzmfivbx175ckqabs4my5qvvdvwlc89xrqb")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-split)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -672,7 +674,7 @@ haskell-8.8-casing
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-co-log-core)))
     (home-page "https://github.com/qnikst/co-log-concurrent/")
@@ -701,7 +703,7 @@ haskell-8.8-co-log-concurrent
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-atomic-primops)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -741,8 +743,10 @@ haskell-8.8-concurrency
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "0xh4a1cc0bqbbbcq6rg2h8lagj0qvdazrd4b4qn8fvyxssh0m4n8")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-ansi-terminal)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -784,7 +788,7 @@ haskell-8.8-concurrent-output
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -824,7 +828,7 @@ haskell-8.8-cookie
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-byteable)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -873,7 +877,7 @@ haskell-8.8-cprng-aes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004)
                      haskell-8.8-tasty-notests)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -906,7 +910,7 @@ haskell-8.8-data-bword
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -943,7 +947,7 @@ haskell-8.8-diagrams-solve
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)))
     (home-page "https://github.com/fumieval/drinkery#readme")
@@ -973,7 +977,7 @@ haskell-8.8-drinkery
        #:haddock? #t
        #:configure-flags
        (list "-f-test-hlint" "-f-test-doc-coverage")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-MonadRandom)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -1040,7 +1044,7 @@ haskell-8.8-dunai
        #:configure-flags (list)
        #:cabal-revision
        ("4" "0sji6ny86f4j9ch1cyf2p1mcr5b2ighvw4bb9rssvypxb6k2r68f")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage003) haskell-8.8-safe)
@@ -1078,7 +1082,7 @@ haskell-8.8-errors
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1711k76b6w7gfqvc8z9jnylj4hhk3rvx7ap31y1mmq4g2a4s82qm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1117,7 +1121,7 @@ haskell-8.8-free-vl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -1163,7 +1167,7 @@ haskell-8.8-ghc-source-gen
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-deverror")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-ghc-tcplugins-extra)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -1229,7 +1233,7 @@ haskell-8.8-ghc-typelits-natnormalise
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-data-default)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -1264,7 +1268,7 @@ haskell-8.8-haskell-src-exts-util
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-old-locale)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -1305,7 +1309,7 @@ haskell-8.8-hourglass
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000) haskell-8.8-tar)
                   (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
@@ -1344,7 +1348,7 @@ haskell-8.8-hpc-codecov
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0kz3yzah7m4c2r9yaawhljcgb579masx3lx4mrr4lmqy39kmsvcb")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage002) haskell-8.8-hset)
@@ -1381,7 +1385,7 @@ haskell-8.8-hreader
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1428,7 +1432,7 @@ haskell-8.8-hspec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1462,7 +1466,7 @@ haskell-8.8-immortal
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -1497,7 +1501,7 @@ haskell-8.8-inflections
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1531,7 +1535,7 @@ haskell-8.8-jira-wiki-markup
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0fnbg9b8isyk8dpmggh736mms7a2m65956y1z15wds63imzhs2ik")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000) haskell-8.8-alex)
                   (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
@@ -1566,7 +1570,7 @@ haskell-8.8-language-java
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -1598,7 +1602,7 @@ haskell-8.8-linenoise
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)))
     (home-page "https://github.com/ombocomp/listsafe")
@@ -1632,7 +1636,7 @@ haskell-8.8-listsafe
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -1667,8 +1671,10 @@ haskell-8.8-little-rio
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "14vn4yyzwg5kh6wx67ax0vd06n94x1y9rzqj6k2qr8liayhmbxhh")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-attoparsec)
                   (@ (gnu packages stackage ghc-8.8 stage000) haskell-8.8-fail)
@@ -1710,7 +1716,7 @@ haskell-8.8-llvm-hs-pure
        #:configure-flags (list)
        #:cabal-revision
        ("1" "13hxmzaxd5iv9hjad5kw9infq0lxsgypqqb2z1i1939604a90qp4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1745,7 +1751,7 @@ haskell-8.8-logict
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-primitive-notests)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -1784,7 +1790,7 @@ haskell-8.8-matrices
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0hjklj9cqcqjvsmav4n5biqh3cbalhd22rvw381glkzbmpv7ccdn")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-hashable)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -1825,7 +1831,7 @@ haskell-8.8-mfsolve
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0sa17aphsnk0lc42k1niisbd4jck7j4xij95mjjc5nlrcx1zd123")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -1876,7 +1882,7 @@ haskell-8.8-midi
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fbase4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -1916,7 +1922,7 @@ haskell-8.8-monad-loops
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1y5733zs49jyi2qyx8nk2p2ddzkkih1nw33qjrc9ppk05m3030hi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-clock)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -1956,7 +1962,7 @@ haskell-8.8-monad-metrics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-comfort-array)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -1994,7 +2000,7 @@ haskell-8.8-netlib-comfort-array
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -2028,7 +2034,7 @@ haskell-8.8-nondeterminism
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0nm5c9x4nzqkklk7a8gkh3v0w08anz17y00h3av6ll260m6m8szy")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-attoparsec)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2063,7 +2069,7 @@ haskell-8.8-openpgp-asciiarmor
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)))
     (home-page "https://hackage.haskell.org/package/opentelemetry")
@@ -2091,7 +2097,7 @@ haskell-8.8-opentelemetry
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-indexed-profunctors)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2145,7 +2151,7 @@ haskell-8.8-optics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-parser-combinators)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2182,7 +2188,7 @@ haskell-8.8-paripari
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage003)
@@ -2233,7 +2239,7 @@ haskell-8.8-pgp-wordlist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -2287,7 +2293,7 @@ haskell-8.8-pipes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-enumset)
                   (@ (gnu packages stackage ghc-8.8 stage003)
@@ -2319,7 +2325,7 @@ haskell-8.8-poll
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2363,7 +2369,7 @@ haskell-8.8-primitive
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1ws072947d8lmchknyhrzpg9mh6dacya872a4b9dw0cdgkn13zm8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2408,7 +2414,7 @@ haskell-8.8-proto3-wire
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004) haskell-8.8-Glob)
                   (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-doctest)
@@ -2440,7 +2446,7 @@ haskell-8.8-read-env-var
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-relational-query)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -2482,7 +2488,7 @@ haskell-8.8-relational-schemas
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1x4f1cbn9ylg82h853mqhm0sda6lz76ssk45d0x842pjbn3y46xx")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2514,7 +2520,7 @@ haskell-8.8-repline
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -2553,7 +2559,7 @@ haskell-8.8-rope-utf16-splay
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fsplitbase")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-numeric-prelude)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -2593,7 +2599,7 @@ haskell-8.8-sample-frame-np
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1dn9ffblmfrr5ly3v1kbcmzc3z6m4x4p5mym8pfwc9p1vfxqbvz7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -2639,7 +2645,7 @@ haskell-8.8-scalpel-core
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0sdzfgsmgw20idxnvvf4sbp8bkl3n7qa7qkphv63pfmqvzyplkwg")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2681,7 +2687,7 @@ haskell-8.8-selda
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -2722,7 +2728,7 @@ haskell-8.8-selective
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-attoparsec)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2764,7 +2770,7 @@ haskell-8.8-semver
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0wizn0h8vwjrfgznb4bikpvil37v9iy42ginq584k85kiysxxmqa")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-HUnit)
                   (@ (gnu packages stackage ghc-8.8 stage002)
@@ -2806,7 +2812,7 @@ haskell-8.8-sitemap-gen
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fsplitbase")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-explicit-exception)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2851,7 +2857,7 @@ haskell-8.8-sox
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-explicit-exception)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2896,7 +2902,7 @@ haskell-8.8-soxlib
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-ftest-doctests")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2941,7 +2947,7 @@ haskell-8.8-structs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-debug")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-data-default)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -2975,7 +2981,7 @@ haskell-8.8-structured-cli
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3009,7 +3015,7 @@ haskell-8.8-tasty-kat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage003)
@@ -3051,7 +3057,7 @@ haskell-8.8-tasty-quickcheck
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-haskell-src-exts)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -3085,7 +3091,7 @@ haskell-8.8-tasty-th
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage000)
                      haskell-8.8-base-compat)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -3122,7 +3128,7 @@ haskell-8.8-temporary
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)))
     (home-page "http://www.github.com/feuerbach/temporary")
@@ -3159,7 +3165,7 @@ haskell-8.8-temporary-rc
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0dc81r4j0q18xy0nw1kimlf08gk8s9dhcshkcfx1c9hgd7a2gj75")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3203,7 +3209,7 @@ haskell-8.8-text-manipulate
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3237,7 +3243,7 @@ haskell-8.8-titlecase
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3272,7 +3278,7 @@ haskell-8.8-traverse-with-class
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3308,7 +3314,7 @@ haskell-8.8-ttc
        #:configure-flags (list)
        #:cabal-revision
        ("3" "0ig8qd2g8rd5n78039xhbq7n8r514f8kvbh0mgajav2a5lp549s1")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage003)
                      haskell-8.8-doctest)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -3345,7 +3351,7 @@ haskell-8.8-type-errors
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0f15n8hqqczwjrcqxwjp2mrd9iycv53sylv407c95nb6d4hw93ci")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-unexceptionalio)))
     (home-page "https://github.com/singpolyma/unexceptionalio-trans")
@@ -3383,7 +3389,7 @@ haskell-8.8-unexceptionalio-trans
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004)
                      haskell-8.8-bytes)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3424,8 +3430,8 @@ haskell-8.8-vector-bytes-instances
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "1hn2g8wykmisaacw4w8iffcd8qn3dnkl9lkj3j9n0324xm1b3sp0")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "1wnml6ypm68k3i92m9wfkl1qckcr697z4dbchj6pwv9pf6rih9bc")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage004)
                      haskell-8.8-tasty-notests)
                   (@ (gnu packages stackage ghc-8.8 stage005)
@@ -3461,7 +3467,7 @@ haskell-8.8-vector-rotcev
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage003)
@@ -3503,7 +3509,7 @@ haskell-8.8-vector-split
        #:configure-flags (list)
        #:cabal-revision
        ("1" "11qhhir9cdy3x7pd0z0xk8vi4nzr9fn9q3ggwbhhc43jglngw1x7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-data-default)
                   (@ (gnu packages stackage ghc-8.8 stage001)
@@ -3538,7 +3544,7 @@ haskell-8.8-vector-th-unbox
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -3597,7 +3603,7 @@ haskell-8.8-versions
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1qizgsiqsraj8w0qndcyw7grcmiylx63vp3lgw2dplchva8p3hp7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-tasty-hunit-notests)
                   (@ (gnu packages stackage ghc-8.8 stage004)
@@ -3629,7 +3635,7 @@ haskell-8.8-wl-pprint-annotated
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-exceptions)
                   (@ (gnu packages stackage ghc-8.8 stage000)
@@ -3662,7 +3668,7 @@ haskell-8.8-writer-cps-exceptions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.8 stage002)
                      haskell-8.8-QuickCheck)
                   (@ (gnu packages stackage ghc-8.8 stage001)

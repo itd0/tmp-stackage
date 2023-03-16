@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -54,7 +54,7 @@
                      haskell-9.0-yesod-static)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/snoyberg/mono-traversable#readme")
     (synopsis "Provide a classy prelude including common Yesod functionality.")
     (description
@@ -82,7 +82,7 @@ haskell-9.0-classy-prelude-yesod
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-csv)
                   (@ (gnu packages stackage ghc-9.0 stage015)
                      haskell-9.0-extra)
@@ -102,7 +102,7 @@ haskell-9.0-classy-prelude-yesod
                      haskell-9.0-split)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/fedora-haskell/fedora-haskell-tools")
     (synopsis "Building and maintenance tools for Fedora Haskell")
     (description
@@ -131,7 +131,7 @@ haskell-9.0-fedora-haskell-tools
        #:haddock? #t
        #:configure-flags
        (list "-f-dev" "-f-library-only" "-fthreaded")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-Decimal)
                   (@ (gnu packages stackage ghc-9.0 stage016)
@@ -205,7 +205,7 @@ haskell-9.0-fedora-haskell-tools
                      haskell-9.0-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://hledger.org")
     (synopsis "Web-based user interface for the hledger accounting system")
     (description

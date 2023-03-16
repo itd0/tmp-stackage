@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage027)
@@ -39,7 +39,7 @@
                   (@ (gnu packages stackage ghc-9.0 stage027) haskell-9.0-pdc)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/fedora-dists")
     (synopsis "Library for Fedora distribution versions")
     (description
@@ -70,7 +70,7 @@ haskell-9.0-fedora-dists
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) gtk+)
                   (@ (gnu packages stackage ghc-9.0 stage020) haskell-9.0-dbus)
                   (@ (gnu packages stackage ghc-9.0 stage021)
@@ -109,7 +109,7 @@ haskell-9.0-fedora-dists
                      haskell-9.0-transformers-base)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/IvanMalison/gtk-sni-tray#readme")
     (synopsis "A standalone StatusNotifierItem/AppIndicator tray")
     (description
@@ -137,7 +137,7 @@ haskell-9.0-gtk-sni-tray
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -153,7 +153,7 @@ haskell-9.0-gtk-sni-tray
                   (@ (gnu packages stackage ghc-9.0 stage019) haskell-9.0-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/snoyberg/mega-sdist#readme")
     (synopsis "Handles uploading to Hackage from mega repos")
     (description
@@ -181,7 +181,7 @@ haskell-9.0-mega-sdist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -197,7 +197,7 @@ haskell-9.0-mega-sdist
                   (@ (gnu packages stackage ghc-9.0 stage019) haskell-9.0-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/pagure-cli")
     (synopsis "Pagure client")
     (description
@@ -226,8 +226,8 @@ haskell-9.0-pagure-cli
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "05g4gnvr8ljg5mszan5cr9zzi40p6d8sr7343mm2yc3ps45vy9g1")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "0qspb55lvavfsyqjjjyyax9gqzp8yq9r13nvzj3qnsipjgw2irln")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -241,7 +241,7 @@ haskell-9.0-pagure-cli
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages compression) lzip)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui")
     (description
@@ -273,7 +273,7 @@ haskell-9.0-servant-swagger-ui
        #:configure-flags (list)
        #:cabal-revision
        ("4" "17spfmrwvj24hxd5sxysn6l3a449nw0ln2m6fslrr7wy4czp2kj5")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -287,7 +287,7 @@ haskell-9.0-servant-swagger-ui
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages compression) lzip)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui: ReDoc theme")
     (description
@@ -317,7 +317,7 @@ haskell-9.0-servant-swagger-ui-redoc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage027)
@@ -336,7 +336,7 @@ haskell-9.0-servant-swagger-ui-redoc
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/stack-all")
     (synopsis "CLI tool for building across Stackage major versions")
     (description
@@ -364,7 +364,7 @@ haskell-9.0-stack-all
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -398,7 +398,7 @@ haskell-9.0-stack-all
                      haskell-9.0-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/fizruk/telegram-bot-simple#readme")
     (synopsis "Easy to use library for building Telegram bots.")
     (description
@@ -426,7 +426,7 @@ haskell-9.0-telegram-bot-simple
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) gtk+)
                   (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
@@ -501,7 +501,7 @@ haskell-9.0-telegram-bot-simple
     (propagated-inputs (list (@ (gnu packages commencement) gcc-toolchain-12)
                              (@ (gnu packages maths) gsl)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/cdepillabout/termonad")
     (synopsis "Terminal emulator configurable in Haskell")
     (description
@@ -537,7 +537,7 @@ haskell-9.0-termonad
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-base64-bytestring)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -555,7 +555,7 @@ haskell-9.0-termonad
                      haskell-9.0-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/yesod-auth-basic")
     (synopsis "Yesod Middleware for HTTP Basic Authentication")
     (description
@@ -587,7 +587,7 @@ haskell-9.0-yesod-auth-basic
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -628,7 +628,7 @@ haskell-9.0-yesod-auth-basic
                      haskell-9.0-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/paul-rouse/yesod-auth-hashdb")
     (synopsis "Authentication plugin for Yesod.")
     (description
@@ -669,7 +669,7 @@ haskell-9.0-yesod-auth-hashdb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-example")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage017)
@@ -711,7 +711,7 @@ haskell-9.0-yesod-auth-hashdb
                      haskell-9.0-yesod-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/freckle/yesod-auth-oauth2")
     (synopsis "OAuth 2.0 authentication plugins")
     (description
@@ -739,7 +739,7 @@ haskell-9.0-yesod-auth-oauth2
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage016)
                      haskell-9.0-aeson)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -781,7 +781,7 @@ haskell-9.0-yesod-auth-oauth2
                      haskell-9.0-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/freckle/yesod-page-cursor#readme")
     (synopsis "")
     (description "Cursor based pagination for Yesod")
@@ -808,7 +808,7 @@ haskell-9.0-yesod-page-cursor
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage012)
                      haskell-9.0-blaze-markup)
                   (@ (gnu packages stackage ghc-9.0 stage015)
@@ -825,7 +825,7 @@ haskell-9.0-yesod-page-cursor
                      haskell-9.0-yesod-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/pbrisbin/yesod-paginator")
     (synopsis "A pagination approach for yesod")
     (description
@@ -853,7 +853,7 @@ haskell-9.0-yesod-paginator
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -906,7 +906,7 @@ haskell-9.0-yesod-paginator
                      haskell-9.0-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Static file serving subsite for Yesod Web Framework.")
     (description

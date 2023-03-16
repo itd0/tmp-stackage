@@ -31,7 +31,6 @@
        #:haskell ,ghc
        #:haddock? #f
        #:configure-flags (list)))
-    (outputs (list "out" "static"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage019)
@@ -53,7 +52,7 @@
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-static)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/snoyberg/mono-traversable#readme")
     (synopsis "Provide a classy prelude including common Yesod functionality.")
     (description
@@ -82,7 +81,7 @@ haskell-8.6-classy-prelude-yesod
        #:haddock? #t
        #:configure-flags
        (list "-f-dev" "-f-library-only" "-fthreaded")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage005)
                      haskell-8.6-Decimal)
                   (@ (gnu packages stackage ghc-8.6 stage012)
@@ -139,7 +138,7 @@ haskell-8.6-classy-prelude-yesod
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-static)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://hledger.org")
     (synopsis "Web interface for the hledger accounting tool")
     (description
@@ -176,7 +175,7 @@ haskell-8.6-hledger-web
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage007)
@@ -216,7 +215,7 @@ haskell-8.6-hledger-web
                   (@ (gnu packages stackage ghc-8.6 stage025)
                      haskell-8.6-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/paul-rouse/yesod-auth-hashdb")
     (synopsis "Authentication plugin for Yesod.")
     (description
@@ -257,7 +256,7 @@ haskell-8.6-yesod-auth-hashdb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-example")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage013)
@@ -294,7 +293,7 @@ haskell-8.6-yesod-auth-hashdb
                   (@ (gnu packages stackage ghc-8.6 stage024)
                      haskell-8.6-yesod-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/thoughtbot/yesod-auth-oauth2")
     (synopsis "OAuth 2.0 authentication plugins")
     (description
@@ -322,7 +321,7 @@ haskell-8.6-yesod-auth-oauth2
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage007)
                      haskell-8.6-attoparsec)
                   (@ (gnu packages stackage ghc-8.6 stage006)
@@ -346,7 +345,7 @@ haskell-8.6-yesod-auth-oauth2
                   (@ (gnu packages stackage ghc-8.6 stage025)
                      haskell-8.6-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/yesod-csp")
     (synopsis "Add CSP headers to Yesod apps")
     (description
@@ -374,7 +373,7 @@ haskell-8.6-yesod-csp
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage002)
                      haskell-8.6-QuickCheck)
                   (@ (gnu packages stackage ghc-8.6 stage006)
@@ -402,7 +401,7 @@ haskell-8.6-yesod-csp
                   (@ (gnu packages stackage ghc-8.6 stage025)
                      haskell-8.6-yesod-test)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/pbrisbin/yesod-paginator")
     (synopsis "A pagination approach for yesod")
     (description
@@ -430,7 +429,7 @@ haskell-8.6-yesod-paginator
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage019)
@@ -444,7 +443,7 @@ haskell-8.6-yesod-paginator
                   (@ (gnu packages stackage ghc-8.6 stage027)
                      haskell-8.6-yesod-form)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/ncaq/yesod-recaptcha2#readme")
     (synopsis "yesod recaptcha2")
     (description "recaptcha2 for yesod-form")

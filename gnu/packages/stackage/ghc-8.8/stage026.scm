@@ -33,7 +33,7 @@
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0284vnzvgpjjh95p67k2b5476npa52hs8g55fvlvlcx487zpc1sc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) gtk+)
                   (@ (gnu packages stackage ghc-8.8 stage005)
                      haskell-8.8-ConfigFile)
@@ -131,7 +131,7 @@
                              (@ (gnu packages xorg) libxinerama)
                              (@ (gnu packages xorg) libxrandr)
                              (@ (gnu packages xorg) libxscrnsaver)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/taffybar/taffybar")
     (synopsis "A desktop bar similar to xmobar, but with more GUI")
     (description

@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -64,7 +64,7 @@
                      haskell-8.10-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/brendanhay/amazonka")
     (synopsis "Common functionality for Amazonka library test-suites.")
     (description
@@ -96,14 +96,14 @@ haskell-8.10-amazonka-test
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-http-query)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/bodhi-hs")
     (synopsis "Fedora Bodhi REST client library")
     (description
@@ -134,7 +134,7 @@ haskell-8.10-bodhi
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1c9rhsnzdpnxhs3l7yq6fh8p9lq177fmdn23khcl72n5m6xx64wm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage003)
                      haskell-8.10-bifunctors)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -185,7 +185,7 @@ haskell-8.10-butcher
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -194,7 +194,7 @@ haskell-8.10-butcher
                      haskell-8.10-xdg-basedir)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/cached-json-file")
     (synopsis "Locally cache a json file obtained by http")
     (description
@@ -227,7 +227,7 @@ haskell-8.10-cached-json-file
        #:configure-flags (list)
        #:cabal-revision
        ("1" "16rvzkg7wy82crgmlz68y9gljp5vv1dldwp3gdn61y95cmi9pybi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -254,7 +254,7 @@ haskell-8.10-cached-json-file
                      haskell-8.10-wreq)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/qwbarch/captcha-haskell#readme")
     (synopsis
      "A package for integrating a variety of captcha solving services.")
@@ -293,7 +293,7 @@ haskell-8.10-captcha-2captcha
        #:configure-flags (list)
        #:cabal-revision
        ("1" "14dl2762c0n4h3492252l3y3gyw9ds44hhw2123hlaq542apqvff")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage015)
@@ -320,7 +320,7 @@ haskell-8.10-captcha-2captcha
                      haskell-8.10-wreq)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/qwbarch/captcha-haskell#readme")
     (synopsis
      "A package for integrating a variety of captcha solving services.")
@@ -357,7 +357,7 @@ haskell-8.10-captcha-capmonster
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -366,7 +366,7 @@ haskell-8.10-captcha-capmonster
                      haskell-8.10-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/copr-api-hs")
     (synopsis "Copr API client libary")
     (description "Fedora Copr buildsystem client api library")
@@ -393,7 +393,7 @@ haskell-8.10-copr-api
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage014)
@@ -426,7 +426,7 @@ haskell-8.10-copr-api
                      haskell-8.10-uri-encode)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page
      "https://github.com/dhall-lang/dhall-haskell/tree/master/dhall-lsp-server#readme")
     (synopsis "Language Server Protocol (LSP) server for Dhall")
@@ -454,7 +454,7 @@ haskell-8.10-dhall-lsp-server
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage000)
                      haskell-8.10-HsYAML)
                   (@ (gnu packages stackage ghc-8.10 stage014)
@@ -479,7 +479,7 @@ haskell-8.10-dhall-lsp-server
                      haskell-8.10-vector)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/dhall-yaml")
     (synopsis "Convert between Dhall and YAML")
     (description
@@ -511,7 +511,7 @@ haskell-8.10-dhall-yaml
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage019)
@@ -526,7 +526,7 @@ haskell-8.10-dhall-yaml
                              (@ (gnu packages maths) lapack)
                              (@ (gnu packages maths) openblas)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/dschrempf/elynx#readme")
     (synopsis "Validate and (optionally) redo ELynx analyses")
     (description
@@ -554,7 +554,7 @@ haskell-8.10-elynx
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) gdk-pixbuf)
                   (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-gi-gio)
@@ -572,7 +572,7 @@ haskell-8.10-elynx
                      haskell-8.10-haskell-gi-overloading)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "GdkPixbuf bindings")
     (description "Bindings for GdkPixbuf, autogenerated by haskell-gi.")
@@ -599,7 +599,7 @@ haskell-8.10-gi-gdkpixbuf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage020)
                      haskell-8.10-gi-glib)
                   (@ (gnu packages stackage ghc-8.10 stage021)
@@ -615,7 +615,7 @@ haskell-8.10-gi-gdkpixbuf
                   (@ (gnu packages gtk) pango-1.90)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Pango bindings")
     (description "Bindings for Pango, autogenerated by haskell-gi.")
@@ -641,7 +641,7 @@ haskell-8.10-gi-pango
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage002)
                      haskell-8.10-attoparsec)
                   (@ (gnu packages stackage ghc-8.10 stage000)
@@ -665,7 +665,7 @@ haskell-8.10-gi-pango
                   (@ (gnu packages stackage ghc-8.10 stage001)
                      haskell-8.10-vector)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages databases) postgresql)))
+                             (@ (gnu packages databases) postgresql-15)))
     (home-page "https://github.com/nikita-volkov/hasql")
     (synopsis "An efficient PostgreSQL driver with a flexible mapping API")
     (description
@@ -697,7 +697,7 @@ haskell-8.10-hasql
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage014)
@@ -720,7 +720,7 @@ haskell-8.10-hasql
                      haskell-8.10-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/blockscope/hpack-dhall#readme")
     (synopsis "hpack's dhalling")
     (description
@@ -758,7 +758,7 @@ haskell-8.10-hpack-dhall
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage006)
                      haskell-8.10-hspec)
                   (@ (gnu packages stackage ghc-8.10 stage005)
@@ -767,7 +767,7 @@ haskell-8.10-hpack-dhall
                      haskell-8.10-tmp-proc)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page
      "https://github.com/adetokunbo/tmp-proc/tree/master/tmp-proc#tmp-proc")
     (synopsis "Simplify use of tmp-proc from hspec tests")
@@ -795,7 +795,7 @@ haskell-8.10-hspec-tmp-proc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage008)
                      haskell-8.10-modern-uri)
                   (@ (gnu packages stackage ghc-8.10 stage008)
@@ -803,7 +803,7 @@ haskell-8.10-hspec-tmp-proc
                   (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-nri-prelude)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page
      "https://github.com/NoRedInk/haskell-libraries/tree/trunk/nri-env-parser#readme")
     (synopsis
@@ -833,7 +833,7 @@ haskell-8.10-nri-env-parser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage002)
                      haskell-8.10-QuickCheck)
                   (@ (gnu packages stackage ghc-8.10 stage001)
@@ -886,7 +886,7 @@ haskell-8.10-nri-env-parser
                      haskell-8.10-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/opentelemetry-extra")
     (synopsis "")
     (description "The OpenTelemetry Haskell Client https://opentelemetry.io")
@@ -912,14 +912,14 @@ haskell-8.10-opentelemetry-extra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-http-query)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/pagure-hs")
     (synopsis "Pagure REST client library")
     (description "A library for querying Pagure gitforges via REST.")
@@ -947,7 +947,7 @@ haskell-8.10-pagure
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0932gfrksfip8bppai5qh5rr9xyddqxrrz4byvnjpwrh5dxsyrg8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage001)
@@ -1026,7 +1026,7 @@ haskell-8.10-pagure
                      haskell-8.10-zip-archive)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/commercialhaskell/pantry#readme")
     (synopsis "Content addressable Haskell package management")
     (description
@@ -1053,14 +1053,14 @@ haskell-8.10-pantry
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-http-query)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/pdc")
     (synopsis "Fedora Product Definition Center service")
     (description "A http query library for Fedora's PDC service.")
@@ -1087,7 +1087,7 @@ haskell-8.10-pdc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage004)
                      haskell-8.10-Glob)
                   (@ (gnu packages stackage ghc-8.10 stage001)
@@ -1110,7 +1110,7 @@ haskell-8.10-pdc
                              (@ (gnu packages tls) openssl-3.0)
                              (@ (gnu packages tls) openssl-1.1)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/juhp/pkgtreediff")
     (synopsis "Package tree diff tool")
     (description
@@ -1140,7 +1140,7 @@ haskell-8.10-pkgtreediff
        #:configure-flags (list)
        #:cabal-revision
        ("6" "0d6mi3w3gx9h21awf1gy2wx7dwh5l9ichww21a3p5rfd8a8swypf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage002)
                      haskell-8.10-QuickCheck)
                   (@ (gnu packages stackage ghc-8.10 stage013)
@@ -1173,7 +1173,7 @@ haskell-8.10-pkgtreediff
                      haskell-8.10-warp)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/haskell-servant/servant-auth#readme")
     (synopsis "servant-client/servant-auth compatibility")
     (description
@@ -1207,8 +1207,8 @@ haskell-8.10-servant-auth-client
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "05g4gnvr8ljg5mszan5cr9zzi40p6d8sr7343mm2yc3ps45vy9g1")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "0qspb55lvavfsyqjjjyyax9gqzp8yq9r13nvzj3qnsipjgw2irln")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage004)
@@ -1222,7 +1222,7 @@ haskell-8.10-servant-auth-client
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages compression) lzip)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui")
     (description
@@ -1251,13 +1251,13 @@ haskell-8.10-servant-swagger-ui
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage022)
                      haskell-8.10-deque)
                   (@ (gnu packages stackage ghc-8.10 stage008)
                      haskell-8.10-websockets)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/iij-ii/direct-hs/tree/master/skews")
     (synopsis "A very quick-and-dirty WebSocket server.")
     (description
@@ -1287,7 +1287,7 @@ haskell-8.10-skews
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1sxrqbjs52gkp1agnbq0bp57fjczvfb30p9p2d8b5ik9zw2j51sq")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage000)
@@ -1360,7 +1360,7 @@ haskell-8.10-skews
                      haskell-8.10-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/wai-middleware-auth")
     (synopsis "Authentication middleware that secures WAI application")
     (description
@@ -1388,7 +1388,7 @@ haskell-8.10-wai-middleware-auth
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage001)
@@ -1421,7 +1421,7 @@ haskell-8.10-wai-middleware-auth
                      haskell-8.10-webex-teams-api)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/nshimaza/webex-teams-api#readme")
     (synopsis "Conduit wrapper of Webex Teams List API")
     (description
@@ -1449,7 +1449,7 @@ haskell-8.10-webex-teams-conduit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage001)
@@ -1482,7 +1482,7 @@ haskell-8.10-webex-teams-conduit
                      haskell-8.10-webex-teams-api)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/nshimaza/webex-teams-api#readme")
     (synopsis "Pipes wrapper of Webex Teams List API")
     (description
@@ -1509,7 +1509,7 @@ haskell-8.10-webex-teams-pipes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage016)
@@ -1546,7 +1546,7 @@ haskell-8.10-webex-teams-pipes
                      haskell-8.10-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Creation of type-safe, RESTful web applications.")
     (description
@@ -1574,7 +1574,7 @@ haskell-8.10-yesod
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fnetwork-uri")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage022)
@@ -1639,7 +1639,7 @@ haskell-8.10-yesod
                      haskell-8.10-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Authentication for Yesod.")
     (description
@@ -1667,7 +1667,7 @@ haskell-8.10-yesod-auth
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage016)
@@ -1722,7 +1722,7 @@ haskell-8.10-yesod-auth
                      haskell-8.10-zlib)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "The yesod helper executable.")
     (description "See README.md for more information")
@@ -1749,7 +1749,7 @@ haskell-8.10-yesod-bin
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage013)
                      haskell-8.10-aeson)
                   (@ (gnu packages stackage ghc-8.10 stage016)
@@ -1767,7 +1767,7 @@ haskell-8.10-yesod-bin
                      haskell-8.10-yesod-core)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/psibi/yesod-fb")
     (synopsis "Useful glue functions between the fb library and Yesod.")
     (description "This package contains useful glue functions between the fb
@@ -1797,7 +1797,7 @@ haskell-8.10-yesod-fb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.10 stage012)
                      haskell-8.10-blaze-html)
                   (@ (gnu packages stackage ghc-8.10 stage011)
@@ -1820,7 +1820,7 @@ haskell-8.10-yesod-fb
                      haskell-8.10-yesod-form)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/pbrisbin/yesod-markdown")
     (synopsis "Tools for using markdown in a yesod application")
     (description

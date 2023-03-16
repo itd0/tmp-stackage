@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages gtk) gtk+)
                   (@ (gnu packages stackage ghc-8.8 stage017) haskell-8.8-dbus)
                   (@ (gnu packages stackage ghc-8.8 stage018)
@@ -69,7 +69,7 @@
                   (@ (gnu packages stackage ghc-8.8 stage001)
                      haskell-8.8-transformers-base)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/IvanMalison/gtk-sni-tray#readme")
     (synopsis "A standalone StatusNotifierItem/AppIndicator tray")
     (description

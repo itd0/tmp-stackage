@@ -30,7 +30,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -88,7 +88,7 @@ haskell-9.0-BNFC
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-cmdargs)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -135,7 +135,7 @@ haskell-9.0-ClustalParser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -171,7 +171,7 @@ haskell-9.0-HasBigDecimal
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("1" "1rmqhwbkdbwa2ng5zlpfwrfnqlcxrvgy3i5ymrjiw5jl9wp6j13c")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-JuicyPixels)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -179,7 +179,7 @@ haskell-9.0-HasBigDecimal
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-hspec-discover)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/mrkkrp/JuicyPixels-extra")
     (synopsis "Efficiently scale, crop, flip images with JuicyPixels")
     (description "Efficiently scale, crop, flip images with JuicyPixels.")
@@ -207,7 +207,7 @@ haskell-9.0-JuicyPixels-extra
        #:configure-flags (list "-f-python_test")
        #:cabal-revision
        ("1" "0hinbn56d8bw45zxazpmgv1b6lcmlcys9jfdkv2lyr5j44pzpvvj")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -244,7 +244,7 @@ haskell-9.0-PyF
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-ParsecTools)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -281,7 +281,7 @@ haskell-9.0-ViennaRNAParser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -331,13 +331,13 @@ haskell-9.0-ace
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fzlib")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-hspec-discover)
                   (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/redneb/hs-adler32")
     (synopsis
      "An implementation of Adler-32, supporting rolling checksum operation")
@@ -375,7 +375,7 @@ haskell-9.0-adler32
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-async)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -415,7 +415,7 @@ haskell-9.0-alarmclock
        #:configure-flags (list "-f-blas")
        #:cabal-revision
        ("1" "1599vbnfalrnq0zgwmh47k62y9yq30agpjyyfwdzxzszhc0vfq6n")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage003)
                      haskell-9.0-Stream)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -475,7 +475,7 @@ haskell-9.0-align-audio
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -598,7 +598,7 @@ haskell-9.0-app-settings
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -633,7 +633,7 @@ haskell-9.0-appendmap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -677,7 +677,7 @@ haskell-9.0-ascii-progress
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-asn1-encoding)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -710,7 +710,7 @@ haskell-9.0-asn1-parse
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-async)
                   (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-fgl)
@@ -751,7 +751,7 @@ haskell-9.0-async-pool
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -822,7 +822,7 @@ haskell-9.0-atomic-write
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -858,7 +858,7 @@ haskell-9.0-bank-holidays-england
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -911,7 +911,7 @@ haskell-9.0-base-compat-batteries
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -947,7 +947,7 @@ haskell-9.0-bbdb
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -986,7 +986,7 @@ haskell-9.0-bencode
        #:haddock? #t
        #:configure-flags
        (list "-f-dev" "-f-benchmark-atto-bencode")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -1022,7 +1022,7 @@ haskell-9.0-bencoding
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-bytestring-lexing)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -1057,7 +1057,7 @@ haskell-9.0-binary-parsers
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1f118vwwskai74l6wn5sfy002k241qv1rhpsahphfr58llzgvv50")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-bytes)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)))
@@ -1087,7 +1087,7 @@ haskell-9.0-bits
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1123,8 +1123,10 @@ haskell-9.0-bitset-word8
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "1jdl8x0vs6p0h3qcwal7zr281cxqlxppq43yg2jkidhddqf9sgpd")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage003)
                      haskell-9.0-blas-ffi)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -1167,7 +1169,7 @@ haskell-9.0-blas-comfort-array
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -1199,7 +1201,7 @@ haskell-9.0-boots
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1235,7 +1237,7 @@ haskell-9.0-bordacount
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1282,7 +1284,7 @@ haskell-9.0-burrito
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-clock)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -1325,7 +1327,7 @@ haskell-9.0-cache
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1359,7 +1361,7 @@ haskell-9.0-can-i-haz
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -1399,7 +1401,7 @@ haskell-9.0-checkers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-test")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -1456,7 +1458,7 @@ haskell-9.0-clientsession
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1501,7 +1503,7 @@ haskell-9.0-commutative
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-comonad)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -1535,7 +1537,7 @@ haskell-9.0-comonad-extras
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1571,8 +1573,8 @@ haskell-9.0-compactmap
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "0j7q975kg4dchl7pn8cl26sf8945bmhw5mvy73s18ylxqx4qqkwb")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "15gs9cv1i9j4qx6vnp32yhcjb5rjaf9g3jsfdzmi5v7i3b1gziwc")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1606,7 +1608,7 @@ haskell-9.0-conferer
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-base-compat)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1664,7 +1666,7 @@ haskell-9.0-configurator-export
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-hashable)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -1703,7 +1705,7 @@ haskell-9.0-constraints
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage004) haskell-9.0-c2hs)
@@ -1743,7 +1745,7 @@ haskell-9.0-crc32c
        #:configure-flags (list)
        #:cabal-revision
        ("8" "09fj4nghk80l8pqxjiddw0v8frwg46v5izkjsx2jvk1ksh6cif2b")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -1790,7 +1792,7 @@ haskell-9.0-crypt-sha512
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-asn1-encoding)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -1822,7 +1824,7 @@ haskell-9.0-crypto-pubkey-types
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -1861,7 +1863,7 @@ haskell-9.0-currencies
        #:haddock? #t
        #:configure-flags
        (list "-fwith-bytestring" "-fwith-case-insensitive" "-fwith-containers" "-f-with-dlist" "-fwith-text" "-fwith-old-locale" "-fwith-unordered-containers" "-fwith-vector")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-data-default-class)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -1938,7 +1940,7 @@ haskell-9.0-data-default-extra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -1985,8 +1987,8 @@ haskell-9.0-data-msgpack-types
        #:haddock? #t
        #:configure-flags (list "-f-tests")
        #:cabal-revision
-       ("1" "137z993v7af9ym468vprys09416c7l7pys5hrng7k5vafga73y3b")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "1ajrndp9251b3pnfm2g56pdp4jynlgbyd8i3qjlsi3wqpngwlhw6")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-base-compat)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -2037,7 +2039,7 @@ haskell-9.0-data-reify
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2084,7 +2086,7 @@ haskell-9.0-dense-linear-algebra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2124,7 +2126,7 @@ haskell-9.0-depq
        (list "-fbase-4-9" "-ftemplate-haskell-2-11" "-fnew-functor-classes")
        #:cabal-revision
        ("1" "0m3ywfvj96yqrdyv6mgnmdhlsvjjn89wl0n1n7v2m60zaan14cgh")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2236,7 +2238,7 @@ haskell-9.0-deriving-compat
        #:configure-flags (list)
        #:cabal-revision
        ("13" "1hbd0j8yw81y4rnxqxxnvhy33ccgl5c7qcr9shzqy97fwi2vkikm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2281,7 +2283,7 @@ haskell-9.0-dlist-nonempty
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2312,7 +2314,7 @@ haskell-9.0-do-list
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2342,7 +2344,7 @@ haskell-9.0-dockerfile
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2375,7 +2377,7 @@ haskell-9.0-dvorak
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2419,8 +2421,10 @@ haskell-9.0-edit-distance-vector
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "1w2rxrj0gc3a7p74pybji8yy2zsjnhxyi4zhlmx4qsyz6w616ggv")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -2459,7 +2463,7 @@ haskell-9.0-either
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2490,7 +2494,7 @@ haskell-9.0-elf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2524,7 +2528,7 @@ haskell-9.0-elynx-nexus
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -2569,7 +2573,7 @@ haskell-9.0-enclosed-exceptions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2641,7 +2645,7 @@ haskell-9.0-envparse
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2677,8 +2681,10 @@ haskell-9.0-envy
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "1b2k97n787730p3k4fsp16f2i9ddqf5k90cq4r7s2lddmdq0cshr")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-semigroupoids)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)))
@@ -2708,7 +2714,7 @@ haskell-9.0-eq
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2744,7 +2750,7 @@ haskell-9.0-errorcall-eq-instance
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-cryptohash)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2778,7 +2784,7 @@ haskell-9.0-executable-hash
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2815,7 +2821,7 @@ haskell-9.0-extra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2848,7 +2854,7 @@ haskell-9.0-fakedata-parser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2881,7 +2887,7 @@ haskell-9.0-fakefs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2914,7 +2920,7 @@ haskell-9.0-fakepull
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -2955,7 +2961,7 @@ haskell-9.0-fileplow
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage011)
                      haskell-9.0-casing)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -2990,7 +2996,7 @@ haskell-9.0-flags-applicative
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -3029,7 +3035,7 @@ haskell-9.0-flush-queue
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-data-default-class)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3065,8 +3071,8 @@ haskell-9.0-fold-debounce
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("5" "1b97k85zryid7x2ygi92ilv480ahfjn5yf1f4blllwyxn7zgvjv4")))
-    (outputs (list "out" "static" "doc"))
+       ("6" "1rli018i812pq294hffpd4x517fszp28hvrlh2x8vm69yh10clfa")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-comonad)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -3118,7 +3124,7 @@ haskell-9.0-foldl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3151,7 +3157,7 @@ haskell-9.0-format-numbers
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1i3qkhxqhvqd7mqfdc1mbizw1fin7vp4dwzayc2y0sqcbg7kkns7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-clock)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -3196,7 +3202,7 @@ haskell-9.0-formatting
        #:configure-flags (list)
        #:cabal-revision
        ("1" "133nycxnzy7sgp2vib8hpp2jgzm8pxp31ljf7b4v91jn1gqg3kpl")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-comonad)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -3258,7 +3264,7 @@ haskell-9.0-free
        #:configure-flags (list)
        #:cabal-revision
        ("1" "096nfaqxavi6xblqh4q5dxks824liz75b4rm2la2hlkkn5mhqdgs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3291,7 +3297,7 @@ haskell-9.0-friendly-time
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -3334,7 +3340,7 @@ haskell-9.0-fuzzcheck
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -3377,7 +3383,7 @@ haskell-9.0-general-games
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fbase-4-9")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3464,7 +3470,7 @@ haskell-9.0-generic-deriving
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3508,7 +3514,7 @@ haskell-9.0-getopt-generics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-ghc-lib-parser)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3541,7 +3547,7 @@ haskell-9.0-ghc-syntax-highlighter
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3575,7 +3581,7 @@ haskell-9.0-ghost-buster
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3610,7 +3616,7 @@ haskell-9.0-graph-wrapper
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3658,7 +3664,7 @@ haskell-9.0-graphite
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3696,7 +3702,7 @@ haskell-9.0-has-transformers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-data-default)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -3734,7 +3740,7 @@ haskell-9.0-haskell-src-exts-util
        #:configure-flags (list "-f-debug")
        #:cabal-revision
        ("2" "0f3v6k3bvsczz0z5i09286c0i74wz782vayzyp5lndqvrx3b4g0x")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-json)
@@ -3773,7 +3779,7 @@ haskell-9.0-hasktags
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3805,7 +3811,7 @@ haskell-9.0-hebrew-time
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-ansi-terminal)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3841,7 +3847,7 @@ haskell-9.0-hformat
        #:haddock? #t
        #:configure-flags
        (list "-f-externallibsass" "-f-sharedlibsass")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3881,7 +3887,7 @@ haskell-9.0-hlibsass
        #:configure-flags (list)
        #:cabal-revision
        ("1" "116jns5im51sb9xiwpx308wz3pr67335633anrf8f704pz8vwjka")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3890,7 +3896,7 @@ haskell-9.0-hlibsass
                      haskell-9.0-hspec-discover)
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/ananthakumaran/hopfli")
     (synopsis "Bidings to Google's Zopfli compression library")
     (description
@@ -3918,7 +3924,7 @@ haskell-9.0-hopfli
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -3952,7 +3958,7 @@ haskell-9.0-hsemail
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-ficonv")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -3989,7 +3995,7 @@ haskell-9.0-hsexif
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage011) haskell-9.0-lua)
@@ -4034,7 +4040,7 @@ haskell-9.0-hslua-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -4075,7 +4081,7 @@ haskell-9.0-hspec-attoparsec
        #:configure-flags (list)
        #:cabal-revision
        ("2" "12jwqbddqx8j69b04q3kzwvnkwh6l9cv8b5fvph4n6nrqnk81mp9")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -4112,7 +4118,7 @@ haskell-9.0-hspec-contrib
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -4150,7 +4156,7 @@ haskell-9.0-hspec-golden
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -4193,7 +4199,7 @@ haskell-9.0-hspec-leancheck
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4229,7 +4235,7 @@ haskell-9.0-hspec-megaparsec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage013)
@@ -4269,7 +4275,7 @@ haskell-9.0-hspec-need-env
        #:configure-flags (list)
        #:cabal-revision
        ("1" "03nsxwc5p6whq21dqwba0289g8fqqqws453kyanwgb6vvg1f0s9l")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4304,7 +4310,7 @@ haskell-9.0-hspec-parsec
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0bih2r7pdfca8jw9jii84nsx3q6xfwjylsilgwxx02xl35dv0nkp")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -4348,7 +4354,7 @@ haskell-9.0-hspec-smallcheck
        #:haddock? #t
        #:configure-flags
        (list "-fnetwork--ge-3_0_0")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4388,7 +4394,7 @@ haskell-9.0-hsyslog-udp
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("2" "1vb9izb058z8lsq5yp4c0w4lralb0mzr5g6hw4mvd82yjf07il0z")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4421,7 +4427,7 @@ haskell-9.0-htaglib
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -4463,7 +4469,7 @@ haskell-9.0-html-email-validate
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -4500,7 +4506,7 @@ haskell-9.0-http-date
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -4541,7 +4547,7 @@ haskell-9.0-http-types
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4575,7 +4581,7 @@ haskell-9.0-hvect
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("5" "0aswi9gwa4f1ll5s323qc6g9fm2h9dc8j526izcbflagxicf04a8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-JuicyPixels)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -4585,7 +4591,7 @@ haskell-9.0-hvect
                   (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-hspec-discover)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/mrkkrp/identicon")
     (synopsis "Flexible generation of identicons")
     (description "Flexible generation of identicons.")
@@ -4613,7 +4619,7 @@ haskell-9.0-identicon
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0iq78rqv6w6vir85p921sawbvkn8lrlhfqd5yx4j2laljcmg2isr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4648,7 +4654,7 @@ haskell-9.0-ilist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-Only)
                   (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
@@ -4717,7 +4723,7 @@ haskell-9.0-indexed-list-literals
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -4753,7 +4759,7 @@ haskell-9.0-ini
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4810,7 +4816,7 @@ haskell-9.0-invariant
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4850,7 +4856,7 @@ haskell-9.0-io-region
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -4884,7 +4890,7 @@ haskell-9.0-isbn
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fnew-time")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -4918,7 +4924,7 @@ haskell-9.0-iso8601-time
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -4950,7 +4956,7 @@ haskell-9.0-jalaali
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-alex)
@@ -4996,7 +5002,7 @@ haskell-9.0-language-javascript
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -5037,7 +5043,7 @@ haskell-9.0-language-thrift
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-debug")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage003)
                      haskell-9.0-Stream)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -5132,8 +5138,10 @@ haskell-9.0-lapack
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "0z80pnn3fpbfbrxmv2n3gwwwlny4a9hgnivd0b8i25q1agyprzcs")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-comfort-array)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -5196,8 +5204,10 @@ haskell-9.0-lapack-comfort-array
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "15w2ml6iqwk7776dl9m7lg0jp7akw9f8s95flrsjfxr479qig48i")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-cassava)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -5250,7 +5260,7 @@ haskell-9.0-lapack-ffi-tools
        #:configure-flags (list)
        #:cabal-revision
        ("4" "0nkcdqb3gsp1lqpj7hv4knndj7p258j0cp4cbqx7jixc93gkq044")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -5303,7 +5313,7 @@ haskell-9.0-lattices
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -5335,7 +5345,7 @@ haskell-9.0-lens-family-th
        #:configure-flags (list "-f-developer")
        #:cabal-revision
        ("2" "1n88rdsf5ayprgz1wnbx32gaff8kpixfkdkr6q4jvc896fhrhdzp")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-ansi-wl-pprint)
                   (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-csv)
@@ -5388,7 +5398,7 @@ haskell-9.0-lentil
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-regex-applicative)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -5425,7 +5435,7 @@ haskell-9.0-lexer-applicative
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0pg3r5zvb13sfyhskyadllxpd2l7xvzvjj8r8rvlq248riq78qdc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -5433,7 +5443,7 @@ haskell-9.0-lexer-applicative
                   (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hyphenation)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://ariis.it/static/articles/linebreak/page.html")
     (synopsis "breaks strings to fit width")
     (description "Simple functions to break a String to fit a maximum text
@@ -5461,7 +5471,7 @@ haskell-9.0-linebreak
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -5495,7 +5505,7 @@ haskell-9.0-list-predicate
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -5542,8 +5552,8 @@ haskell-9.0-locators
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "0nbfbp7a6x3vppavra7pf28l2wwlci3qgps60igqgjkbdcvq7w8c")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "1hddf1q0gvpx7ic0qynjl9nk9g37kjh352yfk5axi36k49zfpw8d")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-bytes)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -5588,7 +5598,7 @@ haskell-9.0-log-domain
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-call-stack)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -5620,7 +5630,7 @@ haskell-9.0-logging-facade
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -5657,7 +5667,7 @@ haskell-9.0-loop
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0wipmh3xcs00x8lbq5j780rdc2klfj67nzni21qc1pdbhr2whn9d")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -5707,7 +5717,7 @@ haskell-9.0-lucid
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-doctest")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -5745,7 +5755,7 @@ haskell-9.0-main-tester
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -5784,7 +5794,7 @@ haskell-9.0-matrix-market-attoparsec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-base64-bytestring)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -5822,7 +5832,7 @@ haskell-9.0-mime-mail
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -5863,7 +5873,7 @@ haskell-9.0-mnist-idx
        #:configure-flags (list "-fsemigroupoids")
        #:cabal-revision
        ("1" "09ibn640fkqlvgqxkrwm1dwr78amy399b6jysxklb6nngj10rcdc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-data-default-class)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -5902,7 +5912,7 @@ haskell-9.0-monad-chronicle
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-semigroupoids)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)))
@@ -5934,7 +5944,7 @@ haskell-9.0-monad-products
        #:configure-flags (list)
        #:cabal-revision
        ("2" "04zbzq7dbv0ddpc1dxrxn9jfyg1xj8sar6ngzhc0cji72cail503")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-groups)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -5971,7 +5981,7 @@ haskell-9.0-monoid-extras
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0y8sw3zsmz5ssn2gl2fsqg44n7xf3xsf6vhrzwnkbaa97hj76nh2")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6013,7 +6023,7 @@ haskell-9.0-monoid-subclasses
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6044,7 +6054,7 @@ haskell-9.0-more-containers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6075,7 +6085,7 @@ haskell-9.0-multi-containers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-build-example")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6122,7 +6132,7 @@ haskell-9.0-multistate
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6153,7 +6163,7 @@ haskell-9.0-n2o
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage003)
@@ -6192,7 +6202,7 @@ haskell-9.0-nagios-check
        #:configure-flags (list)
        #:cabal-revision
        ("10" "18d14fasp1l5xdfgp8swgcyyjd3irqj19cn298ksx9wiw43j818p")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-quickcheck-instances)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -6231,7 +6241,7 @@ haskell-9.0-natural-transformation
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -6284,7 +6294,7 @@ haskell-9.0-netpbm
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0xgc7sxs1p3qibgwbikjdrhn47j7m4gk5x1wrv9hncks6hd6hsyf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6319,7 +6329,7 @@ haskell-9.0-newtype-generics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-semigroupoids)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)))
@@ -6351,7 +6361,7 @@ haskell-9.0-nonemptymap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-uniplate)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)))
@@ -6385,7 +6395,7 @@ haskell-9.0-nsis
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -6447,7 +6457,7 @@ haskell-9.0-once
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-data-binary-ieee754)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -6462,7 +6472,7 @@ haskell-9.0-once
                      haskell-9.0-vector-split)
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "git://klacansky.com/openexr-write.git")
     (synopsis "Library for writing images in OpenEXR HDR file format.")
     (description
@@ -6492,7 +6502,7 @@ haskell-9.0-openexr-write
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0bpr1bkb7mmww028n8ikwa0qhdl7ybxpb9s887dlp3dvxr5iq8nq")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-hashable)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6537,7 +6547,7 @@ haskell-9.0-optics-extra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6570,7 +6580,7 @@ haskell-9.0-optparse-text
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -6603,7 +6613,7 @@ haskell-9.0-pagination
        #:haddock? #t
        #:configure-flags
        (list "-fbinary" "-fparsec" "-fattoparsec")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -6652,7 +6662,7 @@ haskell-9.0-parsers
        #:configure-flags (list)
        #:cabal-revision
        ("3" "0i6djm9zsb95qdan0vr9shilhmzjxqsqrjy9v16hcaph49wnw7pr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6700,7 +6710,7 @@ haskell-9.0-password-types
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0p7wsphh513s8l5d62lzgbhk2l1h6kj5y7bc27qqjsry9g8ah4y7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -6735,7 +6745,7 @@ haskell-9.0-path-pieces
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6768,7 +6778,7 @@ haskell-9.0-pava
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -6831,7 +6841,7 @@ haskell-9.0-pinch
        #:haddock? #t
        #:configure-flags
        (list "-f-dump-core" "-ferror-messages")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -6882,7 +6892,7 @@ haskell-9.0-polysemy
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -6915,7 +6925,7 @@ haskell-9.0-pretty-types
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -6951,7 +6961,7 @@ haskell-9.0-projectroot
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-proto-lens-protoc)
                   (@ (gnu packages stackage ghc-9.0 stage011)
@@ -7020,7 +7030,7 @@ haskell-9.0-proto-lens-setup
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7089,7 +7099,7 @@ haskell-9.0-protobuf-simple
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -7127,7 +7137,7 @@ haskell-9.0-protocol-radius-test
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7164,7 +7174,7 @@ haskell-9.0-quickcheck-assertions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7194,7 +7204,7 @@ haskell-9.0-rampart
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7232,7 +7242,7 @@ haskell-9.0-ramus
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0k71n9vqlr7kpjzyqb2pp4lpj8wjla8gfp9f34cmlb8gg7l2g5np")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7267,8 +7277,8 @@ haskell-9.0-rec-smallarray
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "1ji6rp0f857d0vp2kjqcck7avrjgqvqjgwnhdcxs3zbjkwpqyhfb")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "00xd4pyg0p4z0alyg1zy193jc3smq50y73dkafiphd73rzszxy9g")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-fingertree)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -7307,8 +7317,8 @@ haskell-9.0-reducers
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("6" "16a2d8d84gzbjbvs7pc7sz5bi7rz2s5c57gkwi0vf5lmscgjy25h")))
-    (outputs (list "out" "static" "doc"))
+       ("7" "0v4k5hvqcabgiiycn4xayg9kahwifqg4nc0m1wkm3ixcywwg8i88")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-regex-applicative)))
     (home-page "https://github.com/phadej/regex-applicative-text#readme")
@@ -7337,7 +7347,7 @@ haskell-9.0-regex-applicative-text
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-base-compat)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7383,7 +7393,7 @@ haskell-9.0-regex-with-pcre
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7418,7 +7428,7 @@ haskell-9.0-resourcet
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -7454,7 +7464,7 @@ haskell-9.0-rfc1751
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7489,7 +7499,7 @@ haskell-9.0-rot13
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7522,7 +7532,7 @@ haskell-9.0-safe-exceptions
        #:configure-flags (list)
        #:cabal-revision
        ("6" "1wrq2rdrxk96an5k1igcn09cma3dz9y2yp58xjlg2lh22djm297m")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -7576,7 +7586,7 @@ haskell-9.0-salak
        #:configure-flags (list)
        #:cabal-revision
        ("1" "18jjnxxq9bh5raxw3khgkx14wq4fv1kfd59lhh9v55z59sjaydiy")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -7619,7 +7629,7 @@ haskell-9.0-sbv
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-fail)
                   (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
@@ -7655,7 +7665,7 @@ haskell-9.0-scanner
        #:configure-flags (list "-fsemigroupoids")
        #:cabal-revision
        ("3" "0dbcdnksik508i12arh3s6bis6779lx5f1df0jkc0bp797inhd7f")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-hashable)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7705,7 +7715,7 @@ haskell-9.0-semialign
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fprofunctors")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage004)
                      haskell-9.0-profunctors)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7737,7 +7747,7 @@ haskell-9.0-semigroupoid-extras
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-data-default)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7773,7 +7783,7 @@ haskell-9.0-sexpr-parser
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7812,7 +7822,7 @@ haskell-9.0-should-not-typecheck
        #:configure-flags (list)
        #:cabal-revision
        ("1" "07zs924gils8nsb5b8q6lmh4g6iln6dkj3qic8p8cpwkrazjfwsx")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage013)
                      haskell-9.0-comfort-array)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7868,7 +7878,7 @@ haskell-9.0-sound-collage
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000) haskell-9.0-erf)
                   (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
@@ -7905,7 +7915,7 @@ haskell-9.0-splitmix-distributions
        #:configure-flags (list "-f-werror")
        #:cabal-revision
        ("1" "0w4d5m5682nv1aas7d47rk1ddgdxc3rvc0qz1dsmxkajfqi1axpk")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -7938,7 +7948,7 @@ haskell-9.0-stitch
        #:haddock? #t
        #:configure-flags
        (list "-f-test_delay_upper_bound" "-f-test_threaded")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-clock)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -7971,7 +7981,7 @@ haskell-9.0-stopwatch
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8186,7 +8196,7 @@ haskell-9.0-streaming
        #:haddock? #t
        #:configure-flags
        (list "-f-use-bytestring-builder")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -8201,7 +8211,7 @@ haskell-9.0-streaming
                      haskell-9.0-random)
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/fpco/streaming-commons")
     (synopsis
      "Common lower-level functions needed by various streaming data libraries")
@@ -8230,7 +8240,7 @@ haskell-9.0-streaming-commons
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-lib-werror")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-quickcheck-instances)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -8264,8 +8274,10 @@ haskell-9.0-string-conv
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "1g3wxx579mhs2icxngi78pvjfybbk606a6vgns88pg6ws5hrvx4s")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8304,7 +8316,7 @@ haskell-9.0-string-conversions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8337,7 +8349,7 @@ haskell-9.0-stringbuilder
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -8370,7 +8382,7 @@ haskell-9.0-sum-type-boilerplate
        #:haddock? #t
        #:configure-flags
        (list "-fsplitbase" "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-data-accessor)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -8423,7 +8435,7 @@ haskell-9.0-synthesizer-midi
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -8458,8 +8470,10 @@ haskell-9.0-sysinfo
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "01x7c98ag7wnmgyz7zkzz5109fp15v03lbkybp87x1zxlwh1rqg1")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-comonad)
                   (@ (gnu packages stackage ghc-9.0 stage001)
@@ -8501,8 +8515,8 @@ haskell-9.0-tagged-transformer
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "0a6r4gzxzp6n90z0nif7ha7p7am57hs48i54i2y4z9kgjv6lnvll")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "0qyp20khzr6ingdjmmwlhlklc26257wds56cn2pwss3yf1j5blv1")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8546,7 +8560,7 @@ haskell-9.0-tasty-hspec
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1mq51vajlj15356f3hjqxwq0q4lk9dpv0xpsk26wfzf7y55l4d3p")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8583,7 +8597,7 @@ haskell-9.0-tensors
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005)
                      haskell-9.0-base16-bytestring)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -8620,7 +8634,7 @@ haskell-9.0-text-conversions
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("2" "0h146i2dvv21nc5z1x9a5a9c2v5ml2kvd10krd5p5aaqpng6i1g4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8655,7 +8669,7 @@ haskell-9.0-text-metrics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage007)
@@ -8700,7 +8714,7 @@ haskell-9.0-text-regex-replace
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8734,8 +8748,10 @@ haskell-9.0-text-zipper
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("2" "0c0p2qy78cwhdfw0hn8g16l5xidikdk5314gam4258pk7q47rbp5")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-base-compat)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8778,7 +8794,7 @@ haskell-9.0-th-compat
        #:configure-flags (list "-f-werror")
        #:cabal-revision
        ("1" "0q9b8xv6qf8yg5c6rn1jgmgwr4ckf4yzd9qv9ysr3c363cgnccyv")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage002)
@@ -8826,7 +8842,7 @@ haskell-9.0-th-printf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -8860,7 +8876,7 @@ haskell-9.0-thread-hierarchy
        #:configure-flags (list "-f-developer")
        #:cabal-revision
        ("1" "1qsmzkm0k14z06czpbjgkbzb1liws3iass0rwsi5wp5i62jkhczs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -8896,7 +8912,7 @@ haskell-9.0-timers-tick
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -8938,7 +8954,7 @@ haskell-9.0-tmapmvar
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -8972,7 +8988,7 @@ haskell-9.0-tophat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage012)
                      haskell-9.0-doctest)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9012,7 +9028,7 @@ haskell-9.0-trimdent
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0ghzp5kqk5a6831kxfizsnjjcaflinqb26l4d5vjwk7763jad195")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-clock)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -9055,7 +9071,7 @@ haskell-9.0-ttl-hashtables
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -9092,7 +9108,7 @@ haskell-9.0-type-of-html
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage006)
                      haskell-9.0-async)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -9132,7 +9148,7 @@ haskell-9.0-typed-process
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9166,7 +9182,7 @@ haskell-9.0-typenums
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-ucd2haskell")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9204,7 +9220,7 @@ haskell-9.0-unicode-data
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9235,7 +9251,7 @@ haskell-9.0-unidecode
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -9276,7 +9292,7 @@ haskell-9.0-unix-time
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-release")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9353,7 +9369,7 @@ haskell-9.0-urbit-hob
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9406,7 +9422,7 @@ haskell-9.0-validity
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage012)
@@ -9443,7 +9459,7 @@ haskell-9.0-valor
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage005) haskell-9.0-Glob)
                   (@ (gnu packages stackage ghc-9.0 stage012)
                      haskell-9.0-doctest)
@@ -9480,7 +9496,7 @@ haskell-9.0-vcs-ignore
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-bytes)
                   (@ (gnu packages stackage ghc-9.0 stage009)
@@ -9522,7 +9538,7 @@ haskell-9.0-vector-bytes-instances
        #:configure-flags (list)
        #:cabal-revision
        ("1" "074y0nkygj8klkpm3rpdp7z2yj9np9y6rzhc7i62j0mykd27h8hq")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9556,7 +9572,7 @@ haskell-9.0-vformat
        #:configure-flags (list "-f-dev")
        #:cabal-revision
        ("1" "19rxhnqhhv1qs35y723c15c8nifj8pakcrd09jlvg5271zg4qb0b")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -9593,7 +9609,7 @@ haskell-9.0-wave
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9628,7 +9644,7 @@ haskell-9.0-wikicfp-scraper
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9666,7 +9682,7 @@ haskell-9.0-wild-bind
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9699,8 +9715,8 @@ haskell-9.0-with-location
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("3" "1f2bvl41by904lnr0dk6qgasqwadq2w48l7fj51bp2h8bqbkdjyc")))
-    (outputs (list "out" "static" "doc"))
+       ("4" "1f6kb8cslgqq4x3mbg1gcxfbd9qb5a8hmrv802mm7zzhbnridiff")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9751,7 +9767,7 @@ haskell-9.0-witherable
        #:configure-flags (list)
        #:cabal-revision
        ("1" "01aanzslm69z94lqy43hgyxj1ys7sqfqwn72l0snw3h2n3pjwn45")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9784,7 +9800,7 @@ haskell-9.0-word-trie
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9814,7 +9830,7 @@ haskell-9.0-word-wrap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage014)
                      haskell-9.0-hspec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -9845,7 +9861,7 @@ haskell-9.0-word8
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9891,7 +9907,7 @@ haskell-9.0-xmlbf-xmlhtml
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9925,7 +9941,7 @@ haskell-9.0-xxhash-ffi
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -9962,7 +9978,7 @@ haskell-9.0-yes-precure5-command
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage005)
@@ -10002,7 +10018,7 @@ haskell-9.0-yi-rope
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0fq49694gqkab8m0vq4i879blswczwd66n7xh4r4gwiahf0ryvqc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage002)
                      haskell-9.0-QuickCheck)
                   (@ (gnu packages stackage ghc-9.0 stage014)
@@ -10011,7 +10027,7 @@ haskell-9.0-yi-rope
                      haskell-9.0-hspec-discover)
                   (@ (gnu packages stackage ghc-9.0 stage012) haskell-9.0-zlib)))
     (propagated-inputs (list (@ (gnu packages pcre) pcre)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/snapframework/zlib-bindings")
     (synopsis "Low-level bindings to the zlib package.")
     (description "Low-level bindings to the zlib package.")

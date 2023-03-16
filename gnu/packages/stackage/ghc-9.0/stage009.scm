@@ -31,7 +31,7 @@
        #:haddock? #t
        #:configure-flags
        (list "-fusenativewindowslibraries" "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage008)
                      haskell-9.0-OpenGL)
                   (@ (gnu packages stackage ghc-9.0 stage006)
@@ -73,8 +73,8 @@ haskell-9.0-GLUT
        #:configure-flags
        (list "-fnetwork--ge-3_0_0")
        #:cabal-revision
-       ("1" "18jigc9mis823dhlx14yd0r59618jwqw93hsdyzmdrgfaigd6qpn")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "11d922r06p00gcgzhb29hhjkq8ajy1xbqdiwdpbmhp2ar7fw7g9l")))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-HUnit)
                   (@ (gnu packages stackage ghc-9.0 stage008)
@@ -118,7 +118,7 @@ haskell-9.0-MissingH
        #:haddock? #t
        #:configure-flags
        (list "-fusenativewindowslibraries" "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-ObjectName)
                   (@ (gnu packages stackage ghc-9.0 stage008)
@@ -166,7 +166,7 @@ haskell-9.0-OpenAL
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage008)
@@ -200,7 +200,7 @@ haskell-9.0-attoparsec-data
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage008)
                      haskell-9.0-email-validate)
                   (@ (gnu packages pkg-config) %pkg-config)))
@@ -233,7 +233,7 @@ haskell-9.0-check-email
        #:haddock? #t
        #:configure-flags
        (list "-fsplitbase" "-f-buildexamples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage008)
                      haskell-9.0-alsa-seq)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -275,7 +275,7 @@ haskell-9.0-midi-alsa
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-GLFW-b)
                   (@ (gnu packages stackage ghc-9.0 stage008)
@@ -322,7 +322,7 @@ haskell-9.0-netwire-input-glfw
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage007)
                      haskell-9.0-attoparsec)
                   (@ (gnu packages stackage ghc-9.0 stage000)
@@ -356,7 +356,7 @@ haskell-9.0-srt-attoparsec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage000)
                      haskell-9.0-base-compat)
                   (@ (gnu packages stackage ghc-9.0 stage008)
@@ -413,7 +413,7 @@ haskell-9.0-tagged-binary
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fclock" "-funix")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-9.0 stage001)
                      haskell-9.0-ansi-terminal)
                   (@ (gnu packages stackage ghc-9.0 stage000)

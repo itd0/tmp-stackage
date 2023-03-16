@@ -31,7 +31,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage005)
@@ -47,7 +47,7 @@
                   (@ (gnu packages stackage ghc-8.6 stage006)
                      haskell-8.6-unordered-containers)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/stites/gym-http-api#readme")
     (synopsis "REST client to the gym-http-api project")
     (description
@@ -77,7 +77,7 @@ haskell-8.6-gym-http-api
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage004)
                      haskell-8.6-optparse-simple)
                   (@ (gnu packages stackage ghc-8.6 stage026)
@@ -90,7 +90,7 @@ haskell-8.6-gym-http-api
                      haskell-8.6-rio-orphans)
                   (@ (gnu packages stackage ghc-8.6 stage017) haskell-8.6-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/snoyberg/mega-sdist#readme")
     (synopsis "Handles uploading to Hackage from mega repos")
     (description
@@ -118,7 +118,7 @@ haskell-8.6-mega-sdist
        #:haddock? #t
        #:configure-flags
        (list "-f-tests" "-f-jsaddle" "-f-ios")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage014)
@@ -136,7 +136,7 @@ haskell-8.6-mega-sdist
                   (@ (gnu packages stackage ghc-8.6 stage001)
                      haskell-8.6-vector)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://github.com/dmjio/miso")
     (synopsis "A tasty Haskell front-end framework")
     (description
@@ -166,7 +166,7 @@ haskell-8.6-miso
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1wmxiihiwjkzwqqj2996fqmixz6jblj5gh43p7dxbww3g9fdz8qi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage004)
                      haskell-8.6-file-embed-lzma)
                   (@ (gnu packages stackage ghc-8.6 stage017)
@@ -179,7 +179,7 @@ haskell-8.6-miso
                      haskell-8.6-swagger2)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages compression) lzip)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui")
     (description
@@ -211,7 +211,7 @@ haskell-8.6-servant-swagger-ui
        #:configure-flags (list)
        #:cabal-revision
        ("3" "1csz8gzmrrjbjvr6kx4vmyp419i5vbzk84a01vh5zr6ncrpx5nf3")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage004)
                      haskell-8.6-file-embed-lzma)
                   (@ (gnu packages stackage ghc-8.6 stage017)
@@ -224,7 +224,7 @@ haskell-8.6-servant-swagger-ui
                      haskell-8.6-swagger2)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
                              (@ (gnu packages compression) lzip)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/haskell-servant/servant-swagger-ui")
     (synopsis "Servant swagger ui: ReDoc theme")
     (description
@@ -256,7 +256,7 @@ haskell-8.6-servant-swagger-ui-redoc
        (list "-f-disable-git-info" "-f-hide-dependency-versions" "-f-integration-tests" "-f-static" "-f-supported-build")
        #:cabal-revision
        ("1" "0s51an3anrn01rghap4ml9f2vqamsv99jbk996x1l1yyl9sqp294")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage006)
                      haskell-8.6-Cabal)
                   (@ (gnu packages stackage ghc-8.6 stage012)
@@ -402,7 +402,7 @@ haskell-8.6-servant-swagger-ui-redoc
                      haskell-8.6-zip-archive)
                   (@ (gnu packages stackage ghc-8.6 stage000) haskell-8.6-zlib)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://haskellstack.org")
     (synopsis "The Haskell Tool Stack")
     (description
@@ -442,7 +442,7 @@ haskell-8.6-stack
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1c0q010bpzdmjlncjn58fvz50l5z2wqp4hjpj0isvdr5iq96pgza")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage000) haskell-8.6-Only)
                   (@ (gnu packages stackage ghc-8.6 stage007)
                      haskell-8.6-attoparsec)
@@ -566,7 +566,7 @@ haskell-8.6-sv
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1spa115xylz59bvx27vjhzzd5a6q226a4lpck5wlqskdi7bf295f")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage005)
@@ -621,7 +621,7 @@ haskell-8.6-sv
                   (@ (gnu packages stackage ghc-8.6 stage023) haskell-8.6-warp)
                   (@ (gnu packages stackage ghc-8.6 stage017) haskell-8.6-yaml)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/wai-middleware-auth")
     (synopsis "Authentication middleware that secures WAI application")
     (description "See README")
@@ -648,7 +648,7 @@ haskell-8.6-wai-middleware-auth
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fnetwork-uri")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage007)
@@ -687,7 +687,7 @@ haskell-8.6-wai-middleware-auth
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Form handling support for Yesod Web Framework")
     (description

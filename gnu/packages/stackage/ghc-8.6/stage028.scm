@@ -30,7 +30,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage015)
@@ -63,7 +63,7 @@
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Creation of type-safe, RESTful web applications.")
     (description
@@ -91,7 +91,7 @@ haskell-8.6-yesod
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fnetwork-uri")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage022)
@@ -153,7 +153,7 @@ haskell-8.6-yesod
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "http://www.yesodweb.com/")
     (synopsis "Authentication for Yesod.")
     (description
@@ -181,7 +181,7 @@ haskell-8.6-yesod-auth
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage007)
                      haskell-8.6-blaze-html)
                   (@ (gnu packages stackage ghc-8.6 stage006)
@@ -193,7 +193,7 @@ haskell-8.6-yesod-auth
                   (@ (gnu packages stackage ghc-8.6 stage027)
                      haskell-8.6-yesod-form)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://github.com/ncaq/yesod-form-bootstrap4#readme")
     (synopsis "renderBootstrap4")
     (description "")
@@ -220,7 +220,7 @@ haskell-8.6-yesod-form-bootstrap4
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages stackage ghc-8.6 stage012)
                      haskell-8.6-aeson)
                   (@ (gnu packages stackage ghc-8.6 stage018)
@@ -236,7 +236,7 @@ haskell-8.6-yesod-form-bootstrap4
                   (@ (gnu packages stackage ghc-8.6 stage026)
                      haskell-8.6-yesod-persistent)))
     (propagated-inputs (list (@ (gnu packages xorg) libpthread-stubs)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/yesod-text-markdown")
     (synopsis "Yesod support for Text.Markdown.")
     (description "Use Text.Markdown in a typical yesod project.

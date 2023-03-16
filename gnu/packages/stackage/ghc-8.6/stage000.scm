@@ -30,7 +30,7 @@
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/DanBurton/ANum#readme")
     (synopsis "Num instance for Applicatives provided via the ANum newtype")
     (description "")
@@ -56,7 +56,7 @@ haskell-8.6-ANum
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/Boolean")
     (synopsis "Generalized booleans and numbers")
     (description
@@ -91,7 +91,7 @@ haskell-8.6-Boolean
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/BoundedChan")
     (synopsis "Implementation of bounded channels.")
     (description
@@ -120,7 +120,7 @@ haskell-8.6-BoundedChan
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/Diff")
     (synopsis "O(ND) diff algorithm in haskell.")
     (description
@@ -147,7 +147,7 @@ haskell-8.6-Diff
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/audreyt/findbin")
     (synopsis "Locate directory of original program")
     (description
@@ -178,7 +178,7 @@ haskell-8.6-FindBin
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/FloatingHex")
     (synopsis "Read and write hexadecimal floating point numbers")
     (description
@@ -213,7 +213,7 @@ haskell-8.6-FloatingHex
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/RazvanRanca/GenericPretty")
     (synopsis "A generic, derivable, haskell pretty printer.")
     (description
@@ -273,7 +273,7 @@ haskell-8.6-GenericPretty
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/apeyroux/HSlippyMap")
     (synopsis "OpenStreetMap Slippy Map")
     (description
@@ -300,7 +300,7 @@ haskell-8.6-HSlippyMap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages commencement) gcc-toolchain-12)))
     (home-page "https://hackage.haskell.org/package/HSvm")
@@ -330,7 +330,7 @@ haskell-8.6-HSvm
        #:configure-flags (list)
        #:cabal-revision
        ("1" "11ws93cdzz7k4nvcld2d74155mdgcvyi6f6an7gpf9z4k523c11n")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/yairchu/generator")
     (synopsis "List monad transformer and class")
     (description "A List monad transformer and a List class.
@@ -358,7 +358,7 @@ haskell-8.6-List
        #:haddock? #t
        #:configure-flags
        (list "-f-bytestring-in-base")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://9ph.googlecode.com")
     (synopsis "9P2000 in pure Haskell")
     (description
@@ -389,7 +389,7 @@ haskell-8.6-NineP
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/pepeiborra/NoHoed")
     (synopsis
      "Placeholder package to preserve debug ability via conditional builds")
@@ -417,7 +417,7 @@ haskell-8.6-NoHoed
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/conal/NumInstances")
     (synopsis "Instances of numeric classes for functions and tuples")
     (description
@@ -448,7 +448,7 @@ haskell-8.6-NumInstances
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/svenpanne/ObjectName")
     (synopsis "Explicitly handled object names")
     (description
@@ -480,7 +480,7 @@ haskell-8.6-ObjectName
        #:configure-flags (list)
        #:cabal-revision
        ("3" "0m3a9fj2h0v529q3i1kq1jfbdj68wxsmhq65hgx2rwjpgb8cqf0z")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/OneTuple")
     (synopsis "Singleton Tuple")
     (description "This package provides a singleton tuple data type
@@ -512,7 +512,7 @@ haskell-8.6-OneTuple
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1ahk7p34kmh041mz7lyc10nhcxgv2i4z8nvzxvqm2x34gslmsbzr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/Only")
     (synopsis "The 1-tuple type or single-value \"collection\"")
     (description
@@ -548,7 +548,7 @@ haskell-8.6-Only
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell-opengl/StateVar")
     (synopsis "State variables")
     (description
@@ -576,7 +576,7 @@ haskell-8.6-StateVar
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages xorg) libxau)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (home-page "https://hackage.haskell.org/package/Xauth")
@@ -605,7 +605,7 @@ haskell-8.6-Xauth
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/simonmar/monad-par")
     (synopsis
      "Type classes generalizing the functionality of the 'monad-par' library.")
@@ -641,7 +641,7 @@ haskell-8.6-abstract-par
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/action-permutations")
     (synopsis "Execute a set of actions (e.g. parsers) in each possible order")
     (description
@@ -675,7 +675,7 @@ haskell-8.6-action-permutations
        #:configure-flags (list "-fsmall_base")
        #:cabal-revision
        ("1" "05sdsklrg52b0054bjp0slz5n6xws1gmc3kwjrzarqigmky9pq6s")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.haskell.org/alex/")
     (synopsis "Alex is a tool for generating lexical analysers in Haskell")
     (description "Alex is a tool for generating lexical analysers in Haskell.
@@ -706,7 +706,7 @@ haskell-8.6-alex
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/almost-fix")
     (synopsis "Recurse while a predicate is satisfied")
     (description "")
@@ -735,7 +735,7 @@ haskell-8.6-almost-fix
        #:configure-flags (list)
        #:cabal-revision
        ("1" "138k24qxvl90l7dwdw1b3w36mpw93n0xi0nljblqg88pxg7jcvjx")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/david-christiansen/annotated-wl-pprint")
     (synopsis "The Wadler/Leijen Pretty Printer, with annotation support")
     (description
@@ -765,7 +765,7 @@ haskell-8.6-annotated-wl-pprint
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/appar")
     (synopsis "A simple applicative parser")
     (description "A simple applicative parser in Parsec style")
@@ -792,7 +792,7 @@ haskell-8.6-appar
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/array-memoize")
     (synopsis
      "Memoization combinators using arrays for finite sub-domains of functions")
@@ -837,7 +837,7 @@ haskell-8.6-array-memoize
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/louispan/arrow-extras#readme")
     (synopsis "Extra functions for Control.Arrow")
     (description "Extra functions for Control.Arrow")
@@ -866,7 +866,7 @@ haskell-8.6-arrow-extras
        #:configure-flags (list)
        #:cabal-revision
        ("1" "05vcv77hzrklja3mkcrlik895x46nbv9anhwn7qyg66n8gjlmszi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/base-compat")
     (synopsis "A compatibility layer for base")
     (description
@@ -921,7 +921,6 @@ haskell-8.6-base-compat
        #:haskell ,ghc
        #:haddock? #f
        #:configure-flags (list)))
-    (outputs (list "out" "static"))
     (home-page "https://github.com/hvr/base-noprelude")
     (synopsis "\"base\" package sans \"Prelude\" module")
     (description
@@ -965,7 +964,7 @@ haskell-8.6-base-noprelude
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/nikita-volkov/base-prelude ")
     (synopsis
      "The most complete prelude formed solely from the \"base\" package")
@@ -1007,7 +1006,7 @@ haskell-8.6-base-prelude
        #:haddock? #t
        #:configure-flags
        (list "-f-old-base" "-fbase-4-8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://haskell.org/haskellwiki/Unicode-symbols")
     (synopsis "Unicode alternatives for common functions and operators")
     (description
@@ -1052,7 +1051,7 @@ haskell-8.6-base-unicode-symbols
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0f2nhlsihzayh6gw9fx0v3vkb8abjrrj0007yqj5q0dml25pq26q")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/bos/base16-bytestring")
     (synopsis "Fast base16 (hex) encoding and decoding for ByteStrings")
     (description "Fast base16 (hex) encoding and decoding for ByteStrings")
@@ -1079,7 +1078,7 @@ haskell-8.6-base16-bytestring
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://urchin.earth.li/~ian/cabal/base64-string/")
     (synopsis "Base64 implementation for String's.")
     (description
@@ -1114,7 +1113,7 @@ haskell-8.6-base64-string
        #:configure-flags (list)
        #:cabal-revision
        ("3" "1indgsrk0yhkbqlxj39qqb5xqicwkmcliggb8wn87vgfswxpi1dn")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell-foundation/foundation#readme")
     (synopsis "Foundation scrap box of array & string")
     (description "Foundation most basic primitives without any dependencies")
@@ -1141,7 +1140,7 @@ haskell-8.6-basement
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tweag/rules_haskell#readme")
     (synopsis "Locate Bazel runfiles location")
     (description
@@ -1168,7 +1167,7 @@ haskell-8.6-bazel-runfiles
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-pedantic")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/trskop/between")
     (synopsis "Function combinator \"between\" and derived combinators")
     (description
@@ -1219,7 +1218,7 @@ haskell-8.6-between
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/winterland1989/binary-ieee754")
     (synopsis "Backport ieee754 float double combinators to older binary")
     (description "Backport ieee754 float double combinators to older binary")
@@ -1248,7 +1247,7 @@ haskell-8.6-binary-ieee754
        #:configure-flags (list)
        #:cabal-revision
        ("5" "1h2d37szfrcwn9rphnijn4q9l947b0wwqjs1aqmm62xkhbad7jf6")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/binary-orphans")
     (synopsis "Compatibility package for binary; provides instances")
     (description
@@ -1279,7 +1278,7 @@ haskell-8.6-binary-orphans
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/binary-search")
     (synopsis "Binary and exponential searches")
     (description
@@ -1336,7 +1335,7 @@ haskell-8.6-binary-search
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/jwiegley/bindings-dsl/wiki")
     (synopsis "FFI domain specific language, on top of hsc2hs.")
     (description
@@ -1376,7 +1375,7 @@ haskell-8.6-bindings-DSL
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/bindings-uname")
     (synopsis "Low-level binding to POSIX uname(3)")
     (description "This is a low-level binding to POSIX uname(3)
@@ -1406,7 +1405,7 @@ haskell-8.6-bindings-uname
        #:configure-flags (list)
        #:cabal-revision
        ("1" "10fk92v9afjqk43zi621jxl0n8kci0xjj32lz3vqa9xbh67zjz45")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~bkomuves/")
     (synopsis "Mutable and immutable bit arrays")
     (description "Mutable and immutable bit arrays.")
@@ -1433,7 +1432,7 @@ haskell-8.6-bitarray
        #:haddock? #t
        #:configure-flags
        (list "-fhlint" "-f-llvm" "-f-support_blake2_sse")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/centromere/blake2")
     (synopsis "A library providing BLAKE2")
     (description
@@ -1462,7 +1461,7 @@ haskell-8.6-blake2
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0ghc3klxfz5v8rb3rwblrnxmxfafplxrd9gc0y975g8k1q71p44k")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/benl23x5/bmp")
     (synopsis "Read and write uncompressed BMP image files.")
     (description
@@ -1492,7 +1491,7 @@ haskell-8.6-bmp
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0xqm0vn9i49b75fnvnvcnr9m4zwvhqynrkcjdxghrsxayg420lnh")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/boolsimplifier")
     (synopsis "Simplification tools for simple propositional formulas.")
     (description
@@ -1520,7 +1519,7 @@ haskell-8.6-boolsimplifier
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/buffer-pipe")
     (synopsis "Read from stdin and write to stdout in large blocks")
     (description "Read from stdin and write to stdout in large blocks.
@@ -1553,7 +1552,7 @@ haskell-8.6-buffer-pipe
        #:haddock? #t
        #:configure-flags
        (list "-fgmp" "-f-test" "-fcheck-bounds" "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/iagoabal/haskell-bv")
     (synopsis "Bit-vector arithmetic library")
     (description "Bit-vectors implemented as a thin wrapper over integers.")
@@ -1580,7 +1579,7 @@ haskell-8.6-bv
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/vincenthz/hs-byteable")
     (synopsis "Type class for sequence of bytes")
     (description
@@ -1614,7 +1613,7 @@ haskell-8.6-byteable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-executable")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/vincenthz/hs-bytedump")
     (synopsis "Flexible byte dump helpers for human readers.")
     (description
@@ -1643,7 +1642,7 @@ haskell-8.6-bytedump
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://community.haskell.org/~aslatter/code/byteorder")
     (synopsis "Exposes the native endianness or byte ordering of the system.")
     (description "This package is for working with the native byte-ordering of
@@ -1672,7 +1671,7 @@ haskell-8.6-byteorder
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1lgxxxrmw4g32pa861n6qbfpzwv14wfjrlp4hv5zd9hygy6v6q2p")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/byteset")
     (synopsis "Set of bytes.")
     (description
@@ -1701,7 +1700,6 @@ haskell-8.6-byteset
        #:haddock? #f
        #:configure-flags
        (list "-fbytestring_has_builder")))
-    (outputs (list "out" "static"))
     (home-page "https://hackage.haskell.org/package/bytestring-builder")
     (synopsis "The new bytestring builder, packaged outside of GHC")
     (description
@@ -1753,7 +1751,7 @@ haskell-8.6-bytestring-builder
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0icnbv83h542vkmn51ykzc4w1g7nl4w6d6lj79909hnwr2g10616")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~wren/")
     (synopsis
      "Parse and produce literals efficiently from strict or lazy bytestrings.")
@@ -1786,7 +1784,7 @@ haskell-8.6-bytestring-lexing
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1d4ra5prh2q9h8inpwvrsmkmg1ndisdj47jv06iijpj6xdp5bapl")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages compression) bzip2)))
     (home-page "https://hackage.haskell.org/package/bzlib")
@@ -1822,7 +1820,7 @@ haskell-8.6-bzlib
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/sol/call-stack#readme")
     (synopsis "Use GHC call-stacks in a backward compatible way")
     (description "")
@@ -1848,7 +1846,7 @@ haskell-8.6-call-stack
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/jb55/cased")
     (synopsis "Track string casing in its type")
     (description "Track string casing in its type")
@@ -1874,7 +1872,7 @@ haskell-8.6-cased
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell-patterns/cast#readme")
     (synopsis "Abstact cast pattern ")
     (description "Generalized pattern that allow cast one type for another.
@@ -1902,7 +1900,7 @@ haskell-8.6-cast
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages commencement) gcc-toolchain-12)))
     (home-page "http://github.com/aelve/charsetdetect-ae")
@@ -1942,7 +1940,7 @@ haskell-8.6-charsetdetect-ae
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mboes/choice#readme")
     (synopsis "A solution to boolean blindness.")
     (description "Please see README.md.")
@@ -1971,7 +1969,7 @@ haskell-8.6-choice
        #:configure-flags (list)
        #:cabal-revision
        ("4" "1jp1b6l5v1llmggy316s4bb78wjvgq8iya0i2zz4k5v6l5dl8ln2")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/circle-packing")
     (synopsis
      "Simple heuristic for packing discs of varying radii in a circle")
@@ -2013,7 +2011,7 @@ haskell-8.6-circle-packing
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/classyplate")
     (synopsis "Fuseable type-class based generics")
     (description
@@ -2043,7 +2041,7 @@ haskell-8.6-classyplate
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-llvm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/corsis/clock")
     (synopsis "High-resolution clock functions: monotonic, realtime, cputime.")
     (description
@@ -2107,7 +2105,7 @@ haskell-8.6-clock
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "https://gitlab.com/tim-m89/clr-haskell/tree/master/libs/clr-marshal")
     (synopsis "Marshaling for the clr")
@@ -2135,8 +2133,10 @@ haskell-8.6-clr-marshal
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags
-       (list "-f-testprog" "-fquotation")))
-    (outputs (list "out" "static" "doc"))
+       (list "-f-testprog" "-fquotation")
+       #:cabal-revision
+       ("1" "0iv210njif1ajr1ayvhnbvkps732jz254110gsqx1pak1n3j6650")))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ndmitchell/cmdargs#readme")
     (synopsis "Command line argument processing")
     (description
@@ -2183,7 +2183,7 @@ haskell-8.6-cmdargs
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1xbnkv6fqf4mizqkha8b073p0r84l1rx1kzdsd6nh8b0adrp6i4d")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/sjakobi/coercible-utils")
     (synopsis "Utility functions for Coercible types.")
     (description "Utility functions for Coercible types.")
@@ -2210,7 +2210,7 @@ haskell-8.6-coercible-utils
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/minad/colorful-monoids#readme")
     (synopsis "Styled console text output using ANSI escape sequences.")
     (description
@@ -2237,7 +2237,7 @@ haskell-8.6-colorful-monoids
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.haskell.org/haskellwiki/Colour")
     (synopsis "A model for human colour/color perception")
     (description
@@ -2268,7 +2268,7 @@ haskell-8.6-colour
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/composition")
     (synopsis "Combinators for unorthodox function composition")
     (description "")
@@ -2295,7 +2295,7 @@ haskell-8.6-composition
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/concurrent-split")
     (synopsis "MVars and Channels with distinguished input and output side")
     (description
@@ -2346,7 +2346,7 @@ haskell-8.6-concurrent-split
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/kallisti-dev/cond")
     (synopsis "Basic conditional and boolean operators with monadic variants.")
     (description
@@ -2386,7 +2386,7 @@ haskell-8.6-cond
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/snoyberg/mono-traversable#readme")
     (synopsis
      "DEPRECATED Functionality merged into the conduit package itself")
@@ -2415,7 +2415,7 @@ haskell-8.6-conduit-combinators
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/fumieval/control-bool")
     (synopsis "Useful combinators for boolean expressions")
     (description "")
@@ -2442,7 +2442,7 @@ haskell-8.6-control-bool
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/pepeiborra/control-monad-free")
     (synopsis "Free monads and monad transformers")
     (description
@@ -2475,7 +2475,7 @@ haskell-8.6-control-monad-free
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/luqui/control-monad-omega")
     (synopsis "A breadth-first list monad.")
     (description "A monad for enumerating sets: like the list
@@ -2502,7 +2502,7 @@ haskell-8.6-control-monad-omega
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-executable")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/vincenthz/hs-cpu")
     (synopsis "Cpu information and properties helpers.")
     (description
@@ -2532,7 +2532,7 @@ haskell-8.6-cpu
        #:configure-flags (list)
        #:cabal-revision
        ("6" "191nvffcrlyvr5dq99bbdxxl2qx44bla9adkhklyknf7ipqdd4yj")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hvr/cryptohash-md5")
     (synopsis "Fast, pure and practical MD5 implementation")
     (description
@@ -2590,7 +2590,7 @@ haskell-8.6-cryptohash-md5
        #:configure-flags (list)
        #:cabal-revision
        ("6" "10rpxrmqgwihmplczglwxf5q3l13z9j3kvi065z884y4dymmnkgc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hvr/cryptohash-sha1")
     (synopsis "Fast, pure and practical SHA-1 implementation")
     (description
@@ -2653,7 +2653,7 @@ haskell-8.6-cryptohash-sha1
        #:configure-flags (list "-f-exe")
        #:cabal-revision
        ("4" "00p6sx2n1pzykm3my68hjfk8l66g66rh7inrfcnkd5mhilqdcqxr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hvr/cryptohash-sha256")
     (synopsis "Fast, pure and practical SHA-256 implementation")
     (description
@@ -2719,7 +2719,7 @@ haskell-8.6-cryptohash-sha256
        #:configure-flags (list)
        #:cabal-revision
        ("6" "0q9c08qd8ssl428ifa3g30r0lp81a8afcpyv7yzqjp88ihgcnfa6")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hvr/cryptohash-sha512")
     (synopsis "Fast, pure and practical SHA-512 implementation")
     (description
@@ -2781,7 +2781,7 @@ haskell-8.6-cryptohash-sha512
        #:configure-flags (list "-fnew-base")
        #:cabal-revision
        ("1" "02sq2bjw5igc2k9f9ssh58k2ivii2xsvk5r00ky3cxh8j61qy86q")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages curl) curl)))
     (home-page "https://hackage.haskell.org/package/curl")
@@ -2818,7 +2818,7 @@ haskell-8.6-curl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/lspitzner/czipwith/")
     (synopsis "CZipWith class and deriving via TH")
     (description "A typeclass similar to Data.Distributive, but for
@@ -2850,7 +2850,7 @@ haskell-8.6-czipwith
        #:haddock? #t
        #:configure-flags
        (list "-fcategory" "-fsplitbase")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.haskell.org/haskellwiki/Record_access")
     (synopsis "Utilities for accessing and manipulating fields of records")
     (description
@@ -2933,7 +2933,7 @@ haskell-8.6-data-accessor
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://john-millikin.com/software/data-binary-ieee754/")
     (synopsis "Parser/Serialiser for IEEE-754 floating-point values")
     (description "Convert Float and Decimal values to/from raw octets.")
@@ -2960,7 +2960,7 @@ haskell-8.6-data-binary-ieee754
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mvv/data-checked")
     (synopsis "Type-indexed runtime-checked properties ")
     (description
@@ -2989,7 +2989,7 @@ haskell-8.6-data-checked
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/data-default-class")
     (synopsis "A class for types with a default value")
     (description "")
@@ -3016,7 +3016,7 @@ haskell-8.6-data-default-class
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mvv/data-endian")
     (synopsis "Endian-sensitive data")
     (description
@@ -3044,7 +3044,7 @@ haskell-8.6-data-endian
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/anton-k/data-fix")
     (synopsis "Fixpoint data types")
     (description
@@ -3075,7 +3075,7 @@ haskell-8.6-data-fix
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/winterland1989/data-has")
     (synopsis "Simple extensible product")
     (description "Simple extensible product")
@@ -3102,7 +3102,7 @@ haskell-8.6-data-has
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/luqui/data-inttrie")
     (synopsis "A simple lazy, infinite trie from integers")
     (description "")
@@ -3128,7 +3128,7 @@ haskell-8.6-data-inttrie
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fbase4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~wren/")
     (synopsis "A data type for non-exclusive disjunction.")
     (description "A data type for non-exclusive disjunction.")
@@ -3155,7 +3155,7 @@ haskell-8.6-data-or
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/data-ordlist")
     (synopsis "Set and bag operations on ordered lists")
     (description
@@ -3185,7 +3185,7 @@ haskell-8.6-data-ordlist
        #:configure-flags (list "-f-tests")
        #:cabal-revision
        ("1" "0ixlibqrz7fd4bg9vnnd431a9kqvz4ajx8sbgyvpx9l2yjrabwzp")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://ku-fpg.github.io/software/data-reify/")
     (synopsis "Reify a recursive data structure into an explicit graph.")
     (description
@@ -3237,7 +3237,7 @@ haskell-8.6-data-reify
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1v5f5yby0cld1ziqqgkcx8b50qkpviplspm82a6wl7lw28cjm0hs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/phadej/vec")
     (synopsis "Decidable propositions.")
     (description "This package provides a @@Dec@@ type.
@@ -3272,7 +3272,7 @@ haskell-8.6-dec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mokus0/dependent-sum")
     (synopsis "Dependent sum type")
     (description "A dependent sum is a generalization of a
@@ -3311,7 +3311,7 @@ haskell-8.6-dependent-sum
        #:configure-flags (list)
        #:cabal-revision
        ("3" "1mn7jcc7h3b8f1pn9zigqp6mc2n0qb66lms5qnrx4zswdv5w9439")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/dictionary-sharing")
     (synopsis "Sharing/memoization of class members")
     (description "Library for ensuring that class members are shared.")
@@ -3338,9 +3338,9 @@ haskell-8.6-dictionary-sharing
        #:haddock? #t
        #:configure-flags
        (list "-f-bytestring-in-base")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/digest")
     (synopsis
      "Various cryptographic hashes for bytestrings; CRC32 and Adler32 for now.")
@@ -3371,7 +3371,7 @@ haskell-8.6-digest
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://brandon.si/code/directory-tree-module-released/")
     (synopsis
      "A simple directory-like tree datatype, with useful IO functions")
@@ -3456,7 +3456,7 @@ haskell-8.6-directory-tree
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages markup) discount)))
     (home-page "http://github.com/lightquake/discount")
@@ -3485,7 +3485,7 @@ haskell-8.6-discount
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-devel")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ku-fpg/dotgen")
     (synopsis "A simple interface for building .dot graph files.")
     (description
@@ -3515,7 +3515,7 @@ haskell-8.6-dotgen
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/YoEight/dotnet-timespan")
     (synopsis ".NET TimeSpan")
     (description ".NET TimeSpan")
@@ -3543,7 +3543,7 @@ haskell-8.6-dotnet-timespan
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1cm80lc3p8bpzj0crxccx2fp33p171gz4j56r9fc5g5kza390nrb")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/dual")
     (synopsis "Dual category")
     (description "")
@@ -3570,7 +3570,7 @@ haskell-8.6-dual
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/kazu-yamamoto/easy-file")
     (synopsis "Cross-platform File handling")
     (description "Cross-platform File handling for Unix\\/Mac\\/Windows")
@@ -3598,7 +3598,7 @@ haskell-8.6-easy-file
        #:configure-flags (list "-f-example")
        #:cabal-revision
        ("1" "0br8wfiybcw5hand4imiw0i5hacdmrax1dv8g95f35gazffbx42l")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/RyanGlScott/echo")
     (synopsis
      "A cross-platform, cross-console way to handle echoing terminal input")
@@ -3640,7 +3640,7 @@ haskell-8.6-echo
        (list "-ftest-properties" "-ftest-hlint" "-ftest-doctests" "-fno-donna")
        #:cabal-revision
        ("6" "0qyx6cl52fnll8lp6v9133wfvv3zhvq7v2crn441mng520j9wp48")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://thoughtpolice.github.com/hs-ed25519")
     (synopsis "Ed25519 cryptographic signatures")
     (description
@@ -3670,7 +3670,7 @@ haskell-8.6-ed25519
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/erf")
     (synopsis "The error function, erf, and related functions.")
     (description
@@ -3699,7 +3699,7 @@ haskell-8.6-erf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/pmlodawski/error-util")
     (synopsis "Set of utils and operators for error handling")
     (description "Set of utils and operators for error handling")
@@ -3726,7 +3726,7 @@ haskell-8.6-error-util
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://wrengr.org/")
     (synopsis "Efficient exact computation of combinatoric functions.")
     (description "Efficient exact computation of combinatoric functions.")
@@ -3753,7 +3753,7 @@ haskell-8.6-exact-combinatorics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~bkomuves/")
     (synopsis "Finding out the full path of the executable.")
     (description
@@ -3787,7 +3787,7 @@ haskell-8.6-executable-path
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/JustusAdam/exit-codes")
     (synopsis "Exit codes as defined by BSD")
     (description
@@ -3815,7 +3815,7 @@ haskell-8.6-exit-codes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/extensible-exceptions")
     (synopsis "Extensible exceptions")
     (description "This package provides extensible exceptions for both new and
@@ -3843,7 +3843,7 @@ haskell-8.6-extensible-exceptions
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/athanclark/extractable-singleton#readme")
     (synopsis
               "A functor, where the \"stored\" value is isomorphic to Identity")
@@ -3870,7 +3870,6 @@ haskell-8.6-extractable-singleton
        #:haskell ,ghc
        #:haddock? #f
        #:configure-flags (list)))
-    (outputs (list "out" "static"))
     (home-page "https://prime.haskell.org/wiki/Libraries/Proposals/MonadFail")
     (synopsis "Forward-compatible MonadFail class")
     (description
@@ -3906,7 +3905,7 @@ haskell-8.6-fail
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/fast-math")
     (synopsis
      "Non IEEE-754 compliant compile-time floating-point optimisations")
@@ -3942,7 +3941,7 @@ haskell-8.6-fast-math
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/iand675/feature-flags")
     (synopsis
      "A simple library for dynamically enabling and disabling functionality.")
@@ -3971,7 +3970,7 @@ haskell-8.6-feature-flags
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/juhp/fedora-dists")
     (synopsis "Library for Fedora distribution versions")
     (description
@@ -4002,7 +4001,7 @@ haskell-8.6-fedora-dists
        #:configure-flags (list "-fcontainers042")
        #:cabal-revision
        ("1" "03igp624mb9lvz6yllbl8spj70r6r3s51lkl9bva76b1rasc6rix")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/fgl")
     (synopsis "Martin Erwig's Functional Graph Library")
     (description
@@ -4032,7 +4031,7 @@ haskell-8.6-fgl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/snoyberg/file-embed")
     (synopsis "Use Template Haskell to embed file contents directly.")
     (description "Use Template Haskell to read a file or all the files in a
@@ -4063,7 +4062,7 @@ haskell-8.6-file-embed
        #:configure-flags (list)
        #:cabal-revision
        ("1" "15ghhsvd9r18ifrqh3x76p6hln4as185dnj5zzanbbfv684j9qsc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/strake/filtrable.hs")
     (synopsis "Class of filtrable containers")
     (description "")
@@ -4090,7 +4089,7 @@ haskell-8.6-filtrable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mniip/finite-typelits")
     (synopsis
      "A type inhabited by finitely many values, indexed by type-level naturals.")
@@ -4119,7 +4118,7 @@ haskell-8.6-finite-typelits
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Lysxia/first-class-families#readme")
     (synopsis "First class type families")
     (description "First class type families,
@@ -4149,7 +4148,7 @@ haskell-8.6-first-class-families
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/kowainik/first-class-patterns")
     (synopsis "First class patterns and pattern matching, using type families")
     (description
@@ -4193,7 +4192,7 @@ haskell-8.6-first-class-patterns
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/fixed")
     (synopsis "Signed 15.16 precision fixed point arithmetic")
     (description "Signed 15.16 precision fixed point arithmetic")
@@ -4220,7 +4219,7 @@ haskell-8.6-fixed
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fgmp")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://bitbucket.org/dafis/floatshow")
     (synopsis "Alternative faster String representations for Double and Float,
 String representations for more general numeric types.")
@@ -4263,7 +4262,7 @@ haskell-8.6-floatshow
        #:configure-flags (list)
        #:cabal-revision
        ("1" "17a6fjw9rm350llz4ygwkn66pkbl6fmsa7c8hqpx5691hcqx0712")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/sjoerdvisscher/fmlist")
     (synopsis "FoldMap lists")
     (description
@@ -4294,7 +4293,7 @@ haskell-8.6-fmlist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/nikita-volkov/focus")
     (synopsis
      "A general abstraction for manipulating elements of container data structures")
@@ -4335,7 +4334,7 @@ haskell-8.6-focus
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/chrisdone/foreign-store")
     (synopsis
      "Store a stable pointer in a foreign context to be retrieved later.")
@@ -4364,7 +4363,7 @@ haskell-8.6-foreign-store
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/System-Indystress/ForkableMonad#readme")
     (synopsis "An implementation of forkIO for monad stacks.")
     (description
@@ -4391,7 +4390,7 @@ haskell-8.6-forkable-monad
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/peti/funcmp")
     (synopsis
      "Functional MetaPost is a Haskell frontend to the MetaPost language")
@@ -4435,7 +4434,7 @@ haskell-8.6-funcmp
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/gc/")
     (synopsis "Poor Richard's Memory Manager")
     (description
@@ -4476,7 +4475,7 @@ haskell-8.6-gc
        #:haddock? #t
        #:configure-flags
        (list "-fbytestring-in-base")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages xml) expat)
                              (@ (gnu packages fontutils)
@@ -4486,7 +4485,7 @@ haskell-8.6-gc
                              (@ (gnu packages gd) gd)
                              (@ (gnu packages image) ijg-libjpeg)
                              (@ (gnu packages image) libpng)
-                             (@ (gnu packages compression) zlib)))
+                             (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/gd")
     (synopsis "A Haskell binding to a subset of the GD graphics library")
     (description "This is a binding to a (currently very small) subset of
@@ -4516,7 +4515,7 @@ haskell-8.6-gd
        #:configure-flags (list)
        #:cabal-revision
        ("4" "02dinasxkbrysdhl8w1c1a1ldiqna49zfbl9hgbk4xlnph0xw5wr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/ghc-compact")
     (synopsis "In memory storage of deeply evaluated data structure")
     (description
@@ -4555,7 +4554,7 @@ haskell-8.6-ghc-compact
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-deverror")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/clash-lang/ghc-tcplugins-extra")
     (synopsis "Utilities for writing GHC type-checker plugins")
     (description "Utilities for writing GHC type-checker plugins, such as
@@ -4584,7 +4583,7 @@ haskell-8.6-ghc-tcplugins-extra
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ghcjs/CodeMirror")
     (synopsis "Installs CodeMirror JavaScript files")
     (description "CodeMirror is a versatile text editor implemented in
@@ -4614,7 +4613,7 @@ haskell-8.6-ghcjs-codemirror
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/snoyberg/githash#readme")
     (synopsis "Compile git revision info into Haskell projects")
     (description
@@ -4641,7 +4640,7 @@ haskell-8.6-githash
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/groups")
     (synopsis "Haskell 98 groups")
     (description "Haskell 98 groups. A group is a monoid with invertibility.")
@@ -4668,7 +4667,7 @@ haskell-8.6-groups
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-debug")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://hub.darcs.net/thielema/guarded-allocation/")
     (synopsis "Memory allocation with added stress tests and integrity checks")
     (description
@@ -4718,7 +4717,7 @@ haskell-8.6-guarded-allocation
        #:configure-flags (list "-fterminfo")
        #:cabal-revision
        ("2" "122dlq7yxir5l23zbyiwsf3q666rrjpan92a7cr09jlybwi5dwzf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/judah/haskeline")
     (synopsis "A command-line interface for user input, written in Haskell.")
     (description
@@ -4751,7 +4750,7 @@ haskell-8.6-haskeline
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell-gi/haskell-gi")
     (synopsis "Overloading support for haskell-gi")
     (description
@@ -4779,7 +4778,7 @@ haskell-8.6-haskell-gi-overloading
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/yav/haskell-lexer")
     (synopsis "A fully compliant Haskell 98 lexer.")
     (description "A fully compliant Haskell 98 lexer.")
@@ -4805,7 +4804,7 @@ haskell-8.6-haskell-lexer
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/heap")
     (synopsis "Heaps in Haskell")
     (description "A flexible Haskell implementation of minimum, maximum,
@@ -4833,7 +4832,7 @@ haskell-8.6-heap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/heaps/")
     (synopsis "Asymptotically optimal Brodal/Okasaki heaps.")
     (description
@@ -4861,7 +4860,7 @@ haskell-8.6-heaps
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tmcgilchrist/hedgehog-corpus")
     (synopsis "hedgehog-corpus")
     (description "Collection of strings for testing things.")
@@ -4887,7 +4886,7 @@ haskell-8.6-hedgehog-corpus
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://hackage.haskell.org/package/heredoc")
     (synopsis "multi-line string / here document using QuasiQuotes")
     (description "multi-line string / here document using QuasiQuotes")
@@ -4915,7 +4914,7 @@ haskell-8.6-heredoc
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0khmrdni6njr4wxgz15yz77l8ar4qm2jj6v0lvfnwqdms4s6i80y")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/hex")
     (synopsis "Convert strings into hexadecimal and back.")
     (description "Convert strings into hexadecimal and back.")
@@ -4942,7 +4941,7 @@ haskell-8.6-hex
        #:haddock? #t
        #:configure-flags
        (list "-f-use-integer-simple")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages multiprecision) mpfr)))
     (home-page "https://github.com/michalkonecny/hmpfr")
@@ -4977,7 +4976,7 @@ haskell-8.6-hmpfr
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/hostname")
     (synopsis
      "A very simple package providing a cross-platform means of determining the hostname")
@@ -5005,7 +5004,7 @@ haskell-8.6-hostname
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-foptimize")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/paulrzcz/hquantlib-time.git")
     (synopsis
      "HQuantLib Time is a business calendar functions extracted from HQuantLib")
@@ -5036,7 +5035,7 @@ haskell-8.6-hquantlib-time
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1dj1r73v31bd2091pqvrg7vdc3lgjh373ynxn49dlhqmyw45kiw8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://codeberg.org/elblake/hs-php-session")
     (synopsis "PHP session and values serialization")
     (description
@@ -5065,7 +5064,7 @@ haskell-8.6-hs-php-session
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-in-ghc-tree")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/hsc2hs")
     (synopsis
      "A preprocessor that helps with writing Haskell bindings to C code")
@@ -5104,7 +5103,7 @@ haskell-8.6-hsc2hs-notests
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~malcolm/hscolour/")
     (synopsis "Colourise Haskell code.")
     (description
@@ -5139,7 +5138,7 @@ haskell-8.6-hscolour
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/html")
     (synopsis "HTML combinator library")
     (description "This package contains a combinator library for constructing
@@ -5167,7 +5166,7 @@ haskell-8.6-html
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/haskell-works/hw-diagnostics#readme")
     (synopsis "Diagnostics library")
     (description "Please see README.md")
@@ -5194,7 +5193,7 @@ haskell-8.6-hw-diagnostics
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-profile")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/UweSchmidt/hxt")
     (synopsis "Character properties and classes for XML and Unicode")
     (description
@@ -5225,7 +5224,7 @@ haskell-8.6-hxt-charproperties
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/iconv")
     (synopsis "String encoding conversion")
     (description "Provides an interface to the POSIX iconv library functions
@@ -5252,7 +5251,7 @@ haskell-8.6-iconv
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/patperry/hs-ieee754")
     (synopsis "Utilities for dealing with IEEE floating point numbers")
     (description
@@ -5281,7 +5280,7 @@ haskell-8.6-ieee754
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/winterland1989/if")
     (synopsis "(?) and (?>) conditional operator")
     (description
@@ -5308,7 +5307,7 @@ haskell-8.6-if
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~thielema/iff/")
     (synopsis "Constructing and dissecting IFF files")
     (description
@@ -5343,7 +5342,7 @@ haskell-8.6-iff
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/minad/ihs")
     (synopsis "Interpolated Haskell")
     (description
@@ -5370,7 +5369,7 @@ haskell-8.6-ihs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/reinerp/indexed")
     (synopsis "Haskell98 indexed functors, monads, comonads")
     (description "Haskell98 indexed functors, monads, comonads")
@@ -5396,7 +5395,7 @@ haskell-8.6-indexed
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/inj")
     (synopsis "A class for injective (one-to-one) functions")
     (description "")
@@ -5425,7 +5424,7 @@ haskell-8.6-inj
        #:configure-flags (list)
        #:cabal-revision
        ("4" "1l5n3hsa8gr0wzc3cb32ha2j8kcf976i84z04580q41macf0r0h6")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hvr/int-cast")
     (synopsis "Checked conversions between integral types")
     (description
@@ -5456,7 +5455,7 @@ haskell-8.6-int-cast
        (list "-finteger-gmp" "-f-check-bounds")
        #:cabal-revision
        ("2" "0a6j3313vz7n7dn8abddyib4jggblaq89f87ib4imdwjxjajbm33")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Bodigrim/integer-logarithms")
     (synopsis "Integer logarithms.")
     (description
@@ -5489,7 +5488,7 @@ haskell-8.6-integer-logarithms
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/YoshikuniJujo/io-machine#readme")
     (synopsis "Easy I/O model to learn IO monad")
     (description "Please see README.md")
@@ -5516,7 +5515,7 @@ haskell-8.6-io-machine
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/io-manager")
     (synopsis "Skeleton library around the IO monad.")
     (description "A skeleton library to help learners of Haskell
@@ -5545,7 +5544,7 @@ haskell-8.6-io-manager
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/willdonnelly/io-storage")
     (synopsis "A key-value store in the IO monad.")
     (description
@@ -5577,7 +5576,7 @@ haskell-8.6-io-storage
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/barrucadu/irc-ctcp")
     (synopsis "A CTCP encoding and decoding library for IRC clients.")
     (description
@@ -5643,7 +5642,7 @@ haskell-8.6-irc-ctcp
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0n01pmvkqi0w9l203i1v7kb6bb867plv4h5hmzlkpnhrf5abf0zf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/iso3166-country-codes")
     (synopsis "A datatype for ISO 3166 country codes")
     (description "Defines datatype CountryCode that has a two
@@ -5672,7 +5671,7 @@ haskell-8.6-iso3166-country-codes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/HugoDaniel/iso639")
     (synopsis "ISO-639-1 language codes ")
     (description
@@ -5706,7 +5705,7 @@ haskell-8.6-iso639
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/ix-shapable")
     (synopsis "Reshape multi-dimensional arrays.")
     (description "Reshape multi-dimensional arrays.
@@ -5741,7 +5740,7 @@ haskell-8.6-ix-shapable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ndmitchell/js-dgtable#readme")
     (synopsis "Obtain minified jquery.dgtable code")
     (description
@@ -5771,7 +5770,7 @@ haskell-8.6-js-dgtable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ndmitchell/js-flot#readme")
     (synopsis "Obtain minified flot code")
     (description
@@ -5803,7 +5802,7 @@ haskell-8.6-js-flot
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ndmitchell/js-jquery#readme")
     (synopsis "Obtain minified jQuery code")
     (description
@@ -5834,8 +5833,8 @@ haskell-8.6-js-jquery
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("8" "1a8a51sz670cfh73q9l2dckfqgv59lpxk8dg5xd9fnvi2ba7wdf1")))
-    (outputs (list "out" "static" "doc"))
+       ("9" "17k52bhfyx2vpj6wpsmfjw9gbxwhc1zi1jq005lfa7hgc4ly5iw2")))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/RyanGlScott/keycode")
     (synopsis "Maps web browser keycodes to their corresponding keyboard keys")
     (description
@@ -5867,7 +5866,7 @@ haskell-8.6-keycode
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/kind-apply")
     (synopsis "Utilities to work with lists of types")
     (description
@@ -5894,7 +5893,7 @@ haskell-8.6-kind-apply
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/kmeans")
     (synopsis "K-means clustering algorithm")
     (description "A simple library for k-means clustering")
@@ -5920,7 +5919,7 @@ haskell-8.6-kmeans
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/louispan/l10n#readme")
     (synopsis
      "Enables providing localization as typeclass instances in separate files.")
@@ -5947,7 +5946,7 @@ haskell-8.6-l10n
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/chrisdone/labels#readme")
     (synopsis "Anonymous records via named tuples")
     (description
@@ -5974,7 +5973,7 @@ haskell-8.6-labels
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/matt-noonan/lawful#readme")
     (synopsis "Assert the lawfulness of your typeclass instances.")
     (description "Assert the lawfulness of your typeclass instances.")
@@ -6001,7 +6000,7 @@ haskell-8.6-lawful
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/lazy-csv")
     (synopsis "Efficient lazy parsers for CSV (comma-separated values).")
     (description "The CSV format is defined by RFC 4180.
@@ -6036,7 +6035,7 @@ haskell-8.6-lazy-csv
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/rudymatela/leancheck#readme")
     (synopsis "Enumerative property-based testing")
     (description
@@ -6074,7 +6073,7 @@ haskell-8.6-leancheck
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/lens-family-core")
     (synopsis "Haskell 98 Lens Families")
     (description
@@ -6115,7 +6114,7 @@ haskell-8.6-lens-family-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages libffi) libffi)
                   (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages libffi) libffi)))
@@ -6145,7 +6144,7 @@ haskell-8.6-libffi
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/liskin/loch-th")
     (synopsis
      "Support for precise error locations in source files (Template Haskell version)")
@@ -6176,7 +6175,7 @@ haskell-8.6-loch-th
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fuseffi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages commencement) gcc-toolchain-12)))
     (home-page "http://code.haskell.org/~wren/")
@@ -6210,7 +6209,7 @@ haskell-8.6-logfloat
        #:configure-flags (list)
        #:cabal-revision
        ("7" "07gc1zl4a38p3yg7md1hfrb2ca7yjzansh1mv8xs0c89jaqbgcr5")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages compression) lzip)))
     (home-page "https://github.com/hvr/lzma")
@@ -6256,7 +6255,7 @@ haskell-8.6-lzma
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0qdb2crfj628ii90fzwv2m2m87fcj47x85y5m1v61f6avzxipmm3")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/managed")
     (synopsis "A monad for managed values")
     (description
@@ -6300,7 +6299,7 @@ haskell-8.6-managed
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1qh5ifbwh62v14ygg3fj22wqimylph17ykng70vqv5x2rkp630jq")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/monadfix/microlens")
     (synopsis
      "A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this.")
@@ -6355,7 +6354,7 @@ haskell-8.6-microlens
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/yesodweb/wai")
     (synopsis "Basic mime-type handling types and functions")
     (description
@@ -6382,7 +6381,7 @@ haskell-8.6-mime-types
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fwin32-2-5-3")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/RyanGlScott/mintty")
     (synopsis
      "A reliable way to detect the presence of a MinTTY console on Windows")
@@ -6426,7 +6425,7 @@ haskell-8.6-mintty
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/missing-foreign")
     (synopsis "Convenience functions for FFI work")
     (description "Add several functions missing in the standard
@@ -6457,7 +6456,7 @@ haskell-8.6-missing-foreign
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-mmaptest")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/mmap")
     (synopsis "Memory mapped files for POSIX and Windows")
     (description "This library provides a wrapper to mmap(2) or MapViewOfFile,
@@ -6488,7 +6487,7 @@ haskell-8.6-mmap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/fumieval/monad-skeleton")
     (synopsis "Monads of program skeleta")
     (description "Fast operational monad library")
@@ -6517,7 +6516,7 @@ haskell-8.6-monad-skeleton
        #:configure-flags (list)
        #:cabal-revision
        ("1" "01bb0a8h51inkn0hyvgw5iw662q6853j47bvjdha8a2z3fwapfya")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/monad-st")
     (synopsis "Provides a MonadST class")
     (description "Provides a MonadST class")
@@ -6544,7 +6543,7 @@ haskell-8.6-monad-st
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/monads-tf")
     (synopsis "Monad classes, using type families")
     (description
@@ -6578,7 +6577,7 @@ haskell-8.6-monads-tf
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/mountpoints")
     (synopsis "list mount points")
     (description "Lists currently mounted filesystems.
@@ -6606,7 +6605,7 @@ haskell-8.6-mountpoints
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/haskell/mtl")
     (synopsis "Monad classes, using functional dependencies")
     (description
@@ -6638,7 +6637,7 @@ haskell-8.6-mtl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-programs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/massysett/multiarg")
     (synopsis "Command lines for options that take multiple arguments")
     (description "multiarg helps you build command-line parsers for
@@ -6667,7 +6666,7 @@ haskell-8.6-multiarg
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://hub.darcs.net/scravy/multimap")
     (synopsis "A multimap.")
     (description
@@ -6707,7 +6706,7 @@ haskell-8.6-multimap
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/multiset")
     (synopsis "The Data.MultiSet container type")
     (description
@@ -6738,7 +6737,7 @@ haskell-8.6-multiset
        #:configure-flags (list)
        #:cabal-revision
        ("1" "006mxzpb8qq603nsxf3ywf0irms7yvz54pf72pzi0rihz9lvw3sl")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/nominolo/murmur-hash")
     (synopsis "MurmurHash2 implementation for Haskell.")
     (description
@@ -6771,8 +6770,8 @@ haskell-8.6-murmur-hash
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("3" "1rfli2b4asgasvgp7zjvydhxbyd0vx44vr7yck2760wz1crkzhhn")))
-    (outputs (list "out" "static" "doc"))
+       ("4" "05m3mw2prbag8bshayvvigxr70jk32398sn3n5gjv1nfhbsplwcr")))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/monadfix/named")
     (synopsis "Named parameters (keyword arguments) for Haskell")
     (description
@@ -6823,7 +6822,7 @@ haskell-8.6-named
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://khibino.github.io/haskell-relational-record/")
     (synopsis "Manipulate name strings for TH")
     (description "This package includes functions to manipulate name string
@@ -6851,7 +6850,7 @@ haskell-8.6-names-th
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/nano-erl")
     (synopsis "Small library for Erlang-style actor semantics")
     (description
@@ -6886,7 +6885,7 @@ haskell-8.6-nano-erl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/hspec/nanospec#readme")
     (synopsis "A lightweight implementation of a subset of Hspec's API")
     (description
@@ -6916,7 +6915,6 @@ haskell-8.6-nanospec
        (list "-fhashable" "-fbinary" "-ftemplate-haskell")
        #:cabal-revision
        ("4" "0qccypqkfs7hi0v2bsjfqfhpi2jgsnpfwi9vmcqh7jxk5g08njk0")))
-    (outputs (list "out" "static"))
     (home-page "http://github.com/ekmett/nats/")
     (synopsis "Natural numbers")
     (description "Natural numbers.")
@@ -6942,7 +6940,7 @@ haskell-8.6-nats
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell/network")
     (synopsis "Low-level networking interface")
     (description
@@ -6980,7 +6978,7 @@ haskell-8.6-network
        #:configure-flags (list)
        #:cabal-revision
        ("1" "07kiw56lhc56kqrnvpa11f5nnnid6by3aq00jrkcbbg7w0q71a6d")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/jacobstanley/network-info")
     (synopsis "Access the local computer's basic network configuration")
     (description "This library provides simple read-only access to the
@@ -7017,7 +7015,7 @@ haskell-8.6-network-info
        #:configure-flags (list)
        #:cabal-revision
        ("3" "0yll88ydchd2gqcvdk28fchf2vygpd42ky2bigg4ga08jan2nacx")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/newtype")
     (synopsis "A typeclass and set of functions for working with newtypes.")
     (description
@@ -7046,7 +7044,7 @@ haskell-8.6-newtype
        #:haddock? #t
        #:configure-flags
        (list "-fallow-relative-paths")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/peti/nix-paths")
     (synopsis "Knowledge of Nix's installation directories.")
     (description "This module provides full paths to various Nix
@@ -7075,7 +7073,7 @@ haskell-8.6-nix-paths
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/cdornan/no-value#readme")
     (synopsis "A type class for choosing sentinel-like values")
     (description
@@ -7104,7 +7102,7 @@ haskell-8.6-no-value
        #:configure-flags (list)
        #:cabal-revision
        ("1" "074xgrxs8ynq29bsx66an03q0457f80ga9jf4sqi0q34jgfpmbcv")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/YoshikuniJujo/nowdoc#readme")
     (synopsis "Here document without variable expansion like PHP Nowdoc")
     (description
@@ -7132,7 +7130,7 @@ haskell-8.6-nowdoc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/numeric-extras")
     (synopsis "Useful tools from the C standard library")
     (description "Useful tools from the C standard library")
@@ -7158,7 +7156,7 @@ haskell-8.6-numeric-extras
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tonyday567/numhask#readme")
     (synopsis "numeric classes")
     (description "A numeric class heirarchy.")
@@ -7187,7 +7185,7 @@ haskell-8.6-numhask
        #:configure-flags (list)
        #:cabal-revision
        ("2" "003w6zzg5dzrmc9anffvvf42hcimzqz0nxkvv25k5kbizfmfjdfj")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/bjornbm/numtype-dk")
     (synopsis "Type-level integers, using TypeNats, Data
 Kinds, and Closed Type Families.")
@@ -7224,7 +7222,7 @@ haskell-8.6-numtype-dk
        #:configure-flags (list)
        #:cabal-revision
        ("2" "04b9vn007hlvsrx4ksd3r8r3kbyaj2kvwxchdrmd4370qzi8p6gs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/old-locale")
     (synopsis "locale library")
     (description "This package provides the ability to adapt to
@@ -7252,7 +7250,7 @@ haskell-8.6-old-locale
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/yi-editor/oo-prototypes")
     (synopsis "Support for OO-like prototypes")
     (description "Support for OO-like prototypes")
@@ -7279,7 +7277,7 @@ haskell-8.6-oo-prototypes
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/rightfold/open-browser")
     (synopsis "Open a web browser from Haskell.")
     (description "Open a web browser from Haskell.
@@ -7309,7 +7307,7 @@ haskell-8.6-open-browser
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1f3j092lk2qa6hi2p4iciyyxg27mzm37dlcw5hg3ch2wh6jw0a37")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/optional-args")
     (synopsis "Optional function arguments")
     (description
@@ -7340,7 +7338,7 @@ haskell-8.6-optional-args
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/ordered-containers")
     (synopsis
      "Set- and Map-like types that remember the order elements were inserted")
@@ -7368,7 +7366,7 @@ haskell-8.6-ordered-containers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/jship/overhang#readme")
     (synopsis "Hang loose with your lambdas!")
     (description "Combinators for clean, \"hanging\" lambdas.")
@@ -7395,7 +7393,7 @@ haskell-8.6-overhang
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/harendra-kumar/packcheck")
     (synopsis "Universal build and CI testing for Haskell packages")
     (description
@@ -7446,7 +7444,7 @@ haskell-8.6-packcheck
        #:configure-flags (list)
        #:cabal-revision
        ("5" "1q45wzpf2sda0244l55gakl3g5zqhcb27m86nhl3vslcjc35mpbf")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/parallel")
     (synopsis "Parallel programming library")
     (description
@@ -7482,7 +7480,7 @@ haskell-8.6-parallel
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/BartMassey/parseargs")
     (synopsis "Parse command-line arguments")
     (description "Full-featured command-line argument parsing library.")
@@ -7509,7 +7507,7 @@ haskell-8.6-parseargs
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-dev")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mrkkrp/parser-combinators")
     (synopsis
      "Lightweight package providing commonly useful parser combinators")
@@ -7538,7 +7536,7 @@ haskell-8.6-parser-combinators
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/nikita-volkov/partial-handler ")
     (synopsis "A composable exception handler")
     (description
@@ -7604,7 +7602,7 @@ haskell-8.6-partial-handler
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.informatik.uni-marburg.de/~rendel/unparse")
     (synopsis "Partial isomorphisms.")
     (description "Partial isomorphisms as described in the
@@ -7643,7 +7641,7 @@ haskell-8.6-partial-isomorphisms
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Xe/pathwalk")
     (synopsis "Path walking utilities for Haskell programs")
     (description
@@ -7686,7 +7684,7 @@ haskell-8.6-pathwalk
        #:configure-flags (list)
        #:cabal-revision
        ("3" "0wl22dnz6ld300cg6id3lw991bp8kdfi8h0nbv37vn79i1zdcj5n")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/peano")
     (synopsis "Peano numbers")
     (description "")
@@ -7713,7 +7711,7 @@ haskell-8.6-peano
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/phantom-state")
     (synopsis
      "Phantom State Transformer. Like State Monad, but without values.")
@@ -7747,7 +7745,7 @@ haskell-8.6-phantom-state
        #:configure-flags (list)
        #:cabal-revision
        ("1" "11yg5pjci1d6p5ml0ic4vqn70vjx8vvhqs20rahgfqhh8palkyw9")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/fpco/pid1#readme")
     (synopsis
      "Do signal handling and orphan reaping for Unix PID1 init processes")
@@ -7776,7 +7774,7 @@ haskell-8.6-pid1
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ahammar/placeholders")
     (synopsis "Placeholders for use while developing Haskell code")
     (description "While working on some Haskell code, it is often useful to
@@ -7811,7 +7809,7 @@ haskell-8.6-placeholders
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/pointedlist")
     (synopsis
      "A zipper-like comonad which works as a list, tracking a position.")
@@ -7844,7 +7842,7 @@ haskell-8.6-pointedlist
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fbase4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~wren/")
     (synopsis "Some common point-free combinators.")
     (description "Some common point-free combinators.")
@@ -7871,7 +7869,7 @@ haskell-8.6-pointless-fun
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~malcolm/polyparse/")
     (synopsis "A variety of alternative parser combinator libraries.")
     (description
@@ -7906,7 +7904,7 @@ haskell-8.6-polyparse
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/cdornan/enum-text#readme")
     (synopsis "type Possibly a = Either String a")
     (description
@@ -7934,7 +7932,7 @@ haskell-8.6-possibly
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/post-mess-age")
     (synopsis
      "Send messages to a handle concurrently without getting them mixed.")
@@ -7967,7 +7965,7 @@ haskell-8.6-post-mess-age
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/prelude-compat")
     (synopsis
      "Provide Prelude and Data.List with fixed content across GHC versions")
@@ -8051,7 +8049,7 @@ haskell-8.6-prelude-compat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fbase4")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~wren/")
     (synopsis
      "A redefinition of the Prelude's Enum class in order to render it safe.")
@@ -8085,7 +8083,7 @@ haskell-8.6-prelude-safeenum
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/chrisdone/present")
     (synopsis "Make presentations for data types.")
     (description "Make presentations for data types.")
@@ -8112,7 +8110,7 @@ haskell-8.6-present
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ddssff/pretty-class")
     (synopsis "Pretty printing class similar to Show.")
     (description
@@ -8145,7 +8143,7 @@ haskell-8.6-pretty-class
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/pretty-hex")
     (synopsis "A library for hex dumps of ByteStrings")
     (description
@@ -8174,7 +8172,7 @@ haskell-8.6-pretty-hex
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/prettyclass")
     (synopsis "Pretty printing class similar to Show.")
     (description "Pretty printing class similar to Show, based on the HughesPJ
@@ -8202,7 +8200,7 @@ haskell-8.6-prettyclass
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/sebfisch/primes")
     (synopsis "Efficient, purely functional generation of prime numbers")
     (description
@@ -8235,7 +8233,7 @@ haskell-8.6-primes
        #:configure-flags (list)
        #:cabal-revision
        ("1" "18a14k1yiam1m4l29rin9a0y53yp3nxvkz358nysld8aqwy2qsjv")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/haskell/primitive")
     (synopsis "Primitive memory-related operations")
     (description
@@ -8262,7 +8260,7 @@ haskell-8.6-primitive
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/RyanGlScott/proxied")
     (synopsis "Make functions consume Proxy instead of undefined")
     (description
@@ -8316,7 +8314,7 @@ haskell-8.6-proxied
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1pv5d7bm2rgap7llp5vjsplrg048gvf0226y0v19gpvdsx7n4rvv")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/random")
     (synopsis "random number library")
     (description "This package provides a basic random number generation
@@ -8347,7 +8345,7 @@ haskell-8.6-random
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1idh1iz15pzdhrhy19584i9ahz41ijbmf56wbb2wns2kipy6w9lr")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://haskell-distributed.github.com")
     (synopsis
      "Like Data.Dynamic/Data.Typeable but with support for rank-1 polymorphic types")
@@ -8378,7 +8376,7 @@ haskell-8.6-rank1dynamic
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/xtendo-org/rawfilepath#readme")
     (synopsis "Use RawFilePath instead of FilePath")
     (description "Please see README.md")
@@ -8405,7 +8403,7 @@ haskell-8.6-rawfilepath
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tolysz/rawstring-qm")
     (synopsis "Simple raw string quotation and dictionary interpolation")
     (description
@@ -8434,7 +8432,7 @@ haskell-8.6-rawstring-qm
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-examples")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/yamadapc/haskell-read-editor")
     (synopsis
      "Opens a temporary file on the system's EDITOR and returns the resulting edits")
@@ -8465,7 +8463,7 @@ haskell-8.6-read-editor
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0dywlvxjszqa1dj5r1cva0viv2l1hm8mw75zddnf96pfpd00fmga")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mightybyte/readable")
     (synopsis "Reading from Text and ByteString")
     (description
@@ -8494,7 +8492,7 @@ haskell-8.6-readable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ndmitchell/record-hasfield#readme")
     (synopsis "A version of GHC.Records as available in future GHCs.")
     (description
@@ -8523,7 +8521,7 @@ haskell-8.6-record-hasfield
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/refact")
     (synopsis "Specify refactorings to perform with apply-refact")
     (description
@@ -8551,7 +8549,7 @@ haskell-8.6-refact
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-mkunicodedata")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/rfc5051")
     (synopsis "Simple unicode collation as per RFC5051.")
     (description
@@ -8590,7 +8588,7 @@ haskell-8.6-rfc5051
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/matt-noonan/roles/")
     (synopsis "Composable class-based roles")
     (description "Composable class-based roles")
@@ -8617,7 +8615,7 @@ haskell-8.6-roles
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/rosezipper")
     (synopsis "Generic zipper implementation for Data.Tree")
     (description "A Haskell datastructure for working with locations in
@@ -8645,7 +8643,7 @@ haskell-8.6-rosezipper
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tejon/safe-foldable#readme")
     (synopsis "Safe wrappers for null-partial Foldable operations")
     (description "")
@@ -8671,7 +8669,7 @@ haskell-8.6-safe-foldable
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Lysxia/scanf#readme")
     (synopsis "Easy and type-safe format strings for parsing and printing")
     (description "A lightweight library for one-off parsing and printing.
@@ -8703,7 +8701,7 @@ haskell-8.6-scanf
        (list "-fhashable" "-fbinary" "-fbytestring" "-f-bytestring-builder" "-fcontainers" "-fdeepseq" "-ftagged" "-ftext" "-ftransformers" "-funordered-containers")
        #:cabal-revision
        ("1" "1inqcxrzzs8xz60pvbmznyi6g6xwzpxv7p6dqlcwariz31grzvs1")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/semigroups/")
     (synopsis "Anything that associates")
     (description
@@ -8731,7 +8729,7 @@ haskell-8.6-semigroups
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/semiring-simple")
     (synopsis "A module for dealing with semirings.")
     (description
@@ -8762,7 +8760,7 @@ haskell-8.6-semiring-simple
        #:configure-flags (list)
        #:cabal-revision
        ("2" "06jpxqz5444k19p1n4i4yf2pvql37w9ngssp1grxl42dxk2bcg94")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/haskell-servant/servant-auth#readme")
     (synopsis "Authentication combinators for servant")
     (description
@@ -8798,7 +8796,7 @@ haskell-8.6-servant-auth
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0ny4g3kjys0hqg41mnwrsymy1bwhl8l169kis4y4fa58sb06m4f5")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/setenv")
     (synopsis "A cross-platform library for setting environment variables")
     (description
@@ -8831,7 +8829,7 @@ haskell-8.6-setenv
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/aelve/shortcut-links")
     (synopsis "Link shortcuts for use in text markup")
     (description
@@ -8864,7 +8862,7 @@ haskell-8.6-shortcut-links
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1zr6xw4fvgx187yiqy7n0r9mnasyv1hxg2q9xzw3lmsf4z3xz6y7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Lysxia/show-combinators#readme")
     (synopsis "Combinators to write Show instances")
     (description
@@ -8894,7 +8892,7 @@ haskell-8.6-show-combinators
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1lknm1jr6h5qpixc727aj3zbmj4ia21r9lb8gzj50iildgmfk33b")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "https://github.com/blockscope/flare-timing/tree/master/siggy-chardust#readme")
     (synopsis "Rounding rationals to significant digits and decimal places.")
@@ -8922,7 +8920,7 @@ haskell-8.6-siggy-chardust
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/pmlodawski/signal")
     (synopsis "Multiplatform signal support for Haskell")
     (description
@@ -8950,7 +8948,7 @@ haskell-8.6-signal
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/simple-cmd")
     (synopsis "Simple String-based process commands")
     (description
@@ -8982,7 +8980,7 @@ haskell-8.6-simple-cmd
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "http://twanvl.nl/blog/haskell/simple-reflection-of-expressions")
     (synopsis "Simple reflection of expressions containing variables")
@@ -9013,7 +9011,7 @@ haskell-8.6-simple-reflect
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/athanclark/since#readme")
     (synopsis "Get the number of seconds since the last invocation")
     (description "")
@@ -9042,7 +9040,7 @@ haskell-8.6-since
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0vl2y19l7xhlq08f91ggycj4imfdxvkj2fsaz8ifc0waxk3q7ja8")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/dtaskoff/skip-var#readme")
     (synopsis "Skip variables")
     (description
@@ -9072,7 +9070,7 @@ haskell-8.6-skip-var
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1y5v3nsin8iyxvh0abfhs7ma75p5zjvha0lp41801pdiikacfzha")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/snowflake")
     (synopsis
      "A loose port of Twitter Snowflake to Haskell. Generates arbitrary precision, unique, time-sortable identifiers.")
@@ -9102,7 +9100,7 @@ haskell-8.6-snowflake
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0nh92nja8ybk9mzn4s4pml4hqa6snhhnng5y94y31l5sml3si9wi")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/sop-core")
     (synopsis "True Sums of Products")
     (description
@@ -9143,7 +9141,7 @@ haskell-8.6-sop-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/cdornan/sort")
     (synopsis "A Haskell sorting toolkit")
     (description "A library of general-purpose sorting utilities.")
@@ -9170,7 +9168,7 @@ haskell-8.6-sort
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "https://github.com/Daniel-Diaz/sorted-list/blob/master/README.md")
     (synopsis "Type-enforced sorted lists and related functions.")
@@ -9222,7 +9220,7 @@ haskell-8.6-sorted-list
        #:configure-flags (list)
        #:cabal-revision
        ("1" "09s5jjcsg4g4qxchq9g2l4i9d5zh3rixpkbiysqcgl69kj8mwv74")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/spoon")
     (synopsis "Catch errors thrown from pure computations.")
     (description
@@ -9251,7 +9249,7 @@ haskell-8.6-spoon
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mainland/srcloc")
     (synopsis "Data types for managing source code locations.")
     (description
@@ -9279,7 +9277,7 @@ haskell-8.6-srcloc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/joeyadams/haskell-stm-delay")
     (synopsis "Updatable one-shot timer polled with STM")
     (description
@@ -9317,7 +9315,7 @@ haskell-8.6-stm-delay
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/louispan/stm-extras#readme")
     (synopsis "Extra STM functions")
     (description "Please see README.md")
@@ -9344,7 +9342,7 @@ haskell-8.6-stm-extras
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/stm-split")
     (synopsis
      "TMVars, TVars and TChans with distinguished input and output side")
@@ -9389,7 +9387,7 @@ haskell-8.6-stm-split
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1j3frdzhlvmggqq07b7kiz6h7mim64n2frsb2d3hzsjd7jym526j")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/peti/streamproc")
     (synopsis "Stream Processer Arrow")
     (description "A continuation-based stream processor implemented as an
@@ -9418,7 +9416,7 @@ haskell-8.6-streamproc
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-fsplit-base")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.cse.unsw.edu.au/~rl/code/strict.html")
     (synopsis "Strict data types and String IO.")
     (description
@@ -9448,7 +9446,7 @@ haskell-8.6-strict
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ygale/strict-concurrency")
     (synopsis "Strict concurrency abstractions")
     (description
@@ -9481,7 +9479,7 @@ haskell-8.6-strict-concurrency
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/basvandijk/string-combinators")
     (synopsis "Polymorphic functions to build and combine stringlike values")
     (description "@@string-combinators@@ provides handy polymorphic functions
@@ -9512,7 +9510,7 @@ haskell-8.6-string-combinators
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-lib-werror")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Soostone/string-conv")
     (synopsis "Standardized conversion between string types")
     (description "Avoids the need to remember many different functions
@@ -9543,7 +9541,7 @@ haskell-8.6-string-conv
        #:configure-flags (list "-fbase4" "-f-base3")
        #:cabal-revision
        ("1" "0z5pz5dccapz9k39r2zmf056m0x2m2lj3jahhnw3mfxlmps07378")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://bitbucket.org/dafis/stringsearch")
     (synopsis "Fast searching, splitting and replacing of ByteStrings")
     (description "This package provides several functions to quickly
@@ -9577,7 +9575,7 @@ haskell-8.6-stringsearch
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/typeclasses/stripe")
     (synopsis "Types for the Stripe API")
     (description
@@ -9605,7 +9603,7 @@ haskell-8.6-stripe-concepts
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/bitonic/sundown")
     (synopsis "Bindings to the sundown markdown library")
     (description
@@ -9636,7 +9634,7 @@ haskell-8.6-sundown
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/agrafix/superbuffer#readme")
     (synopsis "Efficiently build a bytestring from smaller chunks")
     (description
@@ -9665,7 +9663,7 @@ haskell-8.6-superbuffer
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0jdbaap11pkgb6m98v57k7qnx62pqxy7pa2i7293ywa4q305qgm1")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://www.cs.drexel.edu/~mainland/")
     (synopsis "A 'Symbol' type for fast symbol comparison.")
     (description
@@ -9695,7 +9693,7 @@ haskell-8.6-symbol
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/symengine/symengine.hs#readme")
     (synopsis "SymEngine symbolic mathematics engine for Haskell")
     (description "Please see README.md")
@@ -9724,7 +9722,7 @@ haskell-8.6-symengine
        (list "-fdeepseq" "-ftransformers")
        #:cabal-revision
        ("3" "1wv9ngbj3pvs6v52dj0bli9h5vanyw3akpsmfmwsvnnian9hpkkw")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/tagged")
     (synopsis
      "Haskell 98 phantom types to avoid unsafely passing dummy arguments")
@@ -9752,7 +9750,7 @@ haskell-8.6-tagged
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/jship/tao#readme")
     (synopsis "Type-level assertion operators.")
     (description "Type-level unit testing via assertion operators/functions.")
@@ -9781,7 +9779,7 @@ haskell-8.6-tao
        (list "-f-old-time" "-f-old-bytestring")
        #:cabal-revision
        ("5" "15dqywn1lsyqb0nq1amj70mh1i079b7xwr02wbpcdzmdljg9c55w")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/tar")
     (synopsis "Reading, writing and manipulating \".tar\" archive files.")
     (description
@@ -9819,7 +9817,7 @@ haskell-8.6-tar
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/testing-type-modifiers")
     (synopsis "Data type modifiers for property based testing")
     (description
@@ -9860,7 +9858,7 @@ haskell-8.6-testing-type-modifiers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/kawu/text-binary")
     (synopsis "Binary instances for text types")
     (description "A compatibility layer providing Binary instances for strict
@@ -9891,7 +9889,7 @@ haskell-8.6-text-binary
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0gij22pwb0z8gn5k8zga8km703s65apca3rvl8bf7n8q1hq4wx86")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
     (propagated-inputs (list (@ (gnu packages icu4c) icu4c-71)))
     (home-page "https://github.com/bos/text-icu")
@@ -9945,7 +9943,7 @@ haskell-8.6-text-icu
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/glguy/th-abstraction")
     (synopsis "Nicer interface for reified information about data types")
     (description "This package normalizes variations in the interface for
@@ -9976,7 +9974,7 @@ haskell-8.6-th-abstraction
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/th-data-compat")
     (synopsis "Compatibility for data definition template of TH")
     (description "This package contains wrapped name definitions of
@@ -10004,7 +10002,7 @@ haskell-8.6-th-data-compat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/khibino/haskell-th-reify-compat/")
     (synopsis "Compatibility for the result type of TH reify")
     (description "This package contains compatible interfaces against
@@ -10032,7 +10030,7 @@ haskell-8.6-th-reify-compat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://gitlab.com/igrep/th-strict-compat")
     (synopsis "Compatibility shim for Bang and Strict in Template Haskell.")
     (description "See README")
@@ -10059,7 +10057,7 @@ haskell-8.6-th-strict-compat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-old-locale")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/khibino/haskell-time-locale-compat")
     (synopsis "Compatibile module for time-format locale")
     (description
@@ -10087,7 +10085,7 @@ haskell-8.6-time-locale-compat
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/tungd/time-locale-vietnamese#readme")
     (synopsis "Vietnamese locale for date and time format")
     (description "Vietnamese locale for date and time format")
@@ -10115,7 +10113,7 @@ haskell-8.6-time-locale-vietnamese
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1vgxfk2021jh6jk3dimchmf9f71844zj080342qvnn5lck7c7mrm")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/merijn/timeit")
     (synopsis "Time monadic computations with an IO base.")
     (description
@@ -10144,7 +10142,7 @@ haskell-8.6-timeit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://projects.haskell.org/time-ng/")
     (synopsis "Enhanced timezone handling for Data.Time")
     (description "This package endows Data.Time, from the time
@@ -10179,9 +10177,9 @@ haskell-8.6-timezone-series
        #:haddock? #t
        #:configure-flags (list "-fuse-cbits")
        #:cabal-revision
-       ("6" "15p4iycphz4q58kgq00kmz0ik0hzv3vx47k2dkp93xavb0dny46v")))
-    (outputs (list "out" "static" "doc"))
-    (home-page "https://github.com/hvr/token-bucket")
+       ("7" "1nf6ciwh4llnmxsdff0shr8vh3j9x7cpi9hgn1dlas8glz4c6vn1")))
+    (outputs (list "out" "doc"))
+    (home-page "https://github.com/haskell-hvr/token-bucket")
     (synopsis "Rate limiter using lazy bucket algorithm")
     (description
      "This package provides a variant of a [Token Bucket](https://en.wikipedia.org/wiki/Token_bucket)
@@ -10211,7 +10209,7 @@ haskell-8.6-token-bucket
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/andrewthad/torsor#readme")
     (synopsis "Torsor Typeclass")
     (description "Torsor Typeclass")
@@ -10239,7 +10237,7 @@ haskell-8.6-torsor
        #:haddock? #t
        #:configure-flags
        (list "-f-two" "-f-three" "-f-four" "-f-five" "-ffive-three" "-fmtl" "-fgeneric-deriving")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/transformers-compat/")
     (synopsis "A small compatibility shim for the transformers library")
     (description
@@ -10277,7 +10275,7 @@ haskell-8.6-transformers-compat
        #:configure-flags (list)
        #:cabal-revision
        ("1" "126gyjr8jp42md6nblx7c0kan97jgsakvsf2vzv2pj828ax1icrs")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/thumphries/transformers-fix")
     (synopsis "Monad transformer for evaluating to a fixpoint")
     (description "Monad transformer for evaluating to a fixpoint.")
@@ -10304,7 +10302,7 @@ haskell-8.6-transformers-fix
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/leftaroundabout/trivial-constraint")
     (synopsis "Constraints that any type, resp. no type fulfills")
     (description
@@ -10391,7 +10389,7 @@ haskell-8.6-trivial-constraint
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0rb9wbkbz6hsm9cz0j954a9hdyyw80r55vr99pp70ljf0ysgk9w2")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/liyang/true-name")
     (synopsis "Template Haskell hack to violate module abstractions")
     (description
@@ -10427,7 +10425,7 @@ haskell-8.6-true-name
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/tuple-th")
     (synopsis
      "Generate (non-recursive) utility functions for tuples of statically known size")
@@ -10456,7 +10454,7 @@ haskell-8.6-tuple-th
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ppetr/tuples-homogenous-h98")
     (synopsis
      "Wrappers for n-ary tuples with Traversable and Applicative/Monad instances.")
@@ -10485,7 +10483,7 @@ haskell-8.6-tuples-homogenous-h98
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/s9gf4ult/type-fun")
     (synopsis "Collection of widely reimplemented type families")
     (description "")
@@ -10512,7 +10510,7 @@ haskell-8.6-type-fun
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mvv/type-hint")
     (synopsis "Guide type inference with proxy values")
     (description
@@ -10541,7 +10539,7 @@ haskell-8.6-type-hint
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/mtesseract/type-level-integers")
     (synopsis "Provides integers lifted to the type level")
     (description "This packages provides type level integers together with
@@ -10571,7 +10569,7 @@ haskell-8.6-type-level-integers
        #:configure-flags (list)
        #:cabal-revision
        ("1" "0nzam0mkawxaq793l5isrfnc3vg8s73lca5nig0y50kfmyk30sbc")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/type-level-numbers")
     (synopsis "Type level numbers implemented using type families.")
     (description
@@ -10615,8 +10613,10 @@ haskell-8.6-type-level-numbers
      `(#:tests? #t
        #:haskell ,ghc
        #:haddock? #t
-       #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+       #:configure-flags (list)
+       #:cabal-revision
+       ("1" "0ws1bj412r79r3pak7nz2bzhl5r8rxhp9l0kdh2mnbnj286vfwdn")))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/Shou/type-operators#readme")
     (synopsis "Various type-level operators")
     (description
@@ -10645,7 +10645,7 @@ haskell-8.6-type-operators
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/sheyll/type-spec#readme")
     (synopsis "Type Level Specification by Example")
     (description "Please see README.md")
@@ -10672,7 +10672,7 @@ haskell-8.6-type-spec
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/uglymemo")
     (synopsis "A simple (but internally ugly) memoization function.")
     (description "A simple (but internally ugly) memoization function.
@@ -10703,7 +10703,7 @@ haskell-8.6-uglymemo
        #:configure-flags (list)
        #:cabal-revision
        ("1" "1ac0mncnk2x87qr53lpjzkjvqynbk76fnvj4g27d3da6x4k982w9")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/basvandijk/unbounded-delays")
     (synopsis "Unbounded thread delays and timeouts")
     (description
@@ -10736,7 +10736,7 @@ haskell-8.6-unbounded-delays
        #:configure-flags (list)
        #:cabal-revision
        ("1" "13fj2jlh44774www49fwp7h7z6gr23scfbvg745rpywys49c0559")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/unconstrained")
     (synopsis "Null constraint")
     (description "")
@@ -10763,7 +10763,7 @@ haskell-8.6-unconstrained
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/haskell-jp/unicode-show#readme")
     (synopsis "print and show in unicode")
     (description
@@ -10796,8 +10796,8 @@ haskell-8.6-unicode-show
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("1" "13cwjh03n82sgshbk4fdlvhc0pb3v979sdcdrpvnpjdqmvcprs92")))
-    (outputs (list "out" "static" "doc"))
+       ("2" "0izwkqzf8dc0v6djz5dxgc3xwvn6pl006x10j27sv21i0xsz9f0z")))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/nominolo/union-find")
     (synopsis "Efficient union and equivalence testing of sets.")
     (description
@@ -10832,7 +10832,7 @@ haskell-8.6-union-find
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/ncaq/uniq-deep#readme")
     (synopsis "uniq-deep")
     (description
@@ -10860,7 +10860,7 @@ haskell-8.6-uniq-deep
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~wren/")
     (synopsis "Unix/Posix-specific functions for ByteStrings.")
     (description
@@ -10901,7 +10901,7 @@ haskell-8.6-unix-bytestring
        #:configure-flags (list "-f-old-time")
        #:cabal-revision
        ("3" "16zpcf6wxfdxn09v3a62rpa7axsqzah6f5amcvbpky23bbf6w95h")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/jacobstanley/unix-compat")
     (synopsis "Portable POSIX-compatibility layer.")
     (description "This package provides portable implementations of parts
@@ -10933,7 +10933,7 @@ haskell-8.6-unix-compat
        #:configure-flags (list)
        #:cabal-revision
        ("3" "08ybg150pa1h1d5z6qqicfv8yfjpc3mrjp70xdn4la72zhpnb9xh")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "https://github.com/fpco/unliftio/tree/master/unliftio-core#readme")
     (synopsis "The MonadUnliftIO typeclass for unlifting monads to IO")
@@ -10961,7 +10961,7 @@ haskell-8.6-unliftio-core
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/unlit")
     (synopsis "Tool to convert literate code between styles or to code.")
     (description
@@ -10999,7 +10999,7 @@ haskell-8.6-unlit
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://code.haskell.org/~thielema/unsafe/")
     (synopsis "Unified interface to unsafe functions")
     (description
@@ -11044,8 +11044,8 @@ haskell-8.6-unsafe
        #:haddock? #t
        #:configure-flags (list)
        #:cabal-revision
-       ("2" "10ryqbxpa4bkjxwpp9c3vd9x7q4gdj38x7qnzvck25q06csfy9kq")))
-    (outputs (list "out" "static" "doc"))
+       ("3" "02pgak2rr7hmz0l58rhqwg2krj7llm34n5c6x5fa7afb7fx7lnj4")))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/utf8-light")
     (synopsis "Unicode")
     (description "Lightweight UTF8 handling.")
@@ -11074,7 +11074,7 @@ haskell-8.6-utf8-light
        #:configure-flags (list)
        #:cabal-revision
        ("3" "02vhj5gykkqa2dyn7s6gn8is1b5fdn9xcqqvlls268g7cpv6rk38")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/glguy/utf8-string/")
     (synopsis "Support for reading and writing UTF8 Strings")
     (description "A UTF8 layer for Strings. The utf8-string
@@ -11105,7 +11105,7 @@ haskell-8.6-utf8-string
        #:configure-flags (list)
        #:cabal-revision
        ("2" "0z9bf05jn5y9k5nrjksfpzjml5xchjrj3nk3jh90g8pygs2658rb")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/util")
     (synopsis "Utilities")
     (description "")
@@ -11133,7 +11133,7 @@ haskell-8.6-util
        #:configure-flags (list)
        #:cabal-revision
        ("2" "1rgyq1m58fa59l5m2ph0yk1siiv7dfxyssy2piqak6nyp11hpj0f")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/vinyl")
     (synopsis "Extensible Records")
     (description "Extensible records for Haskell with lenses.")
@@ -11159,7 +11159,7 @@ haskell-8.6-vinyl
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list "-f-safe")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/ekmett/void")
     (synopsis "A Haskell 98 logically uninhabited data type")
     (description
@@ -11186,7 +11186,7 @@ haskell-8.6-void
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://hackage.haskell.org/package/wrap")
     (synopsis "Wrap a function's return value with another function")
     (description "Wrap a function's return value with another function")
@@ -11213,7 +11213,6 @@ haskell-8.6-wrap
        #:haskell ,ghc
        #:haddock? #f
        #:configure-flags (list)))
-    (outputs (list "out" "static"))
     (home-page "https://github.com/minad/writer-cps-transformers#readme")
     (synopsis "WriteT and RWST monad transformers")
     (description
@@ -11241,7 +11240,7 @@ haskell-8.6-writer-cps-transformers
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "http://github.com/willdonnelly/xdg-basedir")
     (synopsis
      "A basic implementation of the XDG Base Directory specification.")
@@ -11273,7 +11272,7 @@ haskell-8.6-xdg-basedir
        #:configure-flags (list)
        #:cabal-revision
        ("2" "15cxa19dp8nqvrrp0bmndkdas2jzg573x8ri75r6kiv8r4vkv8y7")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://github.com/GaloisInc/xml")
     (synopsis "A simple XML library.")
     (description "A simple XML library.")
@@ -11300,7 +11299,7 @@ haskell-8.6-xml
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page "https://john-millikin.com/software/haskell-xml/")
     (synopsis "Basic types for representing XML")
     (description "")
@@ -11326,7 +11325,7 @@ haskell-8.6-xml-types
        #:haskell ,ghc
        #:haddock? #t
        #:configure-flags (list)))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (home-page
      "http://homepage3.nifty.com/salamander/second/projects/yjtools/index.xhtml")
     (synopsis "some tools for Monad, List, Tuple and so on.")
@@ -11356,9 +11355,9 @@ haskell-8.6-yjtools
        (list "-f-non-blocking-ffi" "-f-pkg-config")
        #:cabal-revision
        ("1" "0i9g71jvdw22bi9bi8dm5khwzcsv6cv8yadmf7afklg4xigxykfk")))
-    (outputs (list "out" "static" "doc"))
+    (outputs (list "out" "doc"))
     (inputs (list (@ (gnu packages pkg-config) %pkg-config)))
-    (propagated-inputs (list (@ (gnu packages compression) zlib)))
+    (propagated-inputs (list (@ (gnu packages compression) zlib-1.2.12)))
     (home-page "https://hackage.haskell.org/package/zlib")
     (synopsis "Compression and decompression in the gzip and zlib formats")
     (description "This package provides a pure interface for compressing and
