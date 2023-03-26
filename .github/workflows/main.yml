@@ -12,7 +12,7 @@ jobs:
         id: install-guix
         uses: PromyLOPh/guix-install-action@v1
         with:
-          pullAfterInstall: false
+          pullAfterInstall: true
       - name: Build haskell-attoparsec
         run: guix build -L . haskell-9.0-attoparsec
       - name: Build haskell-attoparsec-iso8601
